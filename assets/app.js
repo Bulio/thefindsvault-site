@@ -26,10 +26,10 @@
     var reviews = c.reviews ? '(' + c.reviews.toLocaleString() + ')' : '';
     var watchBtn = c.youtube
       ? '<a class="watch-btn" href="' + c.youtube + '" target="_blank" rel="noopener" ' +
-        'aria-label="Watch on YouTube" onclick="event.stopPropagation()">&#9654;</a>'
+        'onclick="event.stopPropagation()">&#9654; YouTube</a>'
       : '';
     // niente <a> annidati: il link al prodotto avvolge foto+testo, il
-    // bottone YouTube e' un elemento indipendente sopra l'immagine.
+    // bottone YouTube e' un elemento indipendente in fondo alla card.
     return (
       '<div class="card">' +
         '<a class="card-link" href="products/' + c.slug + '/index.html">' +
@@ -47,7 +47,7 @@
             '</div>' +
           '</div>' +
         '</a>' +
-        watchBtn +
+        '<div class="card-actions">' + watchBtn + '</div>' +
       '</div>'
     );
   }
