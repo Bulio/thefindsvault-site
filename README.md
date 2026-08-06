@@ -5,9 +5,9 @@ Sito statico generato da `build_site.py` (nel progetto privato
 
 1. Aggiungi il nuovo prodotto ai dati esistenti (`product_data/`,
    `scripts/*_metadata.json`, `affiliate_links.json`).
-2. `cd website && python3 build_site.py`
-3. Copia il contenuto di `website/dist/` qui dentro e fai push su `main`.
+2. `cd website && ./deploy_site.sh`
 
 Nessun pagamento/carrello: ogni pagina prodotto linka direttamente ad
 Amazon con il tag Associates. GitHub Pages serve tutto gratis dalla
-branch `main`, dominio custom via file `CNAME`.
+branch `main`, dominio custom via file `CNAME` (rimosso finche' il
+dominio thefindsvault.com non e' registrato).
