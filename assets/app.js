@@ -24,22 +24,31 @@
   function cardHTML(c) {
     var badge = c.rating >= 4.7 ? '<span class="badge">Top Rated</span>' : '';
     var reviews = c.reviews ? '(' + c.reviews.toLocaleString() + ')' : '';
+    var watchBtn = c.youtube
+      ? '<a class="watch-btn" href="' + c.youtube + '" target="_blank" rel="noopener" ' +
+        'aria-label="Watch on YouTube" onclick="event.stopPropagation()">&#9654;</a>'
+      : '';
+    // niente <a> annidati: il link al prodotto avvolge foto+testo, il
+    // bottone YouTube e' un elemento indipendente sopra l'immagine.
     return (
-      '<a class="card" href="products/' + c.slug + '/index.html">' +
-        '<div class="card-media">' + badge +
-          '<img src="' + c.image + '" alt="' + esc(c.title) + '" loading="lazy">' +
-        '</div>' +
-        '<div class="card-body">' +
-          '<span class="cat-chip">' + esc(c.category) + '</span>' +
-          '<h3>' + esc(c.title) + '</h3>' +
-          '<p class="hook">' + esc(c.hook) + '</p>' +
-          '<div class="meta">' +
-            '<span class="stars">' + stars(c.rating) + '</span>' +
-            '<span class="reviews">' + reviews + '</span>' +
-            '<span class="price">' + esc(c.price) + '</span>' +
+      '<div class="card">' +
+        '<a class="card-link" href="products/' + c.slug + '/index.html">' +
+          '<div class="card-media">' + badge +
+            '<img src="' + c.image + '" alt="' + esc(c.title) + '" loading="lazy">' +
           '</div>' +
-        '</div>' +
-      '</a>'
+          '<div class="card-body">' +
+            '<span class="cat-chip">' + esc(c.category) + '</span>' +
+            '<h3>' + esc(c.title) + '</h3>' +
+            '<p class="hook">' + esc(c.hook) + '</p>' +
+            '<div class="meta">' +
+              '<span class="stars">' + stars(c.rating) + '</span>' +
+              '<span class="reviews">' + reviews + '</span>' +
+              '<span class="price">' + esc(c.price) + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>' +
+        watchBtn +
+      '</div>'
     );
   }
 
