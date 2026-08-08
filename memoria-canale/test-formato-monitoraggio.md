@@ -41,6 +41,15 @@
 3. **Check 48h — 10/8 ~18:30 Italia**: VERDETTO sui 4 criteri → raccomandazione
    riconfigurazione notturna (1 batch/notte nuovo formato dal 17/8) o mantenimento.
 
+## Log tempi di produzione nuovo formato (per ritarare la notturna)
+
+| Data | Fase | Tempo | Note |
+|------|------|-------|------|
+| 8/8 cloud | Scelta soggetto + anti-duplicati | ~3 min | Video 2 batch (FF 10–14 ago) |
+| 8/8 cloud | Script completo 20 min (2.474 parole) | ~7 min | 2 passate, formula completa |
+| 8/8 cloud | TTS | n/d | Bloccata in cloud (proxy + Horacl 16cr). Da misurare sul Mac |
+| 8/8 cloud | Immagini/thumbnail | n/d | Regola nuova: mix 50/50 generate/riusate da cartelle personaggi. Da misurare sul Mac |
+
 ## Log dei check
 
 - _(vuoto — si riempie a ogni check)_

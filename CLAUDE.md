@@ -55,6 +55,32 @@
   (lì anche canali banditi e farm IA). ⚠️ Il controllo anti-duplicati va rinforzato:
   trovate 3 coppie di duplicati pubblicate + 3 programmate (stessa scena, 2 video).
 
+## Regola IMMAGINI per le clip video (indicazione utente, 8/8/2026 sera)
+
+- **Mix 50/50**: a parità di fabbisogno, generare SOLO metà delle immagini nuove;
+  l'altra metà va presa dalle **cartelle personaggi già esistenti sul Mac** (immagini
+  già usate in altri video). Es.: servono 10 → 5 generate + 5 riusate. Obiettivo:
+  mantenere lo stesso livello visivo dimezzando le generazioni.
+- **Le librerie immagini NON si cancellano MAI** — né quelle delle serie TV
+  (Serie TV Fans) né quelle di Storie Ispiranti (stessa strategia su quel canale).
+  Servono proprio per il riuso.
+- **Refresh**: rigenerare le foto dei personaggi solo ~ogni 2 mesi (cambia la resa
+  e si accorcia la "memoria" visiva del pubblico sulle immagini ripetute).
+- Nota sessione cloud: le cartelle stanno sul Mac; qui la regola si registra e si
+  passa alla pipeline. Horacl (cloud) ha 16 crediti free: nessuna generazione
+  possibile da qui finché non viene ricaricato.
+
+## ⏱ Taratura tempi nuovo formato (per riconfigurare la notturna)
+
+- Decisione utente 8/8: qualità > quantità; se il test passa la notturna scende
+  probabilmente a **1 batch/notte** col nuovo formato.
+- **Dato #1 (8/8, sessione cloud)**: script completo 20 min (FF 10–14 ago,
+  2.474 parole, formula completa) = **~8–10 min di lavoro AI** (2 passate).
+  → 3 script/notte ≈ 30 min di scrittura; cap $25 ampiamente sufficiente.
+- Mancano da misurare (sul Mac): TTS, raccolta/gen immagini col mix 50/50,
+  montaggio, QC. Ogni sessione di produzione nuovo formato DEVE loggare i tempi
+  di fase in `memoria-canale/test-formato-monitoraggio.md` (sezione Log).
+
 ## ⚠️ CONFLITTO APERTO da decidere dopo il test (priorità 1)
 
 - La pipeline notturna produce **6 lunghi/giorno con il vecchio formato (8–9 min)**.
