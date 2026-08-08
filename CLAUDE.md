@@ -1,113 +1,151 @@
-# MEMORIA — Progetto rilancio canale YouTube "Serie TV Fans"
+# MEMORIA UNIFICATA — Progetto rilancio canale YouTube "Serie TV Fans"
 
-> Memoria operativa del lavoro svolto l'8 agosto 2026. Leggere PRIMA di qualsiasi
-> nuova attività sul canale. I documenti completi sono in `memoria-canale/`.
+> Memoria unificata l'8 agosto 2026 (sera) dalle sessioni: "Analisi e ottimizzazione
+> grafico storico" (strategia/formato) + "Produzione batch Serie TV Fans" (pipeline
+> sul Mac, handoff del 08/08 ~16:45). Leggere PRIMA di qualsiasi attività sul canale.
+> Documenti completi in `memoria-canale/`.
 
 ## Il canale e l'obiettivo
 
 - **Canale**: Serie TV Fans (`UCwgtJLcJWxO5p_VAILE4sdA`, @serietvfans) — nicchia
-  "anticipazioni soap" in italiano. 60.100 iscritti, 14,1M viste totali, ~1.050 video.
-- **Storia**: picco 129.000 viste/giorno nel 2023 grazie a Terra Amara; crollo
-  strutturale quando la serie è finita (non è penalizzazione algoritmica).
-- **OBIETTIVO**: tornare ad almeno **64.000 viste/giorno** (metà del picco).
-  Formula: 3 video/giorno × ~20.000 viste. Tappe: agosto 8–12K/g, settembre 20–30K/g,
-  ottobre–novembre 45–64K/g (stagione autunnale = momento migliore della nicchia).
-- Baseline all'8/8/2026: ~2.200 viste/giorno. Monetizzazione attiva solo dal 5/8/2026
-  (prima il canale NON era monetizzato — mistero risolto, nessun problema).
+  "anticipazioni soap" in italiano. 60.100 iscritti, 14,1M viste, ~1.050 video.
+- **OBIETTIVO**: tornare ad almeno **64.000 viste/giorno** (metà del picco storico di
+  129.000 del 2023). Tappe: agosto 8–12K/g · settembre 20–30K/g · ott–nov 45–64K/g.
+- Baseline 8/8/2026: ~2.200 viste/giorno.
+
+## Storia vera del grafico (riconciliata dalle due sessioni)
+
+1. **Picco 2023**: Terra Amara, fino a 129K viste/giorno e $150–360/giorno.
+   Revenue vita canale: ~$35.3K (~€32.8K).
+2. **Declino 2024–2025**: strutturale — fine di Terra Amara, non penalizzazione.
+3. **Cliff a ZERO dal 10/06/2026**: sospensione account/YPP (NON calo organico).
+   **YPP riaccettato il 28/07/2026**, revenue ripartita ~05/08. La "monetizzazione
+   mancante" di luglio è spiegata da questo — nessun problema residuo.
+4. **Germoglio attuale**: Forbidden Fruit 24K viste (28/07), Far Away costante 1,2–3,1K.
 
 ## Il pubblico (dato fondamentale)
 
 - **87,6% over 55 (68,7% over 65), 85,3% donne**, 98% Italia.
-- Conseguenze: orari diurni (9–12 e 18), thumbnail con testo grande, narrazione
-  chiara tipo "amica che racconta", NIENTE Shorts come strategia principale.
-- **Shorts**: partiti il 5/8/2026, in TEST monitorato fino al 22/8/2026. Criteri:
-  viste medie, % pubblico non iscritto, iscritti portati, clic ai long-form.
-  Se non portano pubblico nuovo → si chiudono.
+- Conseguenze: orari diurni, thumbnail con testo GRANDE, narrazione "amica che
+  racconta", TTS curata. Gli Shorts NON sono la strategia per questo pubblico.
+
+## LE DUE CORSIE (regola inter-sessione, NON violare)
+
+- **Corsia LUNGHI**: questa. Produzione, strategia, analytics dei long-form.
+- **Corsia SHORT: è di un'altra chat — MAI toccarla** (memoria Mac
+  `feedback_divisione_corsie_short_lunghi`). Qui si possono solo LEGGERE i dati
+  Shorts per il verdetto del 22/8 (criteri: viste medie, % pubblico non iscritto,
+  iscritti portati, clic ai long-form). La decisione va coordinata con quella chat.
+- Kaggle: max 1 slot se esiste `bin/kaggle_lane_reserved.txt` (sul Mac).
+
+## Pipeline di produzione ATTIVA (sul Mac, sessione batch)
+
+- **Video 102–113 prodotti e in coda upload** (batch29–32 in `YOUTUBE_API/serietvfans/`).
+  Storico angoli/fonti: `~/Desktop/Claude/YOUTUBE_API/serietvfans/_storico_video.md`.
+- **Cron upload `0 23 * * *`**: carica 6 bozze PRIVATE/giorno dalle `queue/batch*.json`.
+  In coda: video 99, 102–113.
+- **Notturna autonoma `0 5 * * *`** (`bin/run_night_batch_serietvfans.sh`, claude -p
+  headless, token `~/.claude/night_oauth_token`): 6 lunghi/notte, cap $25.
+  Prima run autonoma: 09/08 → video 114–119.
+- **Calendario**: `PIANO EDITORIALE/Piano_Editoriale_Canali.xlsx` foglio
+  "Cal. Serie TV Fans" — lunghi coperti fino al 29/08 (ai 2/3).
+- **Regole upload**: SEMPRE bozza privata + containsSyntheticMedia; max 6/giorno;
+  quota API resetta ~9:00 italiane.
+- **Canone narrativo**: prima di produrre, checkpoint MASTER + `_storico_video.md`
+  (lì anche canali banditi e farm IA). ⚠️ Il controllo anti-duplicati va rinforzato:
+  trovate 3 coppie di duplicati pubblicate + 3 programmate (stessa scena, 2 video).
+
+## ⚠️ CONFLITTO APERTO da decidere dopo il test (priorità 1)
+
+- La pipeline notturna produce **6 lunghi/giorno con il vecchio formato (8–9 min)**.
+- La strategia validata sui dati dice: **3 lunghi/giorno da 18–25 min** (formula sotto)
+  battono 6 da 8 min (watch time, suggeriti, retention — i concorrenti con 1/3 degli
+  iscritti fanno 10–30K viste/video così).
+- **Il video TEST col nuovo formato esce SAB 8/8 ore 18:00** (TPLMF). Verifica a 48h:
+  retention min 1 ≥65% (baseline ~50%) · durata media ≥5:00 (baseline ~2:30) ·
+  viste 48h ≥1.500 (baseline 150–400) · commenti ≥30. Se passa 2/4 → riconfigurare
+  la notturna sul nuovo formato (script più lunghi, meno video) dal 17/8.
 
 ## La diagnosi (problemi trovati nei dati)
 
-1. Video da 8–9 min contro i 18–50 min dei concorrenti vincenti → poco watch time.
-2. Retention: 50% del pubblico perso nel primo minuto (hook che "introduce" invece
-   di spoilerare). Target: ≥65% al minuto 1, durata media ≥5 min.
+1. Video 8–9 min vs 18–50 min dei concorrenti vincenti → poco watch time.
+2. Retention: −50% nel primo minuto (hook che introduce invece di spoilerare).
 3. Ricerca YouTube al 2,8% del traffico (titoli senza date). Target ≥10%.
-4. Il flusso di produzione genera DUPLICATI (trovate 3 coppie pubblicate + 3 coppie
-   programmate). Regola: mai due video sulla stessa scena; controllare prima di programmare.
-5. Slot notturni ricorrenti per errore (00:00, 22:00) — controllare sempre l'orario.
-6. Serie morte (Beautiful, Paradiso delle Signore: 40–130 viste) rubavano slot.
+4. Duplicati generati dal flusso di produzione (6 coppie trovate).
+5. Slot notturni per errore (00:00, 22:00) — controllare sempre l'orario.
+6. Serie morte (Beautiful, Paradiso: 40–130 viste) rubavano slot → FUORI.
 
-## Il portafoglio serie (priorità)
+## Portafoglio serie (priorità)
 
-1. **Tutto per la mia famiglia** — l'onda più grande (concorrenti: 26–33K/video)
-2. **Forbidden Fruit** — validata (video utente da 24K)
-3. **Far Away** — la serie più reattiva del canale col vecchio formato (1,2–3,1K)
-4. **La Promessa** — storica, 1 slot
+1. **Tutto per la mia famiglia** (concorrenti: 26–33K/video — era scoperta!)
+2. **Forbidden Fruit** (validata: 24K)
+3. **Far Away** (la più reattiva del canale)
+4. **La Promessa** (storica, 1 slot)
 5. Rotazione: La forza di una donna, Melek. FUORI: Beautiful, Paradiso delle Signore.
 
-## La formula del nuovo formato (estratta dai transcript dei concorrenti top)
+## Formula del nuovo formato (estratta dai transcript dei top competitor)
 
-Video 18–25 min. Struttura: HOOK 0:00–0:45 (spoiler frontali + un evento shock SENZA
-nome = loop aperto mai risolto) → RESET "tutto comincia quando…" → 5 blocchi da 2,5 min
-ognuno chiuso da domanda-ponte → CTA unica al min 10 (chiede una TEORIA nei commenti)
-→ 2 blocchi speculativi ("le anticipazioni lasciano intendere…") → chiusura troncata
-sul momento drammatico + rilancio al prossimo video. ZERO intro/sigla/saluti.
-Ritmo: 1 fatto ogni 15–25 sec; mai >90 sec sulla stessa linea narrativa; similitudine
-popolare ogni 2 blocchi. Dettagli completi: `memoria-canale/formula-script-20min.html`.
+Video 18–25 min: HOOK 0:00–0:45 (spoiler frontali + evento shock SENZA nome = loop
+aperto mai risolto) → RESET "tutto comincia quando…" → 5 blocchi da 2,5 min chiusi da
+domanda-ponte → CTA unica al min 10 (chiede una TEORIA) → 2 blocchi speculativi
+("le anticipazioni lasciano intendere…") → chiusura troncata + rilancio. ZERO
+intro/sigla/saluti. Ritmo: 1 fatto ogni 15–25 sec; mai >90 sec sulla stessa linea;
+similitudine popolare ogni 2 blocchi. Dettagli: `memoria-canale/formula-script-20min.html`.
 
-**Voce**: tutti i concorrenti usano TTS AI. Migliorie decise: 145 parole/min, frasi
-shock isolate e cortissime (la punteggiatura controlla la prosodia della TTS), una
-domanda ogni ~2 min (curva ascendente = rompe la cantilena), testare voce femminile
-25–35 calda, musica con ducking dinamico, 1 sec di silenzio prima della frase clou.
+**Voce (tutti i competitor usano TTS AI)**: 145 parole/min, frasi shock isolate e corte
+(la punteggiatura controlla la prosodia), domanda ogni ~2 min, testare voce femminile
+25–35 calda, ducking dinamico, 1 sec di silenzio prima della frase clou.
+Primo test formato "speciale voci": video112 (pipeline Mac).
 
-## Titoli e SEO
+## Titoli, SEO, thumbnail
 
-- Formula: `SERIE Anticipazioni DAL X AL Y MESE: PERSONAGGIO + evento shock 😱`
-- Ogni domenica: 1 video "riassunto settimana" per serie con date nel titolo (magnete di ricerca).
-- Descrizione: prima riga = serie+date+personaggi; capitoli con timestamp; hashtag.
-- Thumbnail: primo piano volto + freccia/cerchio + 3–5 parole GRANDI (diverse dal titolo).
+- `SERIE Anticipazioni DAL X AL Y MESE: PERSONAGGIO + evento shock 😱`
+- Domenica: 1 video "riassunto settimana" per serie con date (magnete di ricerca).
+- Descrizione: riga 1 serie+date+personaggi; capitoli; hashtag.
+- Thumbnail: primo piano + freccia/cerchio + 3–5 parole GRANDI (≠ dal titolo).
+- Membership CTA: retrofit fatto su ~309+ video (misurarne l'effetto).
 
-## PROCESSO STANDARD concordato con l'utente (importante!)
+## PROCESSO STANDARD (concordato con l'utente)
 
-1. **Verifica trame**: prima di ogni script, confrontare con le trame UFFICIALI
-   italiane (ComingSoon, TGCOM24, TvSerial, Sorrisi, Mediaset Infinity, Davide Maggio).
-   I concorrenti spesso raccontano puntate TURCHE future o inventano. Le parti
-   speculative negli script vanno dichiarate come tali ("le anticipazioni lasciano intendere…").
-2. **Riga PUBBLICARE**: ogni script consegnato porta in PRIMA riga della descrizione
-   `PUBBLICARE: GIORNO X/X ORE XX:XX` — l'utente la vede quando programma e poi la toglie.
-3. **Ordine cronologico**: eventi già in onda → subito (slot secondari); settimana in
-   onda → il giorno prima; trame future → settimana dopo, mai un effetto prima della causa.
-4. **Slot**: vecchio formato 10:00/11:00/12:00 e 21:00 · nuovo formato 9:00 e 18:00 ·
+1. **Verifica trame** su fonti UFFICIALI italiane (ComingSoon, TGCOM24, TvSerial,
+   Sorrisi, Mediaset Infinity, Davide Maggio) — i competitor raccontano puntate
+   turche future o inventano. Le parti speculative vanno dichiarate nello script.
+2. **Riga PUBBLICARE**: ogni script porta in PRIMA riga della descrizione
+   `PUBBLICARE: GIORNO X/X ORE XX:XX` (l'utente la toglie quando programma).
+3. **Ordine cronologico**: già in onda → subito (slot secondari); settimana in onda →
+   giorno prima; future → settimana dopo; mai un effetto prima della causa.
+4. **Slot**: vecchio formato 10/11/12 e 21 · nuovo formato 9:00 e 18:00 ·
    settimanali nel weekend precedente.
-5. Claude NON ha accesso a YouTube Studio (solo analytics in lettura via NexLev MCP):
-   le modifiche a programmazione/descrizioni le fa l'utente a mano con le mappe fornite.
+5. Claude (sessioni cloud) NON accede a YouTube Studio: legge analytics via NexLev;
+   programmazione/descrizioni le applica l'utente con le mappe. La pipeline Mac
+   invece carica bozze via API (mai pubblicare direttamente).
 
 ## Stato all'8 agosto 2026 (sera)
 
-- **Batch di prova consegnato e verificato** (`memoria-canale/batch-verificato-8-agosto.html`):
-  video 1 TPLMF script completo (PUBBLICARE SAB 8/8 18:00 — IL TEST), video 2 Forbidden
-  Fruit (DOM 9/8 9:00), video 3 Far Away (DOM 9/8 18:00).
-- **Test da valutare dopo 48h** (9–10/8): retention min 1 ≥65% (baseline ~50%), durata
-  media ≥5:00 (baseline ~2:30), viste 48h ≥1.500 (baseline 150–400), commenti ≥30.
-  Se passa 2/4 → formula su tutto il calendario dal 17/8.
-- **Coda ripianificata**: mappa completa dei 37 video programmati (9–20/8) in
-  `memoria-canale/mappa-ripianificazione.html` + Excel `ripianificazione-8-23-agosto.xlsx`.
-  3 duplicati da eliminare, 7+2 video "bruciati" anticipati, 3 slot notturni corretti,
-  Petra anticipata all'11/8, FOTO di Feride al 13/8. L'utente sta applicando la mappa a mano.
-- **Da verificare**: il video "Petra guarisce" (20/8) contraddice il "tetano senza
-  scampo" delle trame ufficiali — confermare prima che esca.
-- Playlist da sistemare (utente): TPLMF (nuova), Forbidden Fruit, Far Away, La Promessa,
-  in ordine cronologico.
+- **Batch di prova verificato** (`memoria-canale/batch-verificato-8-agosto.html`):
+  TPLMF (SAB 8/8 18:00 — TEST) · Forbidden Fruit (DOM 9/8 9:00) · Far Away (DOM 9/8 18:00).
+- **Coda ripianificata**: 37 video 9–20/8 mappati in
+  `memoria-canale/mappa-ripianificazione.html` + `ripianificazione-8-23-agosto.xlsx`:
+  3 duplicati da eliminare, 9 video bruciati anticipati, 3 slot notturni corretti,
+  Petra→11/8, FOTO Feride→13/8. L'utente applica a mano.
+- **Da verificare**: "Petra guarisce" (20/8) contraddice il "tetano senza scampo"
+  delle trame ufficiali — confermare prima dell'uscita.
+- Playlist da sistemare: TPLMF (nuova), Forbidden Fruit, Far Away, La Promessa.
 
 ## Prossimi passi
 
-1. Analizzare i risultati del video test (retention curva completa) → tarare hook.
-2. Batch settimana 17–23 col processo standard (verifica trame → script → date).
-3. Il 22/8: verdetto sugli Shorts coi criteri sopra.
-4. Post community quotidiani (7 pronti nel kit) — sondaggio del sabato = ricerca di mercato.
-5. Eventuale test TTS con Horacle AI (voce femminile vs maschile) — consuma crediti,
-   chiedere conferma prima.
+1. **9–10/8**: valutare il test (curva retention completa) → tarare hook → decidere
+   la riconfigurazione della pipeline notturna (vedi CONFLITTO APERTO).
+2. Incrociare il grafico storico con le date della pipeline: rimonetizzazione 28/07,
+   ritmo 6/g, membership retrofit, video112 "speciale voci" (variabili nuove).
+3. Batch 17–23 col processo standard. 4. Verdetto Shorts il 22/8 (coordinato con la
+   chat della corsia SHORT). 5. Post community quotidiani (7 pronti nel kit).
+6. Su Mac: `memory_search.py "serie tv fans revenue analytics"`, checkpoint
+   `serietvfans_batch_1_2_3_agosto_stato`, benchmark `serietvfans_competitor_benchmark_02agosto`.
 
 ## Nota su questo repository
 
-Questo repo (thefindsvault-site) è un sito statico NON collegato al canale YouTube:
-viene usato come contenitore della memoria di questo progetto sul branch
-`claude/analisi-grafico-storico-fvwaqt`. Non toccare i file del sito per il lavoro canale.
+thefindsvault-site è un sito statico NON collegato al canale: fa da contenitore della
+memoria su questo branch (`claude/analisi-grafico-storico-fvwaqt`). Non toccare i file
+del sito per il lavoro canale. Non portare `memoria-canale/` su main (diventerebbe
+pubblica sul sito).
