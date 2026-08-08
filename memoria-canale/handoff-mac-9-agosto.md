@@ -3,6 +3,22 @@
 > Da leggere nella chat/pipeline del Mac. Tutto ciò che serve è committato sul
 > branch `claude/analisi-grafico-storico-fvwaqt` di thefindsvault-site.
 
+## ⓪ DECISIONE UTENTE (8/8 sera): IL LAVORO OPERATIVO SI SPOSTA SUL MAC
+
+- L'utente vuole lavorare "come sempre su Claude che ha accesso a tutto" → il Mac.
+- Il Mac deve fare `git pull` di questo branch e ripartire da questo file.
+- **RICHIESTA MEMORIA (importante)**: la sessione cloud NON vede la memoria Claude
+  del Mac (checkpoint, `_storico_video.md`, istruzioni Palmier, feedback corsie).
+  Al prossimo giro, la sessione Mac copi/esporti in `memoria-canale/` di questo
+  branch i file di memoria essenziali (o un estratto), così ogni sessione — cloud
+  o Mac — lavora sulle stesse istruzioni. Priorità: istruzioni Palmier, checkpoint
+  MASTER, `_storico_video.md`, regole corsie.
+- Resta in cloud SOLO il monitoraggio del test TPLMF (check automatici 19:00 /
+  24h / 48h via NexLev, che sul Mac non c'è): il verdetto verrà committato qui.
+- **Orari di pubblicazione**: usare la nuova analisi
+  `memoria-canale/analisi-orari-pubblicazione.md` → lunghi 9:00 · 14:45 · 18:30
+  (A/B col 20:30). Short: proposta 12:30/17:00/21:00 da COORDINARE con chat SHORT.
+
 ## 1. Da produrre SUBITO: video Forbidden Fruit (slot DOM 9/8 ore 9:00)
 
 - Script COMPLETO pronto: `memoria-canale/video-FF-10-14ago-script-completo.md`
