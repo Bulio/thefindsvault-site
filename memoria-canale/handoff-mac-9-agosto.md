@@ -53,3 +53,18 @@
   La riconfigurazione scatta solo dopo il verdetto 48h (10/8 sera).
 - Ripianificazione coda 9–20/8: `memoria-canale/mappa-ripianificazione.html`
   (3 duplicati da eliminare, 9 bruciati da anticipare, slot notturni da correggere).
+
+---
+
+## ✅ AGGIORNAMENTO DALLA SESSIONE MAC (8/8 sera ~17:30)
+
+**⚡ DIRETTIVA UTENTE (8/8 ~17:15): "inizia a pubblicare nuovo formato senza test, cambiamo già strategia."** Il test TPLMF non è più decisionale (i check restano come misura).
+
+Fatto dalla sessione Mac:
+1. **Memoria esportata** in `memoria-canale/memoria-mac/` (Palmier, checkpoint MASTER, storico video, regole corsie, calibrazione TTS) — richiesta del punto ⓪ soddisfatta.
+2. **Palmier documentato** (punto 2): app locale `/Applications/PalmierPro.app` + MCP `http://127.0.0.1:19789/mcp`, piano PRO $29, nano-banana-pro (thumbnail/volti con referenceMediaRefs + "SAME EXACT FACE") e nano-banana-lite (scene). Dettagli completi in `memoria-mac/palmier-*.md`.
+3. **Video FF 10–14 ago (nuovo formato) in produzione**: immagini 50/50 fatte (10 Palmier + 10 libreria), thumbnail "LI HA VISTI" fatta, TTS in corso (lancio 17:04, CPU), montaggio in catena automatica. Verrà **programmato per DOM 9/8 ORE 9:00** via publishAt (progetto quota SDOPPIA, non tocca il cron 23:00).
+4. **Ripianificazione applicata via API**: 11 programmati spostati secondo la mappa; 2 duplicati eliminati con conferma utente (Nadir 15/8, Santos 7:57). "Ángela si ribella" 14/8 TENUTA (la presunta copia 11/8 non esiste tra i programmati — da verificare tra le bozze). Video non trovati tra i programmati (probabili bozze non programmate): "Kaya smaschera Şahika al funerale", "tregua Ender/Şahika/Yıldız", "strappa l'ordine" 16/8, "Zehra scopre che Mert ha un figlio" 17/8, "nozze lampo" 10/8 12:00.
+5. **Notturna riconfigurata DA STANOTTE**: 1 batch = 3 lunghi nuovo formato (prompt `bin/prompt_night_batch_serietvfans.txt` riscritto, backup del vecchio conservato).
+
+**Per la sessione cloud**: fare comunque i check TPLMF 19:00/24h/48h e committare i numeri nella scheda monitoraggio (servono come baseline del nuovo formato). Il video FA settimanale "divorzio Nare + scoperta Alya" (DOM 9/8 18:00 nella mappa) NON ha ancora uno script: se la cloud può scriverlo col nuovo formato, committarlo qui come fatto per il FF.
