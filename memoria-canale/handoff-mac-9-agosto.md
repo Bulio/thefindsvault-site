@@ -53,3 +53,37 @@
   La riconfigurazione scatta solo dopo il verdetto 48h (10/8 sera).
 - Ripianificazione coda 9–20/8: `memoria-canale/mappa-ripianificazione.html`
   (3 duplicati da eliminare, 9 bruciati da anticipare, slot notturni da correggere).
+
+---
+
+## ✅ AGGIORNAMENTO DALLA SESSIONE MAC (8/8 sera ~17:30)
+
+**⚡ DIRETTIVA UTENTE (8/8 ~17:15): "inizia a pubblicare nuovo formato senza test, cambiamo già strategia."** Il test TPLMF non è più decisionale (i check restano come misura).
+
+Fatto dalla sessione Mac:
+1. **Memoria esportata** in `memoria-canale/memoria-mac/` (Palmier, checkpoint MASTER, storico video, regole corsie, calibrazione TTS) — richiesta del punto ⓪ soddisfatta.
+2. **Palmier documentato** (punto 2): app locale `/Applications/PalmierPro.app` + MCP `http://127.0.0.1:19789/mcp`, piano PRO $29, nano-banana-pro (thumbnail/volti con referenceMediaRefs + "SAME EXACT FACE") e nano-banana-lite (scene). Dettagli completi in `memoria-mac/palmier-*.md`.
+3. **Video FF 10–14 ago (nuovo formato) in produzione**: immagini 50/50 fatte (10 Palmier + 10 libreria), thumbnail "LI HA VISTI" fatta, TTS in corso (lancio 17:04, CPU), montaggio in catena automatica. Verrà **programmato per DOM 9/8 ORE 9:00** via publishAt (progetto quota SDOPPIA, non tocca il cron 23:00).
+4. **Ripianificazione applicata via API**: 11 programmati spostati secondo la mappa; 2 duplicati eliminati con conferma utente (Nadir 15/8, Santos 7:57). "Ángela si ribella" 14/8 TENUTA (la presunta copia 11/8 non esiste tra i programmati — da verificare tra le bozze). Video non trovati tra i programmati (probabili bozze non programmate): "Kaya smaschera Şahika al funerale", "tregua Ender/Şahika/Yıldız", "strappa l'ordine" 16/8, "Zehra scopre che Mert ha un figlio" 17/8, "nozze lampo" 10/8 12:00.
+5. **Notturna riconfigurata DA STANOTTE**: 1 batch = 3 lunghi nuovo formato (prompt `bin/prompt_night_batch_serietvfans.txt` riscritto, backup del vecchio conservato).
+
+**Per la sessione cloud**: fare comunque i check TPLMF 19:00/24h/48h e committare i numeri nella scheda monitoraggio (servono come baseline del nuovo formato). Il video FA settimanale "divorzio Nare + scoperta Alya" (DOM 9/8 18:00 nella mappa) NON ha ancora uno script: se la cloud può scriverlo col nuovo formato, committarlo qui come fatto per il FF.
+
+---
+
+## ✅ RIPIANIFICAZIONE COMPLETATA DA BROWSER (8/8 ~19:00, sessione Mac)
+
+Trovati e corretti 4 elementi che la prima passata via API aveva mancato (causa: alcuni video scheduled hanno `privacyStatus` API "public"/anomalo anche se Studio li mostra "Scheduled" — es. video membership-only con release pubblica futura; verificare sempre da Studio, non fidarsi solo del campo API):
+1. **Fix di un mio errore**: "FAR AWAY: dopo il tribunale" era finito su 11/8 22:00 invece di 12/8 21:00 — corretto.
+2. **"Kaya smaschera Şahika al funerale"** (era ancora al 13/8) → spostato 10/8 21:00.
+3. **"tregua Ender, Şahika, Yıldız"** (era ancora al 13/8) → spostato 11/8 21:00.
+4. **"Yıldız e Çağatay nozze lampo"** (era ancora al 10/8) → spostato 19/8 10:00 (via Studio, video a visibilità membership).
+5. **Duplicato reale trovato e confermato**: "Ángela si ribella" esisteva in 2 copie (9:01 corretto all'11/8 12:00, TENUTO; 7:49 copia al 14/8, ELIMINATA da browser con conferma utente).
+
+Mappa `ripianificazione-8-23-agosto.xlsx` ora riflette lo stato reale della coda YouTube. Nessun'altra discrepanza trovata scorrendo i primi 30 programmati (622 video totali sul canale, il resto sono già pubblicati/storico).
+
+## ✅ AGGIORNAMENTO 2 SESSIONE MAC (8/8 ~19:00)
+- **Video FA settimanale (nuovo formato ≥20 min) IN PRODUZIONE sul Mac**: script completo committato qui (`video-FA-10-14ago-script-completo.md`, 20.229 caratteri ≈ 20,8 min), TTS in corso, uscita programmata DOM 9/8 ORE 18:30. La sessione cloud NON deve scriverlo.
+- **NUOVE DIRETTIVE UTENTE 8/8 sera (valgono per ogni video)**: 1) durata MINIMA 20 minuti, mai riempitivi, solo fatti verificati nuovi; 2) immagini SOLO della stessa serie + personaggi citati (mai mischiare canali/serie); 3) generazioni Palmier con reference + controllo fedeltà volto (se non riconoscibile → foto reale); 4) thumbnail SEMPRE con foto reali dei personaggi (no volti AI); 5) sottotitoli a metà schermo (build_video.py aggiornato); 6) numeri SEMPRE in lettere negli script (pronuncia TTS); 7) in valutazione switch voce a ElevenLabs (decisione utente, mitigazione attiva).
+- Thumbnail NF2 rifatta con foto reali e già sostituita su k_Usdt_aAvI.
+- Nuova cartella libreria: PERSONAGGI SERIE TV FANS/FAR AWAY/Nare/ (2 foto reali Sahra Şaş).
