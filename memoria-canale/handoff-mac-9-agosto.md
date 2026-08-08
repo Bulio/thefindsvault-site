@@ -81,3 +81,9 @@ Trovati e corretti 4 elementi che la prima passata via API aveva mancato (causa:
 5. **Duplicato reale trovato e confermato**: "Ángela si ribella" esisteva in 2 copie (9:01 corretto all'11/8 12:00, TENUTO; 7:49 copia al 14/8, ELIMINATA da browser con conferma utente).
 
 Mappa `ripianificazione-8-23-agosto.xlsx` ora riflette lo stato reale della coda YouTube. Nessun'altra discrepanza trovata scorrendo i primi 30 programmati (622 video totali sul canale, il resto sono già pubblicati/storico).
+
+## ✅ AGGIORNAMENTO 2 SESSIONE MAC (8/8 ~19:00)
+- **Video FA settimanale (nuovo formato ≥20 min) IN PRODUZIONE sul Mac**: script completo committato qui (`video-FA-10-14ago-script-completo.md`, 20.229 caratteri ≈ 20,8 min), TTS in corso, uscita programmata DOM 9/8 ORE 18:30. La sessione cloud NON deve scriverlo.
+- **NUOVE DIRETTIVE UTENTE 8/8 sera (valgono per ogni video)**: 1) durata MINIMA 20 minuti, mai riempitivi, solo fatti verificati nuovi; 2) immagini SOLO della stessa serie + personaggi citati (mai mischiare canali/serie); 3) generazioni Palmier con reference + controllo fedeltà volto (se non riconoscibile → foto reale); 4) thumbnail SEMPRE con foto reali dei personaggi (no volti AI); 5) sottotitoli a metà schermo (build_video.py aggiornato); 6) numeri SEMPRE in lettere negli script (pronuncia TTS); 7) in valutazione switch voce a ElevenLabs (decisione utente, mitigazione attiva).
+- Thumbnail NF2 rifatta con foto reali e già sostituita su k_Usdt_aAvI.
+- Nuova cartella libreria: PERSONAGGI SERIE TV FANS/FAR AWAY/Nare/ (2 foto reali Sahra Şaş).
