@@ -52,4 +52,9 @@
 
 ## Log dei check
 
-- _(vuoto — si riempie a ogni check)_
+- **CHECK 0 — 8/8 19:02 Italia: VIDEO NON PUBBLICATO.** Nessun video TPLMF sul
+  canale; l'upload più recente risale a ~7 ore prima. Utente avvisato (chat +
+  push). Ricontrollo automatico alle ~20:05 Italia. Nota a margine: oggi risultano
+  usciti 3 video vecchio formato (8–9 min) verso le 12:00–14:30 — FF "Ender",
+  La Promessa "Leocadia/Ángela", FF "Hasan Ali holding" (titoli visti in
+  auto-traduzione inglese dallo scraper, da confermare).
