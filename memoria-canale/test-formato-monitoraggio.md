@@ -62,6 +62,13 @@
 
 ## Log dei check
 
+- **RICONTROLLO — 8/8 20:07 Italia: TPLMF ANCORA NON PUBBLICATO → TEST CHIUSO
+  COME SALTATO** (coerente con la direttiva utente: nuovo formato attivo senza
+  test). Il monitoraggio passa ai primi nuovo formato reali:
+  **FF `k_Usdt_aAvI` (DOM 9/8 9:00)** → check 24h LUN 10/8 ~9:30 ·
+  **FA (DOM 9/8 18:30)** → check 48h FF + 24h FA MAR 11/8 ~10:00.
+  Stessi 4 criteri della tabella come metro (misura, non decisione).
+  Se TPLMF uscisse più avanti, trattarlo come video normale del nuovo formato.
 - **CHECK 0 — 8/8 19:02 Italia: VIDEO NON PUBBLICATO.** Nessun video TPLMF sul
   canale; l'upload più recente risale a ~7 ore prima. Utente avvisato (chat +
   push). Ricontrollo automatico alle ~20:05 Italia. Nota a margine: oggi risultano
