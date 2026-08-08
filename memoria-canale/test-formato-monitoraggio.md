@@ -15,6 +15,7 @@
 - Formato: 18–25 min, formula competitor (hook spoiler 0:00–0:45, loop aperto,
   5 blocchi da 2,5 min, CTA teoria al min 10, chiusura troncata)
 - Video ID: _da rilevare al primo check dopo la pubblicazione_
+- **Video 2 del batch (FF 10-14 ago): ID k_Usdt_aAvI, programmato DOM 9/8 9:00, durata 15:10**
 
 ## Criteri di verifica a 48h (passa con ≥2/4)
 
@@ -52,9 +53,12 @@
 | 8/8 cloud | Script completo 20 min (2.474 parole) | ~7 min | 2 passate, formula completa |
 | 8/8 cloud | TTS | n/d | Bloccata in cloud (proxy + Horacl 16cr). Da misurare sul Mac |
 | 8/8 Mac | Estrazione narrazione + dispatch TTS | ~2 min | 14.779 caratteri; corsia CPU locale (Kaggle semaforo attivo); pause 0.7/1.3 |
-| 8/8 Mac | TTS Chatterbox (CPU) | _in corso, lancio 17:04_ | ETA ~75 min; tempo finale nel prossimo commit |
+| 8/8 Mac | TTS Chatterbox (CPU) | 68 min (17:04→18:12) | 14.779 char → 15:10 di audio (910s). Ritmo reale con pause 0.7/1.3: ~16.2 char/s |
 | 8/8 Mac | Immagini 50/50 (video FF) | ~5 min | 10 generate Palmier nano-banana-lite con reference volti + 10 riusate libreria FORBIDDEN. Qualità verificata a campione |
 | 8/8 Mac | Thumbnail | ~2 min | Sfondo Palmier nano-banana-pro (3 reference: Feride+Yildiz+HasanAli) + overlay make_thumb_cinema.py "LI HA VISTI" / "FERIDE SCOPRE TUTTO" + badge |
+| 8/8 Mac | Montaggio (h264_videotoolbox) | 4,5 min (18:12→18:17) | 140 clip, 20 immagini ciclate, sub sync, musica, logo. Validazione ffmpeg pulita |
+| 8/8 Mac | Upload+thumbnail+programmazione | ~3 min | Progetto quota SDOPPIA. **Video ID k_Usdt_aAvI, PROGRAMMATO DOM 9/8 ORE 9:00** |
+| — | **TOTALE Mac (esclusa scrittura script)** | **~85 min** | di cui 68 non presidiati (TTS). Con corsia Kaggle il TTS scenderebbe a ~20-25 min |
 
 ## Log dei check
 
