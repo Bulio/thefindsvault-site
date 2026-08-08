@@ -32,13 +32,36 @@
   <p class="hero-copy">We dig through thousands of Amazon products so you don't have to.
   Every pick below is hand-checked and highly rated — tap through to Amazon to grab it.</p>
 </section>
+<section class="featured">
+<button class="feat-tile" data-cat="Home"><img src="assets/products/filtrete_air_filter/1.jpg" alt="Home finds" loading="lazy"><span class="feat-overlay"><strong>13 Home Finds</strong></span></button>
+<button class="feat-tile" data-cat="Kitchen"><img src="assets/products/fretta_juicer_v1/1.jpg" alt="Kitchen finds" loading="lazy"><span class="feat-overlay"><strong>12 Kitchen Finds</strong></span></button>
+<button class="feat-tile" data-cat="Beauty"><img src="assets/products/mrs_meyers_hand_soap/1.jpg" alt="Beauty finds" loading="lazy"><span class="feat-overlay"><strong>9 Beauty Finds</strong></span></button>
+<button class="feat-tile" data-cat="Fitness &amp; Outdoor"><img src="assets/products/reaction_tackle_fishing_line/1.jpg" alt="Fitness &amp; Outdoor finds" loading="lazy"><span class="feat-overlay"><strong>9 Fitness &amp; Outdoor Finds</strong></span></button>
+</section>
+<div class="toolbar">
+  <input id="search" class="search-box" type="search" placeholder="Search the vault..." aria-label="Search products">
+  <span id="result-count" class="result-count"></span>
+</div>
+<div class="filters sort-filters">
+
+<button class="pill sort-pill active" data-sort="best">Best</button>
+<button class="pill sort-pill" data-sort="newest">Newest</button>
+<button class="pill sort-pill" data-sort="price-low">Price &darr;</button>
+<button class="pill sort-pill" data-sort="price-high">Price &uarr;</button>
+<button class="pill sort-pill" data-sort="under20">Under $20</button>
+<button class="pill sort-pill" data-sort="random">Random</button>
+</div>
 <div class="filters">
 <button class="pill active" data-cat="All">All</button>
-<button class="pill" data-cat="Fitness">Fitness</button>
+<button class="pill" data-cat="Beauty">Beauty</button>
+<button class="pill" data-cat="Fitness &amp; Outdoor">Fitness &amp; Outdoor</button>
 <button class="pill" data-cat="Home">Home</button>
 <button class="pill" data-cat="Hydration">Hydration</button>
+<button class="pill" data-cat="Kids &amp; Play">Kids &amp; Play</button>
 <button class="pill" data-cat="Kitchen">Kitchen</button>
+<button class="pill" data-cat="Pets">Pets</button>
 <button class="pill" data-cat="Style">Style</button>
+<button class="pill" data-cat="Tech">Tech</button>
 </div>
 <section class="grid" id="grid" aria-live="polite"></section>
 <div id="sentinel" class="sentinel"><div class="spinner"></div></div>
@@ -46,8 +69,25 @@
 <script src="assets/app.js"></script>
 
 <footer class="site-footer">
-  <p>&copy; 2026 Finds Vault. As an Amazon Associate, Finds Vault earns from qualifying purchases.</p>
-  <p><a href="videos.html">Videos</a> · <a href="disclosure.html">Affiliate Disclosure</a> · <a href="about.html">About</a></p>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <span class="footer-brand">FINDS VAULT</span>
+      <p>Daily Amazon must-haves, hand-checked and highly rated.</p>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Explore</span>
+      <a href="index.html">Shop</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Follow</span>
+      <a href="https://www.youtube.com/@findsvault" target="_blank" rel="noopener">&#9654; YouTube</a>
+      <a href="https://linktr.ee/FindsVault_" target="_blank" rel="noopener">&#128279; All Links</a>
+    </div>
+  </div>
+  <p class="footer-legal">&copy; 2026 Finds Vault. As an Amazon Associate, Finds Vault earns from qualifying purchases.</p>
 </footer>
 </body>
 </html>
