@@ -67,8 +67,11 @@
 - **Refresh**: rigenerare le foto dei personaggi solo ~ogni 2 mesi (cambia la resa
   e si accorcia la "memoria" visiva del pubblico sulle immagini ripetute).
 - Nota sessione cloud: le cartelle stanno sul Mac; qui la regola si registra e si
-  passa alla pipeline. Horacl (cloud) ha 16 crediti free: nessuna generazione
-  possibile da qui finché non viene ricaricato.
+  passa alla pipeline.
+- ⚠️ **PIATTAFORMA GENERAZIONE (utente, 8/8 sera): NON si usa più Horacl — si usa
+  PALMIER.** Dettagli (accesso, crediti, MCP) noti solo alla sessione Mac: la
+  produzione visiva/TTS va fatta LÀ con Palmier. In questa sessione cloud resta
+  collegato solo Horacl (16 crediti free, inutilizzabile) — non usarlo.
 
 ## ⏱ Taratura tempi nuovo formato (per riconfigurare la notturna)
 
