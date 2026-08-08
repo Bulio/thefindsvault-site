@@ -1,0 +1,318 @@
+<title>Piano di Rilancio — Serie TV Fans</title>
+<style>
+  :root {
+    --bg: #F6F7F9;
+    --surface: #FFFFFF;
+    --surface-2: #EEF0F4;
+    --ink: #1C2128;
+    --ink-soft: #4A5260;
+    --ink-faint: #7A8394;
+    --accent: #B3123E;
+    --accent-soft: #F7E3E9;
+    --good: #1E7A4C;
+    --good-soft: #E1F0E8;
+    --warn: #9A5B00;
+    --warn-soft: #F6ECDC;
+    --line: #DDE1E8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171C;
+      --surface: #1D2129;
+      --surface-2: #252A34;
+      --ink: #E8EAEE;
+      --ink-soft: #B4BBC7;
+      --ink-faint: #828B9B;
+      --accent: #F0537A;
+      --accent-soft: #3A1F29;
+      --good: #5BC68C;
+      --good-soft: #1D3229;
+      --warn: #E0A94F;
+      --warn-soft: #372C1A;
+      --line: #333A46;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171C;
+    --surface: #1D2129;
+    --surface-2: #252A34;
+    --ink: #E8EAEE;
+    --ink-soft: #B4BBC7;
+    --ink-faint: #828B9B;
+    --accent: #F0537A;
+    --accent-soft: #3A1F29;
+    --good: #5BC68C;
+    --good-soft: #1D3229;
+    --warn: #E0A94F;
+    --warn-soft: #372C1A;
+    --line: #333A46;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1, h2, h3 { font-family: Didot, "Bodoni MT", "Playfair Display", Georgia, serif; line-height: 1.15; text-wrap: balance; }
+  h1 { font-size: 2.4rem; margin: 0.5rem 0 0.75rem; }
+  h2 { font-size: 1.6rem; margin: 3rem 0 0.75rem; }
+  h3 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+  p { margin: 0.75rem 0; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0;
+  }
+  .lede { font-size: 1.1rem; color: var(--ink-soft); }
+  .goal-band {
+    background: var(--accent);
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    margin: 1.75rem 0;
+    font-size: 1.05rem;
+  }
+  .goal-band strong { font-size: 1.3rem; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.92rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th {
+    background: var(--surface-2);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody { background: var(--surface); }
+  .num { text-align: right; white-space: nowrap; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .card.good { border-left-color: var(--good); }
+  .card.warn { border-left-color: var(--warn); }
+  .card h3 { margin-top: 0.15rem; font-family: inherit; font-size: 1rem; }
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.1rem 0.55rem;
+    border-radius: 99px;
+    margin-right: 0.4rem;
+  }
+  .tag.red { background: var(--accent-soft); color: var(--accent); }
+  .tag.green { background: var(--good-soft); color: var(--good); }
+  .tag.amber { background: var(--warn-soft); color: var(--warn); }
+  ol.lever { padding-left: 0; list-style: none; counter-reset: lever; }
+  ol.lever > li {
+    counter-increment: lever;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem 1.1rem 3.4rem;
+    margin: 0.9rem 0;
+    position: relative;
+  }
+  ol.lever > li::before {
+    content: counter(lever);
+    position: absolute;
+    left: 1.05rem;
+    top: 1.05rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ol.lever h3 { margin: 0 0 0.4rem; font-family: inherit; font-size: 1.05rem; }
+  ol.lever ul { margin: 0.5rem 0 0.25rem; padding-left: 1.1rem; }
+  ol.lever li li { margin: 0.3rem 0; }
+  .footnote { color: var(--ink-faint); font-size: 0.85rem; margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  code { background: var(--surface-2); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.88em; }
+</style>
+<main>
+  <p class="eyebrow">Serie TV Fans · Analisi e strategia · 8 agosto 2026</p>
+  <h1>Piano di rilancio: tornare a 64.000 visualizzazioni al giorno</h1>
+  <p class="lede">Analisi basata sui dati reali del canale (YouTube Analytics) e sulla concorrenza attiva nella nicchia "anticipazioni soap" in questi ultimi 14 giorni.</p>
+
+  <div class="goal-band">
+    Obiettivo: dal ritmo attuale di <strong>~2.200 viste/giorno</strong> tornare ad almeno <strong>64.000 viste/giorno</strong> — la metà del picco storico di 129.000. La strada: <strong>3 video/giorno × ~20.000 viste medie</strong>, il ritmo che i concorrenti tengono già oggi.
+  </div>
+
+  <h2>Perché il grafico è crollato (e perché non è colpa tua)</h2>
+  <p>Il picco del 2023 era costruito quasi interamente su <strong>Terra Amara</strong>: 6 dei 7 contenuti storici principali del canale sono video su Terra Amara. Quando la serie è finita in Italia, la domanda di ricerca è evaporata e con lei le visualizzazioni. Il crollo è <strong>strutturale, non una penalizzazione dell'algoritmo</strong>. La prova: appena hai pubblicato su Forbidden Fruit, il canale ha ripreso subito distribuzione (24.000 viste in 10 giorni). Il pubblico c'è ancora — segue le nuove serie, e va raggiunto lì.</p>
+
+  <h2>La nicchia oggi: viva e ricca</h2>
+  <p>Questi sono risultati reali degli ultimi 14 giorni di canali concorrenti italiani:</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Canale</th><th>Serie</th><th class="num">Viste/video top</th><th>Durata video</th></tr></thead>
+    <tbody>
+      <tr><td>Mustafá TV</td><td>Tutto per la mia famiglia</td><td class="num">33.300</td><td>1h 23m</td></tr>
+      <tr><td>La Forza di una Donna Anticipazioni (22,5K iscritti)</td><td>Tutto per la mia famiglia</td><td class="num">31.200</td><td>23 min</td></tr>
+      <tr><td>LuLu News</td><td>Forbidden Fruit</td><td class="num">25.600</td><td>20 min</td></tr>
+      <tr><td>SOAP PER VOI!</td><td>La Promessa</td><td class="num">21.100</td><td>41 min</td></tr>
+      <tr><td>Turkish SS</td><td>Melek</td><td class="num">20.800</td><td>1h 47m</td></tr>
+      <tr><td>La Promessa Spoiler Italia</td><td>La Promessa</td><td class="num">17.000</td><td>33 min</td></tr>
+      <tr><td>Desy TV</td><td>La Promessa</td><td class="num">12.800</td><td>33 min</td></tr>
+      <tr><td>TRAME PROIBITE</td><td>Forbidden Fruit</td><td class="num">12.500</td><td>12 min</td></tr>
+    </tbody>
+  </table></div>
+  <p>Il dato chiave: il canale "La Forza di una Donna Anticipazioni" ha <strong>un terzo dei tuoi iscritti</strong> (22.500 contro 60.100) ma fa <strong>21.000 viste di media a video</strong>, pubblicando ogni giorno. Tu hai una base più grande di quasi tutti loro: 48.500 viste da soli iscritti nelle ultime 5 settimane. Il vantaggio strutturale è tuo — manca solo il formato giusto.</p>
+
+  <h2>Diagnosi: i 7 freni trovati nei dati</h2>
+
+  <div class="card">
+    <h3><span class="tag red">Freno 1</span> Video troppo corti per il meta attuale</h3>
+    <p>I tuoi video durano 8–9 minuti; i concorrenti che vincono stanno tra 18 e 50 minuti. Un video da 23 minuti con la stessa retention genera 3× il watch time — e il watch time è ciò che l'algoritmo premia nei suggeriti (la tua seconda fonte di traffico). In più, video sopra gli 8 minuti con più spazio pubblicitario rendono di più per vista.</p>
+  </div>
+
+  <div class="card">
+    <h3><span class="tag red">Freno 2</span> Metà del pubblico persa nel primo minuto</h3>
+    <p>Sul tuo video migliore (Forbidden Fruit, funerale di Halit): al 10% del video la retention è già al 50%. La performance relativa rispetto a video simili è ~0,3 — molto sotto la media. L'apertura attuale non aggancia: serve il momento shock nei primi 20 secondi, senza sigla né riepilogo introduttivo.</p>
+  </div>
+
+  <div class="card">
+    <h3><span class="tag red">Freno 3</span> Ricerca YouTube quasi azzerata</h3>
+    <p>Solo 2.355 viste da ricerca in 5 settimane (2,8% del traffico). La nicchia vive di ricerche tipo "anticipazioni [serie] dal 10 al 15 agosto". I concorrenti mettono le date nel titolo; tu quasi mai. Il tuo video evergreen sul padre di Jana (161.000 viste totali, ancora 22.600 nell'ultimo periodo) dimostra quanto rende la coda lunga della ricerca.</p>
+  </div>
+
+  <div class="card">
+    <h3><span class="tag red">Freno 4</span> Copertura incompleta della serie più calda</h3>
+    <p>La serie che sta esplodendo ora è <strong>Tutto per la mia famiglia</strong> (video concorrenti da 26.000–33.000 viste negli ultimi 14 giorni) e il canale non la copre affatto. Melek è un altro fronte scoperto (20.000+ viste a video).</p>
+  </div>
+
+  <div class="card warn">
+    <h3><span class="tag amber">Freno 5</span> Video duplicati che si cannibalizzano</h3>
+    <p>"Halit torna e si porta via il bambino" è stato pubblicato due volte (29 e 31 luglio): 6.200 + 8.400 viste divise su due URL invece che concentrate su uno. L'algoritmo divide il segnale e nessuna delle due copie decolla. Mai ripubblicare lo stesso contenuto.</p>
+  </div>
+
+  <div class="card warn">
+    <h3><span class="tag amber">Freno 6</span> Shorts che non trattengono</h3>
+    <p>Gli Shorts attuali hanno una durata media di visione di 16–36 secondi e portano quasi zero watch time e zero iscritti. Così come sono, non aiutano. O si rifanno con un hook nei primi 1,5 secondi e un cliffhanger finale che spinge al video lungo, o è meglio investire quel tempo nei long-form.</p>
+  </div>
+
+  <div class="card warn">
+    <h3><span class="tag amber">Freno 7</span> Anomalia monetizzazione da verificare subito</h3>
+    <p>Le entrate risultano a <strong>€0 dal 1° luglio al 4 agosto</strong> nonostante decine di migliaia di visualizzazioni, e riprendono solo il 5 agosto. Da controllare in YouTube Studio → Monetizzazione: idoneità annunci dei singoli video (possibili limitazioni per contenuti riutilizzati o copyright) e stato del canale. Ogni giorno con annunci spenti è fatturato perso.</p>
+  </div>
+
+  <h2>Il piano: 8 leve in ordine di impatto</h2>
+  <ol class="lever">
+    <li>
+      <h3>Copri le serie giuste, ogni giorno</h3>
+      <p>Portafoglio consigliato, in ordine di priorità basato sulla domanda attuale:</p>
+      <ul>
+        <li><strong>Tutto per la mia famiglia</strong> — l'onda più grande del momento, oggi scoperta. 1 video/giorno.</li>
+        <li><strong>Forbidden Fruit</strong> — già validata dal tuo video da 24.000 viste. 1 video/giorno.</li>
+        <li><strong>La Promessa</strong> — la tua storica seconda gamba, domanda stabile. 1 video/giorno.</li>
+        <li><strong>La forza di una donna / Far Away / Melek</strong> — rotazione: la più calda della settimana prende lo slot extra.</li>
+      </ul>
+      <p>Come al picco del 2023 con Terra Amara: presidio quotidiano totale, nessuna puntata scoperta.</p>
+    </li>
+    <li>
+      <h3>Allunga i video a 18–25 minuti</h3>
+      <ul>
+        <li>Struttura: momento shock (20 sec) → "ma per capire cosa significa, dobbiamo partire da qui" → sviluppo in 3–4 blocchi → cliffhanger sulla puntata successiva.</li>
+        <li>Ogni blocco chiude con una micro-domanda aperta che tiene dentro lo spettatore.</li>
+        <li>Il video lungo triplica il watch time per vista e sblocca più annunci mid-roll.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Riscrivi i titoli per la ricerca</h3>
+      <ul>
+        <li>Formula: <code>SERIE Anticipazioni DAL 10 AL 15 AGOSTO: PERSONAGGIO + evento shock 😱</code></li>
+        <li>Le date nel titolo intercettano le ricerche settimanali — è il pattern esatto dei video concorrenti da 20.000+ viste.</li>
+        <li>Ogni domenica: 1 video "riassunto settimana prossima" per serie — è il formato magnete di ricerca.</li>
+        <li>Prima riga della descrizione: ripeti serie + date + personaggi. Hashtag: #serie #anticipazioni #canale5.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Aggancia nei primi 20 secondi</h3>
+      <ul>
+        <li>Apri sul momento più drammatico, con la frase clou ("Sono vivo…") già nei primi 5 secondi.</li>
+        <li>Niente sigla, niente "benvenuti sul canale", niente riepilogo lento: la retention al minuto 1 deve salire dal 50% al 70%+.</li>
+        <li>Controlla la curva di retention di ogni video pubblicato: il punto di crollo indica cosa tagliare nel prossimo.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Cadenza fissa: 3 long-form al giorno</h3>
+      <ul>
+        <li>Slot consigliati: 9:00 · 13:00 · 18:00 (il pubblico soap è attivo mattina e pre-serata).</li>
+        <li>La costanza quotidiana è ciò che tiene i concorrenti in cima: l'algoritmo impara che il canale è una fonte quotidiana.</li>
+        <li>Mai duplicare un video: se un tema merita un secondo passaggio, cambia angolo e titolo (es. da "cosa succede" a "il significato nascosto della scena").</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Riaccendi i 60.000 iscritti</h3>
+      <ul>
+        <li>Gli iscritti sono già la tua fonte n°1 (57% del traffico): nutrili. 1 post community al giorno (sondaggio "Cosa farà Yildiz?", foto con domanda).</li>
+        <li>Playlist per serie in ordine cronologico + schermata finale che punta sempre al video successivo della stessa serie.</li>
+        <li>Chiedi l'iscrizione nel momento di massima tensione del video, non all'inizio.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Shorts solo come esca al long-form</h3>
+      <ul>
+        <li>Formato: il singolo momento shock (15–25 sec), hook nel primo secondo e mezzo, testo in sovrimpressione, chiusura sospesa + link al video lungo in primo commento fissato.</li>
+        <li>Se dopo 2 settimane non convertono, sospendili e reinvesti il tempo nei long-form.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sistema la monetizzazione oggi</h3>
+      <ul>
+        <li>YouTube Studio → Monetizzazione: verifica lo stato canale e l'icona € di ogni video di luglio.</li>
+        <li>Se ci sono limitazioni per "contenuti riutilizzati", aumenta la trasformazione: voce narrante propria, montaggio, testo a schermo, analisi — non solo clip.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Tabella di marcia verso i 64.000/giorno</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Fase</th><th>Periodo</th><th>Azioni</th><th class="num">Target viste/giorno</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1. Fondamenta</strong></td><td>Agosto</td><td>3 video/giorno sulle 3 serie prioritarie, formato lungo, titoli con date, fix monetizzazione</td><td class="num">8.000–12.000</td></tr>
+      <tr><td><strong>2. Accelerazione</strong></td><td>Settembre</td><td>Ripresa autunnale dei palinsesti (il momento migliore dell'anno per la nicchia): copertura totale, video settimanali domenicali, community attiva</td><td class="num">20.000–30.000</td></tr>
+      <tr><td><strong>3. Consolidamento</strong></td><td>Ottobre–Novembre</td><td>Raddoppio sui format che performano, retention ≥ 40% media, eventuale 4° slot giornaliero</td><td class="num">45.000–64.000</td></tr>
+    </tbody>
+  </table></div>
+  <p>La matematica dell'obiettivo: i concorrenti dimostrano che nel meta attuale un video ben fatto in queste serie vale 15.000–30.000 viste. Con 3 video/giorno a regime e la tua base iscritti (la più grande della nicchia italiana tra i canali analizzati), 64.000/giorno è un obiettivo aggressivo ma coerente con i numeri di mercato di oggi.</p>
+
+  <h2>Controllo settimanale (5 minuti ogni lunedì)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Indicatore</th><th>Dove</th><th>Soglia di allarme</th></tr></thead>
+    <tbody>
+      <tr><td>Viste/giorno media 7 giorni</td><td>Analytics → Panoramica</td><td>Sotto il target di fase</td></tr>
+      <tr><td>Retention al minuto 1</td><td>Analytics → per video</td><td>&lt; 65%</td></tr>
+      <tr><td>Durata media visione</td><td>Analytics → per video</td><td>&lt; 5 min sui long-form</td></tr>
+      <tr><td>% traffico da ricerca</td><td>Analytics → Sorgenti</td><td>&lt; 10% (deve salire dal 2,8%)</td></tr>
+      <tr><td>Video pubblicati</td><td>—</td><td>&lt; 18/settimana</td></tr>
+      <tr><td>€ stimati/giorno</td><td>Guadagni</td><td>€0 con viste &gt; 0 → controllo idoneità annunci</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="footnote">Fonti: YouTube Analytics del canale Serie TV Fans (traffico, retention, ricavi, top video 1 giu – 8 ago 2026) e rilevazione della concorrenza su YouTube Italia (ultimi 14 giorni) via NexLev. I numeri dei concorrenti sono visualizzazioni pubbliche reali, non stime.</p>
+</main>

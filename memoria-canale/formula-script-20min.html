@@ -1,0 +1,137 @@
+<title>La Formula dei Concorrenti — Script Template 20 min</title>
+<style>
+  :root {
+    --bg: #F6F7F9; --surface: #FFFFFF; --surface-2: #EEF0F4;
+    --ink: #1C2128; --ink-soft: #4A5260; --ink-faint: #7A8394;
+    --accent: #B3123E; --accent-soft: #F7E3E9;
+    --good: #1E7A4C; --good-soft: #E1F0E8;
+    --warn: #9A5B00; --warn-soft: #F6ECDC;
+    --line: #DDE1E8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171C; --surface: #1D2129; --surface-2: #252A34;
+      --ink: #E8EAEE; --ink-soft: #B4BBC7; --ink-faint: #828B9B;
+      --accent: #F0537A; --accent-soft: #3A1F29;
+      --good: #5BC68C; --good-soft: #1D3229;
+      --warn: #E0A94F; --warn-soft: #372C1A;
+      --line: #333A46;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171C; --surface: #1D2129; --surface-2: #252A34;
+    --ink: #E8EAEE; --ink-soft: #B4BBC7; --ink-faint: #828B9B;
+    --accent: #F0537A; --accent-soft: #3A1F29;
+    --good: #5BC68C; --good-soft: #1D3229;
+    --warn: #E0A94F; --warn-soft: #372C1A;
+    --line: #333A46;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; margin: 0; padding: 2.5rem 1.25rem 5rem;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1, h2 { font-family: Didot, "Bodoni MT", "Playfair Display", Georgia, serif; line-height: 1.15; text-wrap: balance; }
+  h1 { font-size: 2.2rem; margin: 0.5rem 0 0.75rem; }
+  h2 { font-size: 1.5rem; margin: 3rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+  p { margin: 0.75rem 0; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 700; color: var(--accent); margin: 0; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); }
+  blockquote {
+    margin: 0.75rem 0; padding: 0.7rem 1rem;
+    background: var(--surface-2); border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0; font-style: italic; color: var(--ink-soft);
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 4px solid var(--accent); border-radius: 6px;
+    padding: 1rem 1.25rem; margin: 1.25rem 0;
+  }
+  .card.good { border-left-color: var(--good); }
+  .card h3 { margin-top: 0.15rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { background: var(--surface-2); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); }
+  tbody { background: var(--surface); }
+  tbody tr:last-child td { border-bottom: none; }
+  .t { color: var(--accent); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-top: 0.9rem; }
+  .script { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  ul.rules { padding-left: 1.2rem; }
+  ul.rules li { margin: 0.4rem 0; }
+  .footnote { color: var(--ink-faint); font-size: 0.85rem; margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+</style>
+<main>
+  <p class="eyebrow">Serie TV Fans · Reverse-engineering dei concorrenti · 8 agosto 2026</p>
+  <h1>La formula che fa 20–30.000 viste a video</h1>
+  <p class="lede">Estratta leggendo integralmente i transcript di 3 video concorrenti (31K, 25K e 21K visualizzazioni): come aprono, come trattengono, come chiudono — e il template pronto per i tuoi script da 20 minuti.</p>
+
+  <h2>La regola d'oro comune a tutti e tre</h2>
+  <ul class="rules">
+    <li><strong>Zero intro personale.</strong> Nessun "ciao ragazzi", nessuna sigla: la trama parte entro 5 secondi. È l'esatto contrario di ciò che ti fa perdere il 50% del pubblico nel primo minuto.</li>
+    <li><strong>Spoiler frontali nel hook.</strong> I 2–3 eventi più grossi vengono "venduti" subito — incluso uno che NON verrà mai risolto nel video (il "loop aperto").</li>
+    <li><strong>Presente narrativo</strong> e discorso indiretto, da cronista partecipe.</li>
+    <li><strong>Cambio di linea narrativa ogni 60–90 secondi</strong> ("Nel frattempo… / Intanto… / Il giorno seguente…"): ogni cambio è un reset dell'attenzione.</li>
+    <li><strong>Almeno una morte o un evento irreversibile</strong> promesso o mostrato in ogni video.</li>
+    <li><strong>Chiusura senza saluti</strong>: si tronca sull'evento o sul rimando al prossimo video. Mai "grazie per aver guardato".</li>
+    <li><strong>CTA quasi assente</strong>: al massimo UNA richiesta di commento — e chiede una <em>teoria</em>, non un like.</li>
+  </ul>
+
+  <h2>Le 3 armi speciali (una per canale)</h2>
+  <div class="card">
+    <h3>1 · Lo "spoiler sandwich" (video da 31K viste)</h3>
+    <p>Apre anticipando in 50 secondi i tre eventi maggiori — inclusa la MORTE di un personaggio — poi riavvolge: <em>"Tutto comincia durante la festa…"</em>. Lo spettatore conosce la destinazione ma non il percorso, e resta fino alla fine per vederlo. La morte viene raccontata due volte: annunciata a metà e mostrata come chiusura secca.</p>
+    <blockquote>"Omer trova la telecamera che registra tutto […] Ma non finisce qui. Si vedrà anche il triste destino di Doruk. Il giovane perderà la vita dopo aver subito un grave incidente."</blockquote>
+    <p>Firma del canale: una <strong>similitudine popolare ogni 60–90 secondi</strong> che alleggerisce e crea complicità:</p>
+    <blockquote>"Quella posa da regina comincia a crollare più velocemente di una pizza dimenticata nel forno" · "È come una pentola di sugo dimenticata sul fuoco: quando ci si accorge bolle già dappertutto"</blockquote>
+  </div>
+  <div class="card">
+    <h3>2 · La densità implacabile (video da 25K viste)</h3>
+    <p>Nessun hook costruito: bollettino puro con le date di messa in onda nella prima frase, poi <strong>un fatto nuovo ogni 20–30 secondi</strong>, senza riempitivi, con montaggio alternato su 3–4 linee narrative e un colpo di scena maggiore ogni 4–6 minuti. Chi cerca il riassunto lo riceve dal secondo zero: nessun motivo per uscire.</p>
+  </div>
+  <div class="card">
+    <h3>3 · Loop aperto + domande-ponte (video da 21K viste, 41 minuti!)</h3>
+    <p>Il hook promette una morte <strong>senza dire chi</strong> — e non lo rivela MAI: il nome diventa la promessa del video successivo. Il loop viene ri-evocato 6 volte lungo il video. Ogni ~2 minuti, a fine blocco, una <strong>domanda-ponte</strong> (14 in totale):</p>
+    <blockquote>"Chi è davvero Enora e fino a che punto è disposta a spingersi?" · "Quale sarà il personaggio a perdere la vita e in che modo questo lutto cambierà per sempre gli equilibri della tenuta?"</blockquote>
+    <p>L'unica CTA chiede una teoria: <em>"Se ancora non avete lasciato un commento con la vostra teoria su chi sarà il prossimo a lasciare la scena, è il momento giusto"</em> — engagement vero, non di cortesia.</p>
+  </div>
+
+  <h2>Il template di script da 20 minuti (da usare da domani)</h2>
+  <div class="script">
+    <span class="t">0:00–0:45 · Hook — formula fissa</span>
+    <p>«<em>[SERIE]</em> dal <em>[data]</em> al <em>[data]</em>. <em>[Personaggio A]</em> sta per <em>[evento shock 1]</em> e quello che scoprirete vi lascerà senza parole. E proprio quando penserete che il peggio sia passato, <em>un personaggio morirà in un modo che nessuno si aspetta</em> [= evento shock 2, SENZA nome]. Restate fino alla fine, perché quello che sta per succedere cambierà per sempre <em>[gli equilibri della serie]</em>. Se anche voi volete scoprire <em>[domanda del loop]</em>, scrivete la vostra teoria nei commenti: tra poco ve lo racconto passo dopo passo.»</p>
+    <span class="t">0:45–1:00 · Reset</span>
+    <p>«Tutto comincia quando…» — riavvolgi all'inizio cronologico.</p>
+    <span class="t">1:00–14:00 · 5 blocchi narrativi da ~2,5 minuti</span>
+    <p>Ogni blocco: una scena, 5–8 fatti, escalation interna, e in chiusura una domanda-ponte. Transizioni pronte: «Nel frattempo…» · «Ma non finisce qui.» · «Proprio in quel momento…» · «Quello che [X] non immagina nemmeno è che…» · «Ma la scena a cui avete appena assistito non è affatto quella che sembra.» Ogni 2 blocchi: 1 similitudine popolare.</p>
+    <span class="t">~10:00 · CTA unica di metà video</span>
+    <p>«Se ancora non avete lasciato un commento con la vostra teoria su <em>[loop aperto]</em>, è il momento giusto per farlo, perché le prossime puntate saranno ancora più intense.»</p>
+    <span class="t">14:00–19:00 · 2 blocchi di anticipazioni speculative</span>
+    <p>Formule: «Le prossime puntate lasciano intendere che…» · «Le anticipazioni suggeriscono che…» · «Alcuni indizi lasciano intendere che l'evento sia ormai prossimo.» Ri-evoca l'evento shock 2 almeno due volte senza risolverlo. Chiudi ogni blocco con domanda-ponte.</p>
+    <span class="t">19:00–20:00 · Chiusura — formula fissa</span>
+    <p>Rievoca l'evento shock un'ultima volta (o mostralo in 3 frasi secche e tronca sul momento più drammatico), poi: «Restate connessi, perché quello che sta per accadere cambierà per sempre il destino di tutti i protagonisti, e nel prossimo video vi racconterò ogni singolo dettaglio di <em>[loop aperto]</em>.» <strong>Stop. Niente saluti, niente sigla.</strong></p>
+  </div>
+
+  <h2>Regole di ritmo</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Regola</th><th>Valore</th></tr></thead>
+    <tbody>
+      <tr><td>Fatti di trama nei blocchi narrativi</td><td>1 ogni 15–25 secondi</td></tr>
+      <tr><td>Permanenza massima sulla stessa linea narrativa</td><td>90 secondi</td></tr>
+      <tr><td>Colpo di scena maggiore</td><td>1 ogni 4–6 minuti</td></tr>
+      <tr><td>Domande-ponte</td><td>1 ogni ~2 minuti, sempre a fine blocco</td></tr>
+      <tr><td>Risoluzione dell'evento annunciato nel hook</td><td>MAI prima del minuto 18 — o rimandata al video successivo</td></tr>
+      <tr><td>CTA</td><td>1 sola (commento-teoria), a metà video</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="card good">
+    <h3>Perché i tuoi video attuali muoiono al minuto 1</h3>
+    <p>La curva di retention dei tuoi video (50% perso nel primo 10%) combinata con questa analisi dice una cosa sola: il tuo primo minuto non vende gli eventi — li introduce. La nicchia funziona al contrario: <strong>prima si spoilera, poi si racconta</strong>. Chi resta dopo un hook a spoiler frontali resta fino alla fine, perché vuole il percorso, non la destinazione.</p>
+  </div>
+
+  <p class="footnote">Fonte: lettura integrale dei transcript di ATx38_AQY1s (Tutto per la mia famiglia, 31K viste, 23 min), KHAs82g1SwM (Forbidden Fruit — LuLu News, 25K viste, 20 min) e OvqNK8vDtHA (La Promessa — SOAP PER VOI!, 21K viste, 41 min). Citazioni letterali dai transcript.</p>
+</main>

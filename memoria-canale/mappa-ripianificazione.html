@@ -1,0 +1,148 @@
+<title>Mappa di Ripianificazione — 8–23 Agosto</title>
+<style>
+  :root {
+    --bg: #F6F7F9; --surface: #FFFFFF; --surface-2: #EEF0F4;
+    --ink: #1C2128; --ink-soft: #4A5260; --ink-faint: #7A8394;
+    --accent: #B3123E; --accent-soft: #F7E3E9;
+    --good: #1E7A4C; --good-soft: #E1F0E8;
+    --warn: #9A5B00; --warn-soft: #F6ECDC;
+    --line: #DDE1E8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171C; --surface: #1D2129; --surface-2: #252A34;
+      --ink: #E8EAEE; --ink-soft: #B4BBC7; --ink-faint: #828B9B;
+      --accent: #F0537A; --accent-soft: #3A1F29;
+      --good: #5BC68C; --good-soft: #1D3229;
+      --warn: #E0A94F; --warn-soft: #372C1A;
+      --line: #333A46;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171C; --surface: #1D2129; --surface-2: #252A34;
+    --ink: #E8EAEE; --ink-soft: #B4BBC7; --ink-faint: #828B9B;
+    --accent: #F0537A; --accent-soft: #3A1F29;
+    --good: #5BC68C; --good-soft: #1D3229;
+    --warn: #E0A94F; --warn-soft: #372C1A;
+    --line: #333A46;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; margin: 0; padding: 2.5rem 1.25rem 5rem;
+  }
+  main { max-width: 52rem; margin: 0 auto; }
+  h1, h2 { font-family: Didot, "Bodoni MT", "Playfair Display", Georgia, serif; line-height: 1.15; text-wrap: balance; }
+  h1 { font-size: 2.1rem; margin: 0.5rem 0 0.75rem; }
+  h2 { font-size: 1.45rem; margin: 2.5rem 0 0.75rem; }
+  p { margin: 0.75rem 0; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 700; color: var(--accent); margin: 0; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 4px solid var(--accent); border-radius: 6px;
+    padding: 1rem 1.25rem; margin: 1.25rem 0;
+  }
+  .card.warn { border-left-color: var(--warn); }
+  .card.good { border-left-color: var(--good); }
+  .card h3 { margin: 0.15rem 0 0.5rem; font-size: 1.02rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--line); border-radius: 6px; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { background: var(--surface-2); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); }
+  tbody { background: var(--surface); }
+  tbody tr:last-child td { border-bottom: none; }
+  .tag { display: inline-block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.08rem 0.5rem; border-radius: 99px; white-space: nowrap; }
+  .tag.keep { background: var(--good-soft); color: var(--good); }
+  .tag.move { background: var(--warn-soft); color: var(--warn); }
+  .tag.del { background: var(--accent-soft); color: var(--accent); }
+  .tag.new { background: var(--accent); color: #FFF; }
+  .pub { font-weight: 700; white-space: nowrap; }
+  code { background: var(--surface-2); padding: 0.08rem 0.3rem; border-radius: 4px; font-size: 0.85em; }
+  ul.rules { padding-left: 1.2rem; }
+  ul.rules li { margin: 0.4rem 0; }
+  .footnote { color: var(--ink-faint); font-size: 0.85rem; margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+</style>
+<main>
+  <p class="eyebrow">Serie TV Fans · Ripianificazione coda programmati · 8 agosto 2026</p>
+  <h1>Mappa di ripianificazione — 31 video + 3 nuovi</h1>
+  <p class="lede">Ogni video programmato confrontato con le trame ufficiali in onda. Per ciascuno: la nuova data con la riga <strong>PUBBLICARE:</strong> da incollare in prima riga di descrizione. Ordina la coda per data e procedi dall'alto.</p>
+
+  <div class="card warn">
+    <h3>⚠️ Le 3 scoperte critiche nella coda</h3>
+    <ul class="rules">
+      <li><strong>3 duplicati programmati</strong>: "Ángela si ribella" (11/8 e 14/8), "Nadir minaccia tutti" (14/8 e 15/8), "il Duca spara, Santos muore" (14/8 e 15/8, versioni 7:57 e 8:57). Questi NON sono ancora pubblici: eliminarne uno adesso non costa nulla — è il momento giusto per farlo (tieni la versione più lunga di Santos).</li>
+      <li><strong>2 orari-cimitero</strong>: un video alle 00:00 di notte (Cristóbal/Julio) e uno alle 22:00 (Far Away tribunale). Spostati in slot diurni.</li>
+      <li><strong>7 video su eventi GIÀ ANDATI IN ONDA</strong> (arresto di Enora del 2–3/8, testamento di Halit e arresto di Kerim, funerale/Kaya, tregua delle tre donne, processo di Far Away, morte di Santos): come "anticipazioni" sono bruciati e perdono valore ogni giorno. Li ho anticipati tutti al 9–13/8: pubblicati subito raccolgono ancora le ricerche "cosa è successo" di chi ha perso le puntate.</li>
+    </ul>
+  </div>
+
+  <h2>La mappa completa (in ordine di nuova pubblicazione)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Azione</th><th>Video</th><th>Era</th><th>Riga PUBBLICARE da incollare</th><th>Motivo</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag new">Nuovo</span></td><td>TPLMF settimanale (script completo)</td><td>—</td><td class="pub">PUBBLICARE: SAB 8/8 ORE 18:00</td><td>Test nuovo formato</td></tr>
+      <tr><td><span class="tag new">Nuovo</span></td><td>FORBIDDEN FRUIT settimanale (equivoco Feride)</td><td>—</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 9:00</td><td>Magnete di ricerca weekend</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FAR AWAY: Mine finge un crollo</td><td>9/8 10:00</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 10:00</td><td>Storyline corrente</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Pía strappata a suo figlio</td><td>9/8 11:00</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 11:00</td><td>Si collega alla lettera di Ricardo (settimana 10–16)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: il Barone minaccia Catalina</td><td>9/8 12:00</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 12:00</td><td>Storyline Catalina attiva</td></tr>
+      <tr><td><span class="tag new">Nuovo</span></td><td>FAR AWAY settimanale (divorzio Nare + scoperta Alya)</td><td>—</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 18:00</td><td>Magnete di ricerca weekend</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>FORBIDDEN FRUIT: testamento di Halit, Kerim in carcere</td><td>11/8 11:00</td><td class="pub">PUBBLICARE: DOM 9/8 ORE 21:00</td><td>🔴 Già in onda (testamento 3–7/8, Kerim fine luglio)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Pía scopre il segreto di Maria Fernandez</td><td>10/8 10:00</td><td class="pub">PUBBLICARE: LUN 10/8 ORE 10:00</td><td>Settimana corrente</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FAR AWAY: Alya entra di nascosto nella stanza</td><td>10/8 11:00</td><td class="pub">PUBBLICARE: LUN 10/8 ORE 11:00</td><td>🟢 Perfetto: "Alya fa una scoperta" è l'evento ufficiale 10–14</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>LA PROMESSA: Toño smaschera Enora e la fa arrestare</td><td>13/8 12:00</td><td class="pub">PUBBLICARE: LUN 10/8 ORE 12:00</td><td>🔴 In onda il 2–3/8: il più bruciato di tutti</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>FORBIDDEN FRUIT: Kaya smaschera Şahika al funerale</td><td>13/8 10:00</td><td class="pub">PUBBLICARE: LUN 10/8 ORE 21:00</td><td>🔴 Funerale già in onda (3–7/8)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Catalina torna, incastra Leocadia</td><td>11/8 10:00</td><td class="pub">PUBBLICARE: MAR 11/8 ORE 10:00</td><td>Storyline attiva</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>LA PROMESSA: Petra confessa i crimini di Leocadia</td><td>18/8 11:00</td><td class="pub">PUBBLICARE: MAR 11/8 ORE 11:00</td><td>🟢 Il tetano di Petra è LA trama del 10–16: al 18 arrivi ultimo, l'11 sei sul pezzo</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Ángela si ribella (versione 11/8)</td><td>11/8 12:00</td><td class="pub">PUBBLICARE: MAR 11/8 ORE 12:00</td><td>🟢 Curro/Ángela/de la Mata è la settimana 10–16</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>FORBIDDEN FRUIT: tregua Ender, Şahika e Yıldız</td><td>13/8 11:00</td><td class="pub">PUBBLICARE: MAR 11/8 ORE 21:00</td><td>🔴 Patto post-Halit già in onda</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FORBIDDEN FRUIT: il patto segreto di Şahika e Mert</td><td>12/8 10:00</td><td class="pub">PUBBLICARE: MER 12/8 ORE 10:00</td><td>🟢 "Şahika contro Mert" è ufficiale 10–14</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Leocadia nel panico</td><td>12/8 11:00</td><td class="pub">PUBBLICARE: MER 12/8 ORE 11:00</td><td>Coerente con la settimana</td></tr>
+      <tr><td><span class="tag move">Orario</span></td><td>LA PROMESSA: Cristóbal smaschera Julio</td><td>12/8 <strong>00:00</strong></td><td class="pub">PUBBLICARE: MER 12/8 ORE 12:00</td><td>⚠️ Mezzanotte = slot morto per un pubblico over 55</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>FAR AWAY: dopo il tribunale, futuro in bilico</td><td>12/8 <strong>22:00</strong></td><td class="pub">PUBBLICARE: MER 12/8 ORE 21:00</td><td>🔴 Processo già in onda + orario tardivo</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FORBIDDEN FRUIT: Nadir minaccia tutti (versione 14/8)</td><td>14/8 10:00</td><td class="pub">PUBBLICARE: GIO 13/8 ORE 10:00 (o lascia 14/8)</td><td>Trame future, flessibile</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>LA PROMESSA: il Duca spara, Santos muore (tieni la 8:57)</td><td>14/8 11:00</td><td class="pub">PUBBLICARE: GIO 13/8 ORE 12:00</td><td>🔴 Morte di Santos già in onda (~5–8/8)</td></tr>
+      <tr><td><span class="tag del">Elimina</span></td><td>LA PROMESSA: Ángela si ribella (copia del 14/8 12:00)</td><td>14/8 12:00</td><td class="pub">— ELIMINA —</td><td>Duplicato esatto del video dell'11/8</td></tr>
+      <tr><td><span class="tag del">Elimina</span></td><td>FORBIDDEN FRUIT: Nadir minaccia tutti (copia del 15/8)</td><td>15/8 10:00</td><td class="pub">— ELIMINA —</td><td>Duplicato del 14/8</td></tr>
+      <tr><td><span class="tag del">Elimina</span></td><td>LA PROMESSA: il Duca spara, Santos muore (versione 7:57)</td><td>15/8 11:00</td><td class="pub">— ELIMINA —</td><td>Duplicato: sopravvive solo la versione 8:57</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Máximo in fin di vita, "è mio padre"</td><td>15/8 12:00</td><td class="pub">PUBBLICARE: SAB 15/8 ORE 12:00</td><td>Trame future</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Ángela sparisce, Curro chiama la Guardia Civil</td><td>16/8 10:00</td><td class="pub">PUBBLICARE: DOM 16/8 ORE 10:00</td><td>Sequenza corretta (dopo la ribellione)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Martina si vendica, muore un Lujan</td><td>16/8 11:00</td><td class="pub">PUBBLICARE: DOM 16/8 ORE 11:00</td><td>Trame future</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: "strappa l'ordine"</td><td>16/8 12:00</td><td class="pub">PUBBLICARE: DOM 16/8 ORE 12:00</td><td>—</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FORBIDDEN FRUIT: Zehra scopre che Mert ha un figlio</td><td>17/8 10:00</td><td class="pub">PUBBLICARE: LUN 17/8 ORE 10:00</td><td>Sequenza coerente (dopo la crisi Zehra/Mert del 10–14)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FORBIDDEN FRUIT: Yıldız si sposa di nascosto</td><td>17/8 11:00</td><td class="pub">PUBBLICARE: LUN 17/8 ORE 11:00</td><td>Trame future</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Leocadia scopre Ángela e Curro, fuga fallita</td><td>17/8 12:00</td><td class="pub">PUBBLICARE: LUN 17/8 ORE 12:00</td><td>Sequenza corretta</td></tr>
+      <tr><td><span class="tag move">Posticipa</span></td><td>FORBIDDEN FRUIT: Yıldız e Çağatay annunciano le nozze lampo</td><td>10/8 12:00</td><td class="pub">PUBBLICARE: MER 19/8 ORE 10:00</td><td>🟡 Il 10–14 c'è solo la cena: le nozze sono future. ⚠️ Quasi-doppione del "si sposa di nascosto" del 17/8 — cambia l'angolo del titolo (es. "la reazione di Feride alle nozze") o valuta di tenerne uno solo</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FORBIDDEN FRUIT: Mert e Şahika uniti contro Zehra</td><td>18/8 10:00</td><td class="pub">PUBBLICARE: MAR 18/8 ORE 10:00</td><td>Sequenza coerente</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: il padre di Vera torna, Vera minacciata dal Duca</td><td>18/8 12:00</td><td class="pub">PUBBLICARE: MAR 18/8 ORE 12:00</td><td>Dopo il sacrificio di Santos: ordine giusto</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Aggiornamento — i 6 video del 19–20 agosto</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Azione</th><th>Video</th><th>Era</th><th>Riga PUBBLICARE da incollare</th><th>Motivo</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag move">Anticipa</span></td><td>FORBIDDEN FRUIT: la FOTO di Yıldız col piccolo finisce nelle mani di Feride</td><td>20/8 <strong>00:00</strong></td><td class="pub">PUBBLICARE: GIO 13/8 ORE 11:00</td><td>🟢→🔴 Questa è LA trama ufficiale della settimana 10–14 (la foto alla cena con Çağatay + l'equivoco di Feride): al 20 sarebbe vecchia di una settimana. E ancora una mezzanotte: terzo slot-cimitero trovato</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>LA PROMESSA: Enora era una spia di Leocadia, tradisce Manuel</td><td>19/8 10:00</td><td class="pub">PUBBLICARE: MER 12/8 ORE 21:00 (al posto del tribunale Far Away, che scala alle 22:00 di MAR 11/8… oppure entrambi in coda serale: vedi nota)</td><td>🔴 La vera identità di Enora è stata svelata in onda tra il 3 e l'8 agosto: al 19 è bruciato da 10 giorni</td></tr>
+      <tr><td><span class="tag move">Anticipa</span></td><td>LA PROMESSA: ENORA è un'agente segreta, Lorenzo arrestato</td><td>20/8 10:00</td><td class="pub">PUBBLICARE: GIO 13/8 ORE 21:00</td><td>🔴 "Lorenzo in trappola / Enora rivela la sua identità" era in onda il 7–8 agosto. Esce subito dopo l'altro video Enora (ordine causa→effetto)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>FAR AWAY: Uğur muore investito, Cihan accusa Mine</td><td>19/8 12:05</td><td class="pub">PUBBLICARE: MER 19/8 ORE 12:00</td><td>Trame future; solo ritocco orario (12:05 → 12:00 per pulizia della griglia)</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: Cristóbal impone il regime del terrore, esilia Pia</td><td>19/8 11:00</td><td class="pub">PUBBLICARE: MER 19/8 ORE 11:00</td><td>Coerente: nel 10–16 Cristóbal si irrita per la servitù che aiuta Petra → il regime del terrore è lo sviluppo successivo</td></tr>
+      <tr><td><span class="tag keep">Invariato</span></td><td>LA PROMESSA: PETRA guarisce e accusa Leocadia, "ha tentato di uccidermi"</td><td>20/8 11:00</td><td class="pub">PUBBLICARE: GIO 20/8 ORE 11:00</td><td>🟡 Trame future coerenti SOLO in questo ordine: prima "Petra confessa i crimini" (11/8, malattia), poi la guarigione e l'accusa (20/8). ⚠️ Verifica dalle puntate che la guarigione sia reale e non inventata dai concorrenti: contraddice il "tetano senza scampo" delle trame ufficiali</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note" style="color: var(--ink-faint); font-size: 0.88rem;">Nota sulla coda serale dell'11–13/8: si sono accumulati 5 video "bruciati" da smaltire alle 21:00. Se preferisci non superare 4 video al giorno, sposta il meno urgente (la tregua delle tre donne) alle 21:00 di venerdì 14/8.</p>
+
+  <div class="card good">
+    <h3>La logica cronologica applicata (per i prossimi batch)</h3>
+    <ul class="rules">
+      <li><strong>Eventi già in onda</strong> → escono subito (9–13/8), slot secondari: raccolgono le ricerche "cosa è successo".</li>
+      <li><strong>Eventi della settimana in onda</strong> → escono il giorno prima o il giorno stesso della puntata.</li>
+      <li><strong>Eventi futuri/turchi</strong> → dalla settimana 17–23, in ordine di trama (mai un effetto prima della causa: Zehra scopre il figlio → poi Mert e Şahika si alleano contro di lei ✓).</li>
+      <li><strong>Slot</strong>: vecchio formato alle 10:00 / 11:00 / 12:00 e 21:00 · nuovo formato (20 min) alle 9:00 e 18:00 · i settimanali con date nel weekend precedente.</li>
+      <li><strong>Mai due video sulla stessa scena</strong> in coda: prima di programmare, controlla se un titolo simile esiste già.</li>
+    </ul>
+  </div>
+
+  <p class="footnote">Confronto eseguito l'8 agosto 2026 tra i 31 video programmati (screenshot Studio) e le trame ufficiali: ComingSoon, TGCOM24, TvSerial, Sorrisi, Mediaset Infinity, BestMovie (settimane 3–7, 8–14 e 10–16 agosto). I giudizi "già in onda" derivano dalle trame ufficiali delle settimane precedenti; in caso di dubbio su un singolo evento fai fede tu che segui le puntate.</p>
+</main>
