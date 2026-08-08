@@ -87,3 +87,11 @@ Mappa `ripianificazione-8-23-agosto.xlsx` ora riflette lo stato reale della coda
 - **NUOVE DIRETTIVE UTENTE 8/8 sera (valgono per ogni video)**: 1) durata MINIMA 20 minuti, mai riempitivi, solo fatti verificati nuovi; 2) immagini SOLO della stessa serie + personaggi citati (mai mischiare canali/serie); 3) generazioni Palmier con reference + controllo fedeltà volto (se non riconoscibile → foto reale); 4) thumbnail SEMPRE con foto reali dei personaggi (no volti AI); 5) sottotitoli a metà schermo (build_video.py aggiornato); 6) numeri SEMPRE in lettere negli script (pronuncia TTS); 7) in valutazione switch voce a ElevenLabs (decisione utente, mitigazione attiva).
 - Thumbnail NF2 rifatta con foto reali e già sostituita su k_Usdt_aAvI.
 - Nuova cartella libreria: PERSONAGGI SERIE TV FANS/FAR AWAY/Nare/ (2 foto reali Sahra Şaş).
+
+## ✅ CHIUSURA SESSIONE MAC 8/8 (~21:30)
+- **Video 2 nuovo formato PUBBLICATO SUBITO** (non programmato, decisione utente): Far Away settimanale, ID `pwnUjTOE-D0`, 21:30 min, https://youtu.be/pwnUjTOE-D0
+- **Video 1 (FF)** resta programmato DOM 9/8 ore 9:00, ID `k_Usdt_aAvI`
+- **NUOVO STANDARD THUMBNAIL (comando utente, vale per TUTTI i canali serie TV/soap: STF, Soap Opera Italia, World Soap Spoilers EN, Telenovela Spoilers ES)**: volti espressivi generati con Palmier nano-banana-pro 2K dai volti REALI (reference + "SAME EXACT FACE"), primo piano che riempie il frame, testo 2 righe in basso (giallo = keyword+evento, rosso = gancio FOMO/citazione), badge alert rosso, titolo agganciato alle scritte. Script: `make_thumb_competitor.py`.
+- **Libreria volti espressivi creata** (25 personaggi, riusabile IT/EN/ES): in `PERSONAGGI SERIE TV FANS/<SERIE>/<Nome>/expr_*.jpg`
+- **29 video programmati** (9–20 ago): titoli e thumbnail rifatti col nuovo standard, tutti applicati.
+- **Da fare domani dopo reset quota (~9:00)**: rifare titoli+thumbnail dei 30 video già pubblicati sotto 3k views degli ultimi 10 giorni + 10 short.

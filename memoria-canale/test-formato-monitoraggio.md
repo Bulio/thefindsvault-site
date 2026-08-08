@@ -58,7 +58,14 @@
 | 8/8 Mac | Thumbnail | ~2 min | Sfondo Palmier nano-banana-pro (3 reference: Feride+Yildiz+HasanAli) + overlay make_thumb_cinema.py "LI HA VISTI" / "FERIDE SCOPRE TUTTO" + badge |
 | 8/8 Mac | Montaggio (h264_videotoolbox) | 4,5 min (18:12→18:17) | 140 clip, 20 immagini ciclate, sub sync, musica, logo. Validazione ffmpeg pulita |
 | 8/8 Mac | Upload+thumbnail+programmazione | ~3 min | Progetto quota SDOPPIA. **Video ID k_Usdt_aAvI, PROGRAMMATO DOM 9/8 ORE 9:00** |
-| — | **TOTALE Mac (esclusa scrittura script)** | **~85 min** | di cui 68 non presidiati (TTS). Con corsia Kaggle il TTS scenderebbe a ~20-25 min |
+| — | **TOTALE video 1 FF (esclusa scrittura script)** | **~85 min** | di cui 68 non presidiati (TTS su CPU) |
+| 8/8 Mac | **VIDEO 2 — Far Away settimanale** | | |
+| 8/8 Mac | Ricerca fonti + fact-check + script 20 min | ~25 min | Fonte L'Angolo delle Soap (transcript integrale) + 2 corroboranti; canone verificato |
+| 8/8 Mac | TTS Chatterbox su **Kaggle GPU** | ~30 min | 21.883 caratteri → 21:30 di video. **GPU 2,5x più veloce della CPU** |
+| 8/8 Mac | Immagini 50/50 + thumbnail volti espressivi | ~15 min | 10 gen Palmier + 10 libreria FAR AWAY; thumbnail nano-banana-pro |
+| 8/8 Mac | Montaggio + validazione | ~5 min | 21:30, ffmpeg pulito |
+| — | **TOTALE video 2 (con GPU)** | **~75 min** | **PUBBLICATO SUBITO (non programmato), ID pwnUjTOE-D0** |
+| ⚠️ | Lezione durata | | Primo montaggio uscito 19:33 con 20.229 caratteri → **servono ≥21.500 caratteri per stare sopra i 20 min**. Ritmo reale confermato ~16,9 char/s |
 
 ## Log dei check
 
