@@ -69,6 +69,27 @@
 
 ## Log dei check
 
+- **CHECK 24h FF — LUN 10/8 ~9:40 Italia (sessione cloud).**
+  - **FF `k_Usdt_aAvI`** (out 9/8 9:00, 15:11): **54 viste, 0 like, 0 commenti**
+    a ~25h. Analytics API in lag (righe vuote, retention non ancora disponibile):
+    durata media e retention min1 misurabili solo al check di domani.
+  - **FA `pwnUjTOE-D0`** (out 8/8 ~21:30, 21:30 min): **233 viste** a ~36h.
+  - Criteri (misura, non decisione): viste ❌ (54 vs ~750 pro-rata 24h) ·
+    commenti ❌ (0 vs 30) · retention e durata media n/d (lag API).
+  - **DIAGNOSI PRINCIPALE — CANNIBALIZZAZIONE**: nello stesso giorno dei 2 nuovo
+    formato sono usciti ALTRI 4-5 vecchio formato dalla coda (La Promessa "Pía"
+    895 viste · FF "Ender" 386 · Promessa "Baron" 129 · FA "Mine" 92 · FF
+    "testamento/Mert" 40, quest'ultimo in slot serale ~21:30). Il feed iscritti
+    è diluito su 6-7 uscite: i nuovo formato non ricevono la spinta iniziale.
+    La strategia era SOSTITUIRE 6 vecchi con 3 nuovi — invece si sta SOMMANDO.
+  - **RACCOMANDAZIONE per Mac/utente**: diradare SUBITO la coda vecchio formato
+    (max 1/giorno di supporto nei giorni con uscite nuovo formato, o spostarla
+    di una settimana); i nuovi vanno negli slot 9:00/14:45/18:30 con il campo
+    libero. Verificare anche da Studio le impression/CTR di k_Usdt_aAvI (dato
+    non visibile da NexLev): se le impression sono poche centinaia il problema
+    è distribuzione, se il CTR è <2% il problema è thumbnail/titolo.
+  - Notturna 1×3 nuovo formato: NON verificabile da cloud (bozze private) —
+    la sessione Mac confermi se stanotte ha prodotto i 3 lunghi.
 - **RICONTROLLO — 8/8 20:07 Italia: TPLMF ANCORA NON PUBBLICATO → TEST CHIUSO
   COME SALTATO** (coerente con la direttiva utente: nuovo formato attivo senza
   test). Il monitoraggio passa ai primi nuovo formato reali:
