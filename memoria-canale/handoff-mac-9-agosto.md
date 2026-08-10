@@ -1,5 +1,12 @@
 # HANDOFF → SESSIONE MAC (aggiornato 8/8/2026 sera, dalla sessione cloud)
 
+> 🔴 **PRIORITÀ LUN 10/8 (autorizzata dall'utente)**: eseguire SUBITO
+> `memoria-canale/diradamento-coda-vecchio-formato.md` — la coda vecchio formato
+> sta cannibalizzando i nuovi (FF 54 viste a 24h contro 895 di un vecchio uscito
+> lo stesso giorno). Max 1 vecchio/giorno alle 21:00; rilevare da Studio
+> impression+CTR di k_Usdt_aAvI e pwnUjTOE-D0 e annotarli nella scheda
+> monitoraggio; programmare i 3 video della notturna su 9:00/14:45/18:30.
+
 > Da leggere nella chat/pipeline del Mac. Tutto ciò che serve è committato sul
 > branch `claude/analisi-grafico-storico-fvwaqt` di thefindsvault-site.
 
