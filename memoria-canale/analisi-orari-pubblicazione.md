@@ -62,3 +62,25 @@ col tablet/telefono.
 
 Dopo 2 settimane di nuovo formato: rileggere per-orario le prime 24h di ogni video
 (NexLev) e fissare definitivamente lo slot 3 (18:30 vs 20:30).
+
+---
+
+## 🔄 Aggiornamento settimanale — 10/08/2026
+
+**Dati analizzati**: Nexlev `get_my_channel_analytics` + `get_my_top_videos`, canale Serie TV Fans, finestra 03-08/08/2026 (ultimi 7 giorni disponibili al momento dell'analisi). Totali finestra: 43.643 view, 60.527 min guardati, 77 iscritti netti (+77/-12).
+
+**Nuovo formato (9:00 · 14:45 · 18:30, A/B 18:30/20:30): dati ancora insufficienti per un verdetto.**
+Un solo video nuovo formato pubblicato finora — "FF DAL 10 AL 14 AGOSTO" (k_Usdt_aAvI), 09/08 ore 9:00 IT, 58 view lifetime a 24h. Troppo presto e un solo campione: **nessuna conclusione possibile sullo slot 9:00 o sull'A/B 18:30/20:30**, serve almeno 1-2 settimane di produzione nuovo formato piena (partita solo il 09/08) prima di poter confrontare.
+
+**Segnale secondario dal vecchio formato (10 video pubblicati nella finestra, orari 10:00/11:00/12:00 IT — coda in smaltimento):**
+| Slot IT | Video nella finestra | Media viste/video |
+|---|---|---|
+| 10:00 | 4 (LA PROMESSA "Leocadia orchestrato", "Petra segreto", "Petra smaschera Tomasa", FF "Yıldız sposa") | ~291 |
+| 11:00 | 4 (FAR AWAY "Feride verità", TERRA AMARA "Zuleyha/Demir", LA PROMESSA "Leocadia confessa", FAR AWAY "Alya non crede") | ~860 |
+| 12:00 | 3 (FAR AWAY "Cihan rifiuta divorzio" 3.171 view, FAR AWAY "Alya scopre Boran" 1.621, FF "Yıldız senza soldo" 226) | ~1.673 |
+
+Pattern ripetuto su più video (non un singolo outlier): **12:00 IT batte nettamente 11:00 e 10:00** nel vecchio formato. Coerente con la raccomandazione già in vigore (spalmare su mattina/pomeriggio/sera invece di concentrare tutto al mattino). Non applicato al nuovo formato (slot e formato diversi) — segnalato solo come promemoria: se lo stesso pattern "fascia mattutina presto più debole" si ripetesse anche sui dati new-format nelle prossime settimane, valutare di spostare lo slot 9:00 leggermente più avanti (es. 9:30-10:00).
+
+**Decisione: slot NUOVO FORMATO CONFERMATI — 9:00 · 14:45 · 18:30 (A/B 18:30/20:30) invariati.** Nessuna evidenza sufficiente per un cambio questa settimana; il campione è troppo piccolo (1 video). Video vecchio formato già programmati NON toccati (nessuna proposta di spostamento — l'evidenza 12:00>10:00 è coerente col piano già approvato, non richiede intervento sui video già in coda).
+
+**Prossima analisi**: 17/08/2026, quando saranno disponibili 1-2 settimane piene di dati sul nuovo formato — allora sarà possibile un primo verdetto reale su slot 9:00 e sull'A/B 18:30 vs 20:30.
