@@ -172,6 +172,23 @@ Primo test formato "speciale voci": video112 (pipeline Mac).
 6. Su Mac: `memory_search.py "serie tv fans revenue analytics"`, checkpoint
    `serietvfans_batch_1_2_3_agosto_stato`, benchmark `serietvfans_competitor_benchmark_02agosto`.
 
+## Canale SOAP OPERA ITALIA (SOI) — binario SEPARATO (istruzioni utente 11/8/2026)
+
+- **Canale**: `@soapoperaitaliaa` (`UCjid0Q5NC0No3HRHIF2_tdg`, doppia A — esiste
+  un omonimo concorrente @SoapOperaItalia da 310 iscritti). Account Google:
+  `bulio91veo3@gmail.com`. Baseline 11/8: 2 iscritti, 4.196 viste, 38 video,
+  ultimi 25 video a 0–14 viste.
+- **REGOLA**: stesso impianto di lavoro di STF (baseline → monitoraggio → check
+  automatici → handoff Mac) ma **SEMPRE SEPARATO**: tutto in
+  `memoria-canale/soap-opera-italia/`, mai mischiare dati/decisioni SOI con STF.
+- Scheda e criteri: `memoria-canale/soap-opera-italia/monitoraggio-soi.md`.
+  Check cloud ogni 3–4 giorni ~10:30 Italia (sfalsati dai check STF delle 10:00).
+- **Da fare (in ordine)**: 1) aggancio NexLev via browser con l'account sopra
+  (utente o Mac — il cloud non può fare l'OAuth); 2) export memoria SOI dal Mac
+  in `soap-opera-italia/memoria-mac-soi/`; 3) decidere posizionamento vs STF
+  (oggi il mix è Hercai/Paradiso — serie finite/deboli — e sovrappone STF su
+  La Promessa/FF: un canale a 2 iscritti vive solo di ricerca).
+
 ## Nota su questo repository
 
 thefindsvault-site è un sito statico NON collegato al canale: fa da contenitore della

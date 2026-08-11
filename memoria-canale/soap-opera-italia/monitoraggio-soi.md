@@ -76,4 +76,15 @@
 
 ## Log dei check
 
-- _(vuoto — si riempie a ogni check)_
+- **CHECK #0 — MAR 11/8 ~12:20 Italia (sessione cloud, su richiesta utente).**
+  - Aggancio NexLev: ❌ non ancora attivo (SOI assente dai 10 canali collegati)
+    → procedura in questo file, da eseguire con `bulio91veo3@gmail.com`.
+  - Dati pubblici: 2 iscritti · 4.196 viste totali · 38 video.
+  - Ultimi video: La Promessa "padre di Jana, cosa può succedere" (oggi, 4:28)
+    0 viste · "verità indizio per indizio" (ieri, 4:01) 1 vista · Paradiso
+    "finale/decima stagione" (ieri, 9:20) 9 viste · best recente: Paradiso
+    "prima e dopo il finale" (9/8) 14 viste.
+  - Mix serie ultimi 25 video: ~14 Hercai (serie finita), ~6 Paradiso, ~4
+    La Promessa, 1 altro. Zero su TPLMF/FF/FA.
+  - Criteri: tutti a baseline (viste 0–14 ❌ · iscritti 2 ❌ · commenti 0 ❌ ·
+    % sopra 100 viste ~0% ❌). Prossimo check: VEN 14/8 ~10:30 (già armato).
