@@ -67,6 +67,35 @@
 | — | **TOTALE video 2 (con GPU)** | **~75 min** | **PUBBLICATO SUBITO (non programmato), ID pwnUjTOE-D0** |
 | ⚠️ | Lezione durata | | Primo montaggio uscito 19:33 con 20.229 caratteri → **servono ≥21.500 caratteri per stare sopra i 20 min**. Ritmo reale confermato ~16,9 char/s |
 
+## 🔁 RIMODULAZIONE MONITORAGGIO — 11/8 (allineamento a content-strategy-stf)
+
+Su direttiva utente, il monitoraggio cloud si allinea alla strategia consolidata
+(`memoria-mac/content-strategy-stf.md`) e ai nuovi batch **1 FA + 1 FF + 1 LP**:
+
+1. **Tracking A/B PER SERIE** (non più per singolo video): ogni check aggiorna la
+   tabella qui sotto con viste/durata media/retention di TUTTI i nuovi formato,
+   raggruppati FA / FF / LP. Serve al verdetto A/B del ~20/8 (Trends vs storico):
+   se Far Away non regge, si torna alla composizione precedente.
+2. **Checa anche la CTA**: la strategia impone la domanda POLARIZZANTE a due lati
+   (non la "teoria" aperta della formula originale — quella non ha generato
+   commenti: 0 su entrambi i primi video). Metrica: commenti per video.
+3. **Evergreen vs settimanali con date**: ⚠️ TENSIONE APERTA da decidere —
+   la regola evergreen (30/07, permanente) vieta le date nei titoli, ma i
+   settimanali nuovo formato le usano apposta come magnete di ricerca
+   (diagnosi: search al 2,8%). Proposta cloud: date SOLO sui 2 settimanali
+   weekend, evergreen su tutti gli altri. Decide l'utente/Mac.
+4. **Membership**: menzione parlata 1 video su 3 — il tracking di quali video
+   ce l'hanno resta al Mac (add_membership_cta.py / checkpoint).
+5. Cadenza check cloud: 13/8 (allineato) → 15/8 → verdetto A/B ~20-22/8.
+
+### Tabella A/B per serie (nuovo formato — aggiornata a ogni check)
+
+| Serie | Video (ID, uscita) | Viste | Durata media | Ret. min1 | Commenti |
+|---|---|---|---|---|---|
+| FA | pwnUjTOE-D0 (8/8 21:23) | 313 (~60h) | 4:41 | ~58% | 0 |
+| FF | k_Usdt_aAvI (9/8 9:00) | 60 (48h) | n/d | n/d | 0 |
+| LP | _(primo LP nuovo formato atteso dalla notturna)_ | — | — | — | — |
+
 ## Log dei check
 
 - **CHECK 48h FF + 24h FA — MAR 11/8 ~10:10 Italia (sessione cloud).**

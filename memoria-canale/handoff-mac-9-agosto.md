@@ -1,4 +1,33 @@
-# HANDOFF → SESSIONE MAC (aggiornato 8/8/2026 sera, dalla sessione cloud)
+# HANDOFF → SESSIONE MAC (aggiornato 11/8 mattina, dalla sessione cloud)
+
+## 📊 DATI 48h PER I NUOVI BATCH (FA+FF+LP) — da applicare da SUBITO in produzione
+
+Il nuovo formato TRATTIENE ma non viene distribuito. Numeri: FA `pwnUjTOE-D0`
+**durata media 4:41 (+70–100% vs baseline 2:20–2:47), retention min1 ~58%
+(baseline 50%), 12,4% arriva in fondo a 21 min** — ma solo 313 viste. FF
+`k_Usdt_aAvI`: 60 viste a 48h. Canale a ~12,9K viste/g (+33%), trainato dal
+catalogo. Conseguenze operative per ogni video dei prossimi batch:
+
+1. **HOOK (correzione dalla curva reale)**: il primo minuto perde ancora il 42%
+   (92→58). Spoiler più secchi nei primi 20 secondi + 1 frase speculativa già
+   nel hook: il picco di retention relativa (0,50) è nei BLOCCHI SPECULATIVI
+   (63–65% del video) — sono il punto più forte, anticiparne l'aroma.
+2. **CTA**: la "teoria" aperta ha prodotto 0 commenti su 2 video. Applicare la
+   regola della strategia: DOMANDA POLARIZZANTE a due lati netti (metà + chiusura,
+   mai formula identica) + **commento fissato del canale** con la stessa domanda
+   appena il video esce.
+3. **RITUALE DI LANCIO (attacca il collo di bottiglia distribuzione)**: post
+   community all'uscita · card/end-screen dai 5 video più visti della stessa
+   serie verso il nuovo · playlist di serie aggiornata subito.
+4. **Ancora mancanti da Studio**: impression + CTR di k_Usdt_aAvI e pwnUjTOE-D0
+   (decidono se il problema è feed o thumbnail) — rilevarle e annotarle nella
+   scheda monitoraggio.
+5. **A/B per serie**: il monitoraggio cloud ora traccia FA vs FF vs LP per il
+   verdetto del ~20/8 (tabella nella scheda). Il primo LP nuovo formato chiude
+   la terna: appena esce, la tabella si completa.
+6. ⚠️ **Tensione da decidere**: regola evergreen (no date nei titoli) vs
+   settimanali con date come magnete search. Proposta: date solo sui 2
+   settimanali weekend, evergreen sul resto.
 
 > 🔴 **PRIORITÀ LUN 10/8 (autorizzata dall'utente)**: eseguire SUBITO
 > `memoria-canale/diradamento-coda-vecchio-formato.md` — la coda vecchio formato
