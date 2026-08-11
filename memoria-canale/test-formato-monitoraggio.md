@@ -69,6 +69,42 @@
 
 ## Log dei check
 
+- **CHECK 48h FF + 24h FA — MAR 11/8 ~10:10 Italia (sessione cloud).**
+
+  | Metrica | FF `k_Usdt_aAvI` (48h) | FA `pwnUjTOE-D0` (~60h) | Baseline vecchio | Target |
+  |---|---|---|---|---|
+  | Viste | 60 | 313 | 150–400 (48h) | ≥1.500 ❌ |
+  | Durata media | n/d (API senza righe) | **4:41** (21,8% di 21:30) | 2:20–2:47 | ≥5:00 ❌ (per 19 sec) |
+  | Retention min 1 | n/d | **~58%** | ~50% | ≥65% ❌ |
+  | Commenti | 0 | 0 | 0–12 | ≥30 ❌ |
+  | Like | 0 | 8 | — | — |
+
+  - **Verdetto formale: 0/4.** MA la lettura giusta è doppia:
+    **il formato TRATTIENE** (durata media +70–100% vs baseline, retention min1
+    +8pt, il 12,4% arriva a fine video di 21 minuti — mai successo con gli 8 min)
+    mentre **la DISTRIBUZIONE è il collo di bottiglia** (60–313 viste con un
+    canale che fa 11–13K viste/giorno sul catalogo).
+  - Curva FA: −42% nel primo minuto (92%→58%) — hook ancora da stringere; picco
+    di performance relativa (0,50) al 63–65% del video = **i blocchi speculativi
+    sono il momento più forte** → anticiparne un assaggio nel hook.
+  - Canale: 7gg = 90.278 viste (~12,9K/g) vs ~9,7K pre-switch (+33%), trainate
+    però da vecchio formato + catalogo (FA "Cihan rifiuta il divorzio" delle
+    12:00 a 3,1K). Il nuovo formato non è ancora entrato nel feed.
+  - **CORREZIONI RACCOMANDATE (per Mac/utente)**:
+    1. Confermare l'esecuzione del diradamento + rilevare impression/CTR da
+       Studio per k_Usdt_aAvI e pwnUjTOE-D0 (ancora non annotate qui).
+    2. **Rituale di lancio per ogni nuovo formato**: post community all'uscita
+       (7 pronti nel kit) + commento fissato del canale con la domanda-teoria
+       (0 commenti su entrambi: la CTA da sola non basta a innescare) + card/
+       end-screen dai 5 vecchi video più visti della stessa serie verso il nuovo
+       + aggiunta immediata alla playlist di serie.
+    3. Hook: primi 20 secondi con gli spoiler più secchi + 1 frase speculativa
+       ("e le anticipazioni lasciano intendere che…") già nel hook.
+    4. Orari: confermati 9:00/14:45/18:30 (nota separata del 10/8 in
+       analisi-orari: segnale 12:00>10:00 sul vecchio formato).
+  - Prossimo check: GIO 13/8 ~10:00 (andamento 4 giorni + verifica trama "Petra
+    guarisce" prima del 20/8).
+
 - **CHECK 24h FF — LUN 10/8 ~9:40 Italia (sessione cloud).**
   - **FF `k_Usdt_aAvI`** (out 9/8 9:00, 15:11): **54 viste, 0 like, 0 commenti**
     a ~25h. Analytics API in lag (righe vuote, retention non ancora disponibile):
