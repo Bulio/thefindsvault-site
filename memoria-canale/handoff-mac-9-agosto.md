@@ -1,4 +1,11 @@
-# HANDOFF → SESSIONE MAC (aggiornato 11/8 mattina, dalla sessione cloud)
+# HANDOFF → SESSIONE MAC (aggiornato 11/8, dalla sessione cloud)
+
+> 🆕 **NUOVO CANALE IN GESTIONE: SOAP OPERA ITALIA (@soapoperaitaliaa)** —
+> binario SEPARATO da STF. Istruzioni permanenti in CLAUDE.md (sezione SOI),
+> scheda in `memoria-canale/soap-opera-italia/monitoraggio-soi.md`. Per il Mac,
+> 3 azioni: 1) aggancio NexLev via browser (account `bulio91veo3@gmail.com`);
+> 2) export memoria SOI in `soap-opera-italia/memoria-mac-soi/`; 3) proposta di
+> posizionamento vs STF (oggi pubblica Hercai/Paradiso a 0–14 viste).
 
 ## 📊 DATI 48h PER I NUOVI BATCH (FA+FF+LP) — da applicare da SUBITO in produzione
 
