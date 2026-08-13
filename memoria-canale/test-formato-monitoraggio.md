@@ -88,15 +88,57 @@ Su direttiva utente, il monitoraggio cloud si allinea alla strategia consolidata
    ce l'hanno resta al Mac (add_membership_cta.py / checkpoint).
 5. Cadenza check cloud: 13/8 (allineato) → 15/8 → verdetto A/B ~20-22/8.
 
-### Tabella A/B per serie (nuovo formato — aggiornata a ogni check)
+### Tabella A/B per serie (nuovo formato — aggiornata al 13/8)
 
-| Serie | Video (ID, uscita) | Viste | Durata media | Ret. min1 | Commenti |
-|---|---|---|---|---|---|
-| FA | pwnUjTOE-D0 (8/8 21:23) | 313 (~60h) | 4:41 | ~58% | 0 |
-| FF | k_Usdt_aAvI (9/8 9:00) | 60 (48h) | n/d | n/d | 0 |
-| LP | _(primo LP nuovo formato atteso dalla notturna)_ | — | — | — | — |
+| Serie | Video (ID, uscita, durata) | Viste | Durata media | Commenti |
+|---|---|---|---|---|
+| **LP** | rb_DyZPzb8U (10/8 18:30, 20:27) | **630** | **5:04** (24,8%) | 0 |
+| **FA** | pwnUjTOE-D0 (8/8 21:23, 21:30) | **376** | 4:41 (21,8%) | 0 |
+| **FA** | ihBWpAhHKq4 (11/8 9:00, 20:52) | 87 | n/d (lag) | 0 |
+| **FF** | eLgMjgdEHbg (12/8, 27:00) | 64 | n/d (lag) | 0 |
+| **FF** | r3z8_Zs3Cng (12/8, 18:57) | 106 | n/d (lag) | 0 |
+| **FF** | k_Usdt_aAvI (9/8 9:00, 15:11) | 69 | n/d | 0 |
+
+**Media per serie (viste)**: LP 630 · FA 232 · FF 80.
+⚠️ **Ribaltamento rispetto alle attese**: l'A/B nasceva da Trends (FA 38,5 >
+FF 30,0 > LP 27,6). Sui video nuovo formato l'ordine reale è **LP > FA >> FF**.
+Conferma anche sul vecchio formato di questi giorni: i picchi sono LP
+("Toño smaschera Enora" 2,3K · "Pía" 1,3K · "Ángela" 828) mentre FF resta
+sotto i 300. **Forbidden Fruit sta perdendo forza** (era il top di luglio):
+ipotesi da verificare — la serie è vicina/oltre il finale di stagione italiano,
+oppure la coda FF è satura di angoli ripetuti.
+→ Per il verdetto del 20-22/8: se il pattern regge, ribilanciare il batch
+verso LP (2 slot) e valutare la sostituzione dello slot FF (TPLMF è ancora
+scoperta e i competitor ci fanno 26-33K).
 
 ## Log dei check
+
+- **CHECK A/B PER SERIE — GIO 13/8 ~10:20 Italia (sessione cloud).**
+  - **6 video nuovo formato** ora pubblicati (tabella A/B sopra aggiornata):
+    la produzione nuovo formato è a regime, tutte e 3 le serie coperte.
+  - ✅ **PRIMO SUPERAMENTO DI SOGLIA**: LP `rb_DyZPzb8U` (uscito 10/8 18:30)
+    **630 viste + durata media 5:04** — supera il target ≥5:00 (baseline 2:30)
+    ed è 10× il primo FF. Lo slot 18:30 conferma il segnale del competitor.
+  - ❌ **Commenti ancora 0 su TUTTI e 6**: la CTA polarizzante o non è ancora
+    applicata o non basta senza commento fissato del canale. È la correzione
+    più urgente rimasta.
+  - **Diradamento: NON applicato.** L'11–12/8 sono usciti ~6 vecchio formato
+    (LP "Catalina" 473, "Ángela" 828, "Toño/Enora" 2,3K, FF "Kaya" 138,
+    FA "Alya" 117, LP "Petra confessa" 229) — il piano prevedeva 1/giorno
+    alle 21:00. Il canale ha caricato 8 video il 12/8 (1069→1077).
+  - **Impression/CTR: non ancora annotate** dal Mac (terzo sollecito).
+  - **Canale**: 7gg 75.162 viste (~10,7K/g), 60.200 iscritti (+100 in 7gg).
+    In calo rispetto ai 12,9K/g del check precedente ma sopra i ~9,7K
+    pre-switch; il traino resta il catalogo vecchio formato.
+  - **Retention min1**: non rilevata (timeout API su rb_DyZPzb8U) — al check 15/8.
+  - ⚠️ **"PETRA GUARISCE" — verificato sulle fonti ufficiali**: le trame
+    10–16/8 confermano il tetano in stadio avanzato e la prognosi infausta
+    (Davide Maggio, ComingSoon "non c'è nulla da fare", La Notizia), MA
+    citano anche **un siero sperimentale molto costoso che potrebbe salvarla
+    in extremis** → la guarigione è POSSIBILE ma NON confermata. Decisione:
+    **NON eliminare il video, ma riscriverlo in forma ipotetica** ("il siero
+    sperimentale può salvarla?") e tenerlo dopo la puntata che scioglie il
+    nodo; se entro il 5/9 le fonti confermano la morte, eliminarlo.
 
 - **CHECK 48h FF + 24h FA — MAR 11/8 ~10:10 Italia (sessione cloud).**
 
