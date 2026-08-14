@@ -1,5 +1,12 @@
 # HANDOFF → SESSIONE MAC (aggiornato 11/8, dalla sessione cloud)
 
+> 🔴 **SOI — SOLLECITO #2 (14/8)**: NexLev ancora NON agganciato (senza, i check
+> SOI restano ciechi su durata/retention) e memoria SOI non ancora esportata.
+> Dati nuovi dal check #1: il canale cresce (2→9 iscritti, +7.800 viste in 3
+> giorni) ma **quasi solo grazie agli SHORTS**; i 25 lunghi recenti sommano 959
+> viste, con un solo outlier (LP "padre di Jana" 754). Vedi
+> `soap-opera-italia/monitoraggio-soi.md` per le 3 raccomandazioni.
+
 > 🆕 **NUOVO CANALE IN GESTIONE: SOAP OPERA ITALIA (@soapoperaitaliaa)** —
 > binario SEPARATO da STF. Istruzioni permanenti in CLAUDE.md (sezione SOI),
 > scheda in `memoria-canale/soap-opera-italia/monitoraggio-soi.md`. Per il Mac,

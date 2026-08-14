@@ -76,6 +76,43 @@
 
 ## Log dei check
 
+- **CHECK #1 — VEN 14/8 ~10:40 Italia (sessione cloud).**
+  - **Aggancio NexLev: ❌ ancora non fatto** (SOI assente dai 10 canali
+    collegati) → niente durata media/retention. Secondo sollecito.
+  - **Crescita forte in 3 giorni**: iscritti **2 → 9** · viste totali
+    **4.196 → 11.998 (+7.802)** · video 38 → 54.
+  - ⚠️ **MA le viste NON vengono dai video lunghi**: i 25 lunghi più recenti
+    sommano **959 viste in totale**. La crescita è quasi tutta **SHORTS**:
+    21 short con 114–1.200 viste l'uno (~10.400 viste complessive).
+    Top: "Il segreto viene fuori" 1,2K · "Yildiz non se lo aspettava" 949 ·
+    "Il piano di Ender" 925. Molti su TERRA AMARA (serie finita ma ancora
+    molto cercata) e Forbidden Fruit.
+  - **Unico lungo che ha funzionato**: LP "La mia reazione a caldo alla
+    rivelazione sul padre di Jana" (4:00 di durata, 3:51) → **754 viste**,
+    cioè il 79% di tutte le viste dei lunghi recenti. Gli altri stanno a 0–41.
+    Nota: è lo stesso filone ("padre di Jana") che su STF è storicamente il
+    video più visto in assoluto (161K lifetime) → **il tema tira, non il canale**.
+  - Mix serie lunghi ultimi 25: ~13 Hercai (finita), ~5 Paradiso, ~7 La Promessa.
+    **Zero TPLMF/FF/FA** nei lunghi (FF appare solo negli Shorts).
+  - Commenti: 0 su tutti.
+
+  | Criterio | Baseline 11/8 | Oggi 14/8 | Target 4 sett. |
+  |---|---|---|---|
+  | Viste 48h/video (lunghi) | 0–14 | 0–28 (outlier 754) | ≥50 |
+  | Iscritti | 2 | **9** ↑ | ≥30 |
+  | Commenti/video | 0 | 0 | ≥2 |
+  | % lunghi sopra 100 viste | ~0% | ~4% (1 su 25) | ≥25% |
+
+  - **LETTURA**: gli Shorts stanno portando il traffico, i lunghi restano
+    invisibili. Su SOI (a differenza di STF) gli Shorts sono l'unico canale
+    di distribuzione che funziona — ma non convertono in viste sui lunghi.
+  - **RACCOMANDAZIONI (decide utente/Mac)**: 1) collegare gli Shorts ai lunghi
+    (stesso soggetto, rimando esplicito, playlist) invece di produrli su serie
+    diverse; 2) spostare i lunghi dai finali di Hercai/Paradiso ai temi che
+    tirano davvero (il caso "padre di Jana" lo dimostra: 754 vs 0-41);
+    3) il formato lungo di SOI è 4-9 min — se si vuole replicare la lezione
+    STF servono video più lunghi e verticali sul tema cercato.
+
 - **CHECK #0 — MAR 11/8 ~12:20 Italia (sessione cloud, su richiesta utente).**
   - Aggancio NexLev: ❌ non ancora attivo (SOI assente dai 10 canali collegati)
     → procedura in questo file, da eseguire con `bulio91veo3@gmail.com`.
