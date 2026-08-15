@@ -88,7 +88,48 @@ Su direttiva utente, il monitoraggio cloud si allinea alla strategia consolidata
    ce l'hanno resta al Mac (add_membership_cta.py / checkpoint).
 5. Cadenza check cloud: 13/8 (allineato) → 15/8 → verdetto A/B ~20-22/8.
 
-### Tabella A/B per serie (nuovo formato — aggiornata al 13/8)
+### Tabella A/B per serie — aggiornata SAB 15/8 (11 video nuovo formato)
+
+| Serie | Video | Uscita | Durata | Viste |
+|---|---|---|---|---|
+| **LP** | rb_DyZPzb8U "Leocadia smascherata" | 10/8 18:30 | 20:27 | **729** |
+| FA | pwnUjTOE-D0 "Nare si spara" | 8/8 21:23 | 21:30 | **542** |
+| **FF** | wBXmUdkv7so "CHI È ZEHRA" | 14/8 16:00 | 19:32 | **390** ⭐ |
+| FA | y1S_J8gUn9o "Sadakat ordina un omicidio" | 14/8 9:00 | 23:40 | 150 |
+| FF | r3z8_Zs3Cng "Feride trova la FOTO" | 12/8 | 18:57 | 122 |
+| FA | ihBWpAhHKq4 "il vero padre di Boran" | 11/8 9:00 | 20:52 | 107 |
+| *Endless Love* | FOTb_qTankc "18-22 ago" | 14/8 | 17:52 | 106 |
+| *Terra Amara* | JCLMPIkk3oU "5 villain più odiati" | 14/8 | 18:00 | 99 |
+| FF | k_Usdt_aAvI "Feride sorprende Yildiz" | 9/8 9:00 | 15:11 | 90 |
+| FF | eLgMjgdEHbg "Manette per Yildiz" | 12/8 | 27:00 | 87 |
+| FA | 4TgmGtPa56E "perché Zerrin ha sposato Demir" | 14/8 15:00 | 20:41 | 63 |
+
+**Medie per serie**: LP 729 (1 video) · FA 215 (4) · FF 172 (4).
+**Il pattern LP > FA > FF REGGE**, ma il distacco FF si è ridotto grazie a un
+solo video — che però cambia la lettura (vedi sotto).
+
+### ⭐ SCOPERTA DEL 15/8: il formato "CHI È [PERSONAGGIO]" batte le anticipazioni
+
+`wBXmUdkv7so` "CHI È ZEHRA — la moglie tradita diventata la più pericolosa"
+ha fatto **390 viste in 18 ore**, 4× la media degli altri FF. Non è un video
+di anticipazioni settimanali: è un **profilo di personaggio evergreen**.
+Coerente con la regola evergreen della strategia (niente date → il video resta
+cliccabile per mesi) e con l'esperienza SOI (il "padre di Jana" ha fatto 754
+viste su un canale a 9 iscritti: tira il TEMA, non il calendario).
+→ **Raccomandazione per il verdetto**: affiancare ai settimanali una linea
+"CHI È / LA STORIA DI [personaggio]" evergreen, 1-2 a settimana.
+
+### Retention LP `rb_DyZPzb8U` (rilevata al 2° tentativo, prima andò in timeout)
+
+- Minuto 1 (5% del video): **50,1%** — sotto il target 65%, in linea con la
+  baseline del vecchio formato. Il hook resta il punto debole (−50% nel primo
+  minuto anche nel nuovo formato).
+- Ma la coda tiene: **12% ancora presente a fine video** (20 minuti) e picchi
+  di performance relativa a 0,49–0,54 nella seconda metà (min 10 e min 13).
+- Conferma la diagnosi: **il formato trattiene chi resta, il problema è il
+  primo minuto + la distribuzione**.
+
+### Tabella A/B per serie (storico — 13/8)
 
 | Serie | Video (ID, uscita, durata) | Viste | Durata media | Commenti |
 |---|---|---|---|---|
@@ -112,6 +153,29 @@ verso LP (2 slot) e valutare la sostituzione dello slot FF (TPLMF è ancora
 scoperta e i competitor ci fanno 26-33K).
 
 ## Log dei check
+
+- **CHECK A/B #2 — SAB 15/8 ~10:15 Italia (sessione cloud).**
+  - **11 video nuovo formato** (erano 6): produzione a pieno regime.
+  - 📈 **IL CANALE STA DECOLLANDO**: 13/8 **21.316** viste · 14/8 9.297 ·
+    15/8 **21.581**. 7 giorni: **95.166 (~13,6K/g)** contro 10,7K del 13/8 e
+    ~9,7K pre-switch. Iscritti **60.300 (+200 in 7gg)** — il ritmo di crescita
+    iscritti è raddoppiato. Mese in corso: 164.965 viste (vs 21.111 di luglio).
+  - Pattern per serie confermato (LP 729 · FA 215 · FF 172), ma **la novità
+    vera è il formato "CHI È ZEHRA"** (390 viste in 18h, vedi sopra).
+  - **Serie fuori composizione**: sono usciti anche 1 Terra Amara e 1 Endless
+    Love in nuovo formato — non previsti dal batch FA+FF+LP. Da chiarire col
+    Mac se è una scelta o una deriva della notturna.
+  - **FF: nessuna evidenza di chiusura imminente**. Le fonti confermano che la
+    soap resta nel daytime di Canale 5 per tutta l'estate (è stata tolta solo
+    dalla prima serata a giugno) e l'ultima puntata italiana è attesa nel
+    2027-2028. Il calo FF NON è di serie: è di ANGOLI (troppi video sullo
+    stesso filone Yildiz/Feride/Halit). Lo conferma il fatto che l'unico FF
+    forte sia quello con un angolo diverso (profilo Zehra).
+  - **Correzioni**: commenti **ancora 0** su tutti gli 11 (4° rilievo) ·
+    diradamento **parzialmente applicato** (3 vecchio formato nelle ultime 24h
+    invece di 6, ma non ancora 1/giorno alle 21:00; compaiono durate
+    intermedie 11-12 min) · impression/CTR **ancora non annotate**.
+  - Prossimo: **VERDETTO A/B GIO 20/8 ~10:00**.
 
 - **CHECK A/B PER SERIE — GIO 13/8 ~10:20 Italia (sessione cloud).**
   - **6 video nuovo formato** ora pubblicati (tabella A/B sopra aggiornata):
