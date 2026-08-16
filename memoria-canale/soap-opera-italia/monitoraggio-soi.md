@@ -54,17 +54,37 @@
   segnali di ricerca (quali titoli raccolgono qualcosa), tabella criteri.
 - Quando NexLev sarà collegato: aggiungere durata media/retention come su STF.
 
-## 🔌 AGGANCIO NEXLEV — autorizzato dall'utente (11/8)
+## 🔌 AGGANCIO NEXLEV — procedura definitiva (verificata 17/8)
 
-- **Account Google del canale: `bulio91veo3@gmail.com`** (fornito dall'utente).
-- Procedura (browser, ~2 min — la fa l'utente o la sessione Mac che ha il
-  browser; il cloud non può completare l'OAuth Google):
-  1. dashboard.nexlev.io/analytics → "Connect channel"
-  2. Login Google con `bulio91veo3@gmail.com` → scegliere "Soap Opera Italia"
-     (@soapoperaitaliaa) → autorizzare la lettura analytics.
-- Al primo check dopo l'aggancio, la sessione cloud verifica con
-  `list_my_youtube_channels` che il canale compaia e attiva le metriche complete
-  (durata media, retention) come su STF.
+**Perché non lo fa il cloud**: NexLev NON espone alcun tool di connessione via
+MCP (`list_my_youtube_channels` è in sola lettura e rimanda a
+dashboard.nexlev.io/analytics). L'aggancio richiede un **OAuth Google nel
+browser**, impossibile da una sessione cloud senza browser né credenziali Google.
+Lo fa l'utente o la sessione Mac. **Due minuti.**
+
+**Passi (account del canale: `bulio91veo3@gmail.com`)**
+1. ⚠️ **Aprire una finestra ANONIMA/in incognito** — è il punto dove si sbaglia:
+   se il browser è già loggato con l'account Google principale (quello dei 10
+   canali già collegati), Google seleziona quello e SOI non compare nella lista.
+2. Andare su **https://dashboard.nexlev.io/analytics** e fare login su NexLev
+   con **lo stesso account NexLev di sempre** (non uno nuovo: SOI deve stare
+   accanto a Serie TV Fans, non in un account separato).
+3. Cliccare **"Connect channel"** / "Connect YouTube".
+4. Nel popup Google scegliere **`bulio91veo3@gmail.com`**; se non è in elenco,
+   "Usa un altro account" e inserirlo.
+5. Selezionare il canale **Soap Opera Italia — @soapoperaitaliaa** (attenzione:
+   NON @SoapOperaItalia, che è il concorrente omonimo) e concedere i permessi
+   di lettura YouTube Analytics.
+6. Fatto: al successivo check il cloud lo rileva da solo.
+
+**Verifica automatica**: la sessione cloud controlla a ogni check con
+`list_my_youtube_channels`. Appena `UCjid0Q5NC0No3HRHIF2_tdg` compare, attiva
+per SOI le stesse metriche di STF (durata media, retention, traffic source) e
+aggiorna la tabella criteri di questo file.
+
+**Se dopo il tentativo il canale non compare**, i due motivi tipici sono:
+(a) il login Google è avvenuto con l'account sbagliato → rifare in incognito;
+(b) SOI è un canale-brand e serve accedere come proprietario del brand account.
 
 ## Richieste alla sessione Mac (per completare il binario)
 
