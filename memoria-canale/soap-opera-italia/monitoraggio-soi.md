@@ -76,6 +76,18 @@
 
 ## Log dei check
 
+- **CHECK #1-bis — DOM 17/8 ~01:55 Italia (check rapido su richiesta utente).**
+  - Iscritti **9 → 13** · viste totali **11.998 → 13.154 (+1.156)** · video
+    54 → 63. Crescita continua ma **rallentata** (+1.156 in 3 giorni contro
+    +7.800 dei 3 precedenti).
+  - NexLev: **ancora non agganciato** (3° rilievo) · memoria SOI dal Mac:
+    **ancora non arrivata** (cartella `memoria-mac-si/` inesistente).
+  - 💡 **Trasferire subito su SOI la scoperta di STF**: lì i video "CHI È
+    [personaggio]" e "CHE FINE HA FATTO" fanno 5-10× i settimanali (Zehra 1.314,
+    Terra Amara 762 su una serie finita). SOI ha già dimostrato lo stesso
+    pattern con "il padre di Jana" (754 viste). **Su un canale a 13 iscritti,
+    che vive solo di ricerca, l'evergreen è l'unica linea sensata.**
+
 - **CHECK #1 — VEN 14/8 ~10:40 Italia (sessione cloud).**
   - **Aggancio NexLev: ❌ ancora non fatto** (SOI assente dai 10 canali
     collegati) → niente durata media/retention. Secondo sollecito.

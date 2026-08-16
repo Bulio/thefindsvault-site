@@ -154,6 +154,37 @@ scoperta e i competitor ci fanno 26-33K).
 
 ## Log dei check
 
+- **CHECK — DOM 17/8 ~01:50 Italia (sessione cloud, su richiesta utente).**
+  - 🚀 **RECORD DEL CANALE: 29.325 viste il 16/8** (15/8: 21.581 · 14/8: 9.297).
+    7 giorni **108.626 (~15,5K/g)** · settimana **102.734** · **mese in corso
+    216.787 contro le 21.111 di luglio: ×10**. Iscritti 60.300.
+    Traiettoria verso l'obiettivo agosto (8–12K/g): **ampiamente superato**.
+  - 🏆 **LA LINEA EVERGREEN È IL VINCITORE ASSOLUTO**:
+    - `wBXmUdkv7so` "CHI È ZEHRA": **390 → 1.314 viste in 2 giorni**, il miglior
+      nuovo formato del canale. Ha anche portato **6 condivisioni** e 1 iscritto.
+    - Stesso schema su Terra Amara (serie FINITA da anni!): "Why did DEMIR
+      disappear" **762** · "Che fine hanno fatto Demir, Hünkar e Züleyha" **436**
+      · "Zuleyha e Yılmaz oggi" 249. Sono tutti **"che fine ha fatto / chi è"**.
+    - Per confronto, i settimanali con date usciti negli stessi giorni:
+      FF 17-21 ago 162 · FA 17-21 ago 174 · FF "Mert secret son" 148.
+    → **L'evergreen batte il settimanale di 8-10×.** Il pubblico non cerca il
+      calendario: cerca i personaggi e il destino delle storie che ha amato.
+  - ⚠️ **Attenzione alla durata media di "CHI È ZEHRA": 2:26 (12,5%)** contro i
+    5:04 del LP settimanale. Fa molte più viste ma trattiene molto meno: il
+    pubblico evergreen arriva dalla ricerca, prende la risposta e se ne va.
+    → Correzione: nei prossimi evergreen mettere **la risposta secca entro il
+    primo minuto** e poi il "come ci è arrivata" (chi resta, resta per la storia).
+  - ❌ **Le 3 azioni sbloccanti NON risultano ancora applicate**:
+    commenti **ancora 0** su tutti (Zehra 1.314 viste e 0 commenti: i testi
+    pronti sono in `azioni-sbloccanti-15-agosto.md`) · diradamento **peggiorato**
+    (8 uscite nelle ultime 24h) · tabella impression/CTR **vuota**.
+  - ⚠️ **Deriva delle durate**: molti video usciti a **10-12 minuti** — né
+    vecchio né nuovo formato. Il nuovo formato vero (≥18 min) negli ultimi
+    2 giorni è quasi sparito. Da riportare la notturna sui 20+ min.
+  - **Serie fuori composizione confermate**: Terra Amara ed Endless Love ora
+    producono stabilmente — e Terra Amara in versione evergreen funziona
+    benissimo. Da formalizzare nel verdetto del 20/8.
+
 - **CHECK A/B #2 — SAB 15/8 ~10:15 Italia (sessione cloud).**
   - **11 video nuovo formato** (erano 6): produzione a pieno regime.
   - 📈 **IL CANALE STA DECOLLANDO**: 13/8 **21.316** viste · 14/8 9.297 ·
