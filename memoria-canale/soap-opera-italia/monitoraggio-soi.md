@@ -96,6 +96,80 @@ aggiorna la tabella criteri di questo file.
 
 ## Log dei check
 
+- **CHECK #2 — MAR 18/8 ~10:35 Italia (sessione cloud).**
+
+  ### 🎯 SVOLTA: i video LUNGHI hanno iniziato a funzionare
+
+  | Metrica | 11/8 | 14/8 | **18/8** |
+  |---|---|---|---|
+  | Iscritti | 2 | 9 | **25** |
+  | Viste totali | 4.196 | 11.998 | **14.654** |
+  | Video | 38 | 54 | 66 |
+
+  - **+12 iscritti in 24h** (13 → 25): il ritmo più alto da quando esiste il canale.
+  - ⚡ **La crescita ora viene dai LUNGHI, non più dagli Shorts**: dei +2.656
+    viste dal 14/8, circa **2.180 arrivano da un solo filone: ENDLESS LOVE**.
+    Gli Shorts sono praticamente fermi (~10.400 → ~10.900 viste totali).
+
+  ### Il filone che ha sbloccato il canale: Endless Love "dietro le quinte"
+
+  | Video | Viste |
+  |---|---|
+  | "Le scene censurate tra Kemal e Nihan — la verità mai raccontata" | **1.200** |
+  | "5 scene che la censura turca non voleva farvi vedere" | 313 |
+  | "Cosa resta oggi di Kemal e Nihan, e perché se ne parla ancora" | 310 |
+  | "Neslihan e Burak — cosa provano davvero gli attori" | 304 |
+
+  Nel frattempo Hercai e Paradiso, sugli stessi giorni, fanno **0–16 viste**.
+  → **Rapporto 75:1 tra il filone giusto e quello sbagliato.**
+
+  **Perché funziona** (ed è lo stesso meccanismo visto su STF con "CHI È ZEHRA"
+  1.314 viste e Terra Amara 762): sono contenuti **evergreen su serie finite ma
+  ancora molto cercate**, con angoli da *dietro le quinte* — censura, attori
+  veri, "che fine ha fatto". Non anticipazioni, non finali di stagione.
+  Su un canale senza pubblico, che vive solo di ricerca, è l'unica linea che
+  porta traffico.
+
+  ### Stato delle raccomandazioni del check #1
+
+  | Raccomandazione | Stato |
+  |---|---|
+  | Spostare i lunghi dai finali Hercai/Paradiso ai temi che tirano | ✅ **applicata** (virata su Endless Love: è ciò che ha sbloccato il canale) |
+  | Collegare gli Shorts ai lunghi sullo stesso soggetto | ❌ no: gli Shorts restano su Terra Amara/Forbidden Fruit mentre i lunghi sono su Endless Love |
+  | Aumentare la durata dei lunghi oltre i 4–9 min | ❌ no: restano 9–10 min |
+
+  ### Tabella criteri
+
+  | Criterio | Baseline 11/8 | **18/8** | Target 4 sett. |
+  |---|---|---|---|
+  | Viste 48h/video (lunghi) | 0–14 | **5–1.200** (mediana ~300 sul filone giusto) | ≥50 ✅ superato sul filone Endless Love |
+  | Iscritti | 2 | **25** | ≥30 — quasi raggiunto |
+  | Commenti/video | 0 | 0 | ≥2 ❌ |
+  | % lunghi sopra 100 viste | ~0% | ~20% (4 su 20) | ≥25% — vicino |
+
+  ### Raccomandazioni per il prossimo giro
+
+  1. **Raddoppiare sul filone "dietro le quinte" di serie finite molto cercate**:
+     dopo Endless Love, i candidati naturali sono Terra Amara (già validata dagli
+     Shorts di questo canale) e Brave and Beautiful/Daydreamer. Angoli che
+     funzionano: scene censurate · gli attori nella vita vera · che fine ha fatto ·
+     5 indizi che nessuno aveva notato.
+  2. **Allineare gli Shorts ai lunghi**: se il lungo è su Endless Love, gli Short
+     della stessa giornata devono essere su Endless Love e rimandare al lungo.
+     Oggi sono su serie diverse: traffico sprecato.
+  3. **Commento fissato con domanda polarizzante** su ogni lungo (stessa regola
+     STF): con 1.200 viste e 0 commenti, è il primo innesco mancante.
+  4. Portare i lunghi del filone forte verso i 15–20 min: chi cerca "scene
+     censurate" resta, e il watch time è l'unico modo per far crescere un canale
+     a 25 iscritti.
+
+  ### Blocchi
+
+  - **NexLev: ancora NON agganciato** (4° rilievo) — niente durata media,
+    retention, traffic sources. Procedura in questo file (finestra incognito).
+  - **Memoria SOI dal Mac: non pervenuta** (`memoria-mac-si/` inesistente).
+
+
 - **CHECK #1-bis — DOM 17/8 ~01:55 Italia (check rapido su richiesta utente).**
   - Iscritti **9 → 13** · viste totali **11.998 → 13.154 (+1.156)** · video
     54 → 63. Crescita continua ma **rallentata** (+1.156 in 3 giorni contro
