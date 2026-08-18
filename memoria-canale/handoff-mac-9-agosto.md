@@ -1,5 +1,14 @@
 # HANDOFF → SESSIONE MAC (aggiornato 11/8, dalla sessione cloud)
 
+> 🟢 **SOI — CHECK #2 (18/8): IL CANALE SI È SBLOCCATO.** 13 → 25 iscritti in
+> 24h. La causa è UNA: il filone **Endless Love "dietro le quinte"** (scene
+> censurate, attori veri) — 1.200 viste su un video, ~2.180 viste su 4 video,
+> mentre Hercai/Paradiso restano a 0–16 (rapporto 75:1). È lo stesso meccanismo
+> di "CHI È ZEHRA" su STF. **Da fare: raddoppiare su quel filone, allineare gli
+> Shorts ai lunghi (oggi parlano di serie diverse), commento fissato, portare i
+> lunghi a 15–20 min.** Restano aperti: aggancio NexLev (4° sollecito) ed export
+> memoria SOI in `soap-opera-italia/memoria-mac-si/`.
+
 > 🔴 **SOI — SOLLECITO #2 (14/8)**: NexLev ancora NON agganciato (senza, i check
 > SOI restano ciechi su durata/retention) e memoria SOI non ancora esportata.
 > Dati nuovi dal check #1: il canale cresce (2→9 iscritti, +7.800 viste in 3
