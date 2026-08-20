@@ -1,3 +1,118 @@
+# ⚖️ VERDETTO A/B — COMPOSIZIONE DEL BATCH (GIO 20/8/2026, sessione cloud)
+
+> Check decisionale promesso il 13/8. Dati: censimento completo dei video usciti
+> 12–20/8 + analytics. **Il verdetto ribalta l'impostazione di partenza.**
+
+## Il dato che decide tutto
+
+Classifica dei video per viste, ultimi 7 giorni (tutte le durate):
+
+| Video | Serie | Tipo | Durata | Viste |
+|---|---|---|---|---|
+| CHI È ZEHRA | FF | **evergreen** | 19:32 | **2.030** |
+| Why did DEMIR disappear from Çukurova | Terra Amara | **evergreen** | 9:15 | **1.700** |
+| What happened to NIHAN — the illness | Endless Love | **evergreen** | 9:15 | **1.600** |
+| PETRA's deathbed confession | La Promessa | storyline calda | 8:09 | **1.400** |
+| MANUEL tears up the order | La Promessa | storyline calda | 10:29 | **1.000** (13h) |
+| Che fine hanno fatto Demir, Hünkar, Züleyha | Terra Amara | **evergreen** | 10:24 | 629 |
+| Zuleyha e Yılmaz oggi | Terra Amara | **evergreen** | 11:29 | 609 |
+| Is Catalina's letter a fake? | La Promessa | storyline | 9:43 | 380 |
+| Why Kemal had to die | Endless Love | **evergreen** | 9:58 | 329 |
+| FA 24–28 agosto (settimanale) | Far Away | **con date** | 10:14 | 109 |
+| FF 24–28 agosto (settimanale) | FF | **con date** | 9:13 | 86 |
+
+**Sei dei primi nove sono evergreen. I settimanali con date sono in fondo: 86–380.**
+
+### Le tre lezioni, in ordine di importanza
+
+1. **L'ANGOLO decide le viste, non la durata né la serie.** Un evergreen da 9
+   minuti su una serie finita da due anni (Terra Amara) fa 1.700 viste; un
+   settimanale con date su una serie in onda ne fa 86. Rapporto **20:1**.
+2. **La durata decide il watch time, non le viste.** "CHI È ZEHRA" (19:32) fa
+   2.030 viste ma solo 2:26 di durata media (12,5%); il settimanale LP da 20 min
+   faceva 5:04. Chi arriva dalla ricerca prende la risposta e se ne va.
+   → **Evergreen + 15-20 min + risposta secca nel primo minuto** è la
+   combinazione che massimizza entrambe le cose.
+3. **La composizione FA+FF+LP nata da Google Trends è superata dai fatti.**
+   L'ordine reale non è FA > FF > LP: è **evergreen (qualsiasi serie) > La
+   Promessa > tutto il resto**.
+
+## ✅ VERDETTO (a) — Composizione definitiva del batch
+
+**Da 3 settimanali FA+FF+LP a: 2 EVERGREEN + 1 STORYLINE al giorno.**
+
+| Slot | Cosa | Perché |
+|---|---|---|
+| **9:00** | **EVERGREEN** su serie finita molto cercata (Terra Amara, Endless Love, Hercai) | Il traffico di ricerca è mattutino e non scade mai |
+| **14:45** | **EVERGREEN "CHI È / CHE FINE HA FATTO"** su personaggio di serie viva (FF, FA, LP) | Tiene vive le serie in onda senza dipendere dal calendario |
+| **18:30** | **STORYLINE della settimana — solo LA PROMESSA** | È l'unica serie viva che rende sulle storyline: 1.000–1.400 viste contro gli 86–321 di FF/FA |
+
+- **Far Away e Forbidden Fruit escono dagli slot forti come settimanali.**
+  Restano nel canale solo in versione evergreen (personaggi, retroscena) e,
+  se serve smaltire coda, nello slot 21:00 di supporto.
+- **TPLMF**: resta scoperta e i competitor ci fanno 26–33K. Testarla **in
+  versione evergreen** ("CHI È…", "CHE FINE HA FATTO…"), non con i settimanali:
+  è il formato che sappiamo funzionare. Un test entro fine mese.
+
+## ✅ VERDETTO (b) — Linea evergreen: PROMOSSA A LINEA PRINCIPALE
+
+Non "1–2 a settimana" come ipotizzato il 15/8: **2 al giorno, due terzi della
+produzione**. Motivo: è la linea che porta il traffico (2.030 · 1.700 · 1.600 ·
+629 · 609 · 329) e non scade, quindi ogni video continua a raccogliere ricerche
+per mesi — a differenza dei settimanali, che muoiono il lunedì dopo.
+
+**Angoli validati, in ordine di resa** (identici su STF e su SOI, due canali
+diversi: è un pattern, non un caso):
+1. CHI È [personaggio] / la storia di [personaggio]
+2. CHE FINE HA FATTO / dove è finito / cosa fa oggi
+3. Scene censurate / quello che non vi hanno fatto vedere
+4. Perché [evento] è successo davvero / perché [personaggio] è morto
+5. I 5 [villain/scene/indizi] più [aggettivo]
+
+**Correzione obbligatoria sul formato evergreen** (dal dato di durata media):
+la risposta promessa dal titolo va data **entro il primo minuto**, poi si
+racconta il "come ci si è arrivati". Oggi il video la tiene per il finale e
+il pubblico se ne va a 2:26.
+
+## ✅ VERDETTO (c) — Serie fuori composizione: TENERLE, anzi promuoverle
+
+Terra Amara ed Endless Love erano comparse il 14/8 fuori dal batch previsto.
+**Sono diventate il motore del canale**: da sole valgono 1.700 + 1.600 + 629 +
+609 + 329 viste. Sono serie **finite**, quindi senza calendario da inseguire,
+con un catalogo di personaggi enorme da raccontare. Formalizzarle nella
+rotazione evergreen insieme a Hercai.
+
+## 📊 Stato del canale
+
+- **Mese in corso: 244.127 viste** contro le 21.111 di luglio → **×11,6**.
+- 7 giorni: 110.040 (~15,7K/g). Ultimi giorni: 15.017 · 11.400.
+- Iscritti 60.300 (+100 in 7gg, +300 nel mese).
+- L'obiettivo di agosto (8–12K/g) è superato stabilmente. Il prossimo traguardo
+  è settembre a 20–30K/g: con la composizione evergreen è a portata.
+
+## 🔴 IL BLOCCO PRINCIPALE (aperto da 5 check)
+
+Tre correzioni ferme, tutte a costo zero, tutte sul Mac:
+
+1. **Commenti: ancora 0 ovunque**, anche su un video da 2.030 viste. I testi dei
+   commenti fissati sono pronti da 5 giorni in `azioni-sbloccanti-15-agosto.md`.
+2. **Diradamento: non applicato.** Continuano a uscire 3–4 video/giorno.
+3. **Impression/CTR: mai rilevate.** Senza, non sappiamo se il limite è il feed
+   o la thumbnail.
+
+⚠️ **Nuovo problema rilevato oggi**: **nessun video ≥15 minuti dal 15 agosto.**
+La produzione è scivolata su 8–12 minuti. Il formato lungo — quello che dava
+5:04 di durata media — è di fatto sparito. Va ripristinato nella notturna,
+combinandolo con l'angolo evergreen.
+
+## Prossimo check
+
+**LUN 24/8 ~10:00**: verifica dell'applicazione di questo verdetto.
+Promemoria: il **22/8 c'è il verdetto Shorts**, che appartiene alla corsia SHORT
+— va coordinato con quella chat, questa sessione non lo tocca.
+
+---
+
 # TEST NUOVO FORMATO — Monitoraggio (TPLMF, SAB 8/8/2026 ore 18:00)
 
 > ⚡ **SUPERATO DALLA DIRETTIVA UTENTE 8/8 SERA (~17:15, sessione Mac): "inizia a
