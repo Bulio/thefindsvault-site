@@ -1,4 +1,17 @@
-# HANDOFF → SESSIONE MAC (aggiornato 11/8, dalla sessione cloud)
+# HANDOFF → SESSIONE MAC
+
+> 🔥 **PRIORITÀ ASSOLUTA (20/8): BATCH DA PUBBLICARE PRIMA DELLA CODA.**
+> 6 script pronti in `memoria-canale/batch-priorita-20-agosto/` (leggi il
+> LEGGIMI). Applicano insieme le tre scoperte: formato 8–12 min denso, angolo
+> evergreen, CTA «scrivete "voglio il seguito"» con commento fissato all'uscita.
+> 3 per Serie TV Fans (Leocadia · Ender · Sadakat) e 3 per Soap Opera Italia
+> (Terra Amara attori · Terra Amara censura · Endless Love attori).
+> **Vanno pubblicati PRIMA dei programmati** — se escono dopo, il confronto è
+> inquinato dalla cannibalizzazione. Se serve, coda in pausa 48h.
+> Con script da 7–11 min il TTS si dimezza: i 6 video stanno in una notte.
+> Le tre scoperte sono ora anche in CLAUDE.md, sezione dedicata.
+
+
 
 > 🟢 **SOI — CHECK #2 (18/8): IL CANALE SI È SBLOCCATO.** 13 → 25 iscritti in
 > 24h. La causa è UNA: il filone **Endless Love "dietro le quinte"** (scene

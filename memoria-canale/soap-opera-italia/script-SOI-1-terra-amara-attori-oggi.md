@@ -16,11 +16,11 @@
 - **Titolo**: CHE FINE HANNO FATTO gli attori di TERRA AMARA — cosa fanno oggi Züleyha, Yılmaz e Demir 😱
 - **Thumbnail**: foto reali dei tre attori (Hilal Altınbilek, Uğur Güneş,
   Murat Ünalmış) affiancate + testo GRANDE: **"DOVE SONO OGGI"**
-- **Durata target**: 15–18 min (~16.000 caratteri, ritmo 16,9 char/s)
+- **Durata target**: ~10 min (formula densa 8–12 min, ritmo 16,9 char/s)
 - **Slot**: uno degli slot forti; nessuna data nel titolo (evergreen puro)
-- **Commento fissato** (all'uscita): 📌 Chi vi è mancato di più dopo la fine di
-  Terra Amara: Züleyha o Yılmaz? Scegliete un nome solo — dal più votato parte
-  il prossimo video.
+- **Commento fissato** (all'uscita): 📌 Volete la seconda parte con gli altri
+  attori di Terra Amara? Scrivete "voglio il seguito" qui sotto: se siete in
+  tanti la preparo per questa settimana. 👇
 - **Shorts della stessa giornata**: DEVONO essere su Terra Amara e rimandare a
   questo video (regola del check #2: oggi Shorts e lunghi parlano di serie diverse).
 - **Descrizione**: `Che fine hanno fatto gli attori di Terra Amara: cosa fanno
@@ -35,7 +35,7 @@
 
 ### [HOOK · 0:00–0:50]
 
-Per anni sono entrati in casa nostra ogni pomeriggio. Ci hanno fatto piangere, arrabbiare, sperare. Poi un giorno la sigla è partita per l'ultima volta e sono spariti. ⏸ E la domanda che in tantissimi continuate a farvi è sempre la stessa: che fine hanno fatto gli attori di Terra Amara? Cosa fanno oggi, davvero, quando non indossano più i panni di Züleyha, di Yılmaz, di Demir? Oggi ve lo racconto uno per uno. E ci tengo a dirvi subito una cosa, perché su questi argomenti in rete gira di tutto: qui non troverete voci di corridoio né cose inventate. Vi racconto solo quello che gli attori hanno detto pubblicamente e quello che si può verificare. ⏸ Perché in una delle tre storie c'è una notizia che ha sorpreso tutti — e non è quella che vi aspettate. Restate fino alla fine, e ditemi nei commenti chi vi è mancato di più.
+Per anni sono entrati in casa nostra ogni pomeriggio. Ci hanno fatto piangere, arrabbiare, sperare. Poi un giorno la sigla è partita per l'ultima volta e sono spariti. ⏸ E la domanda che in tantissimi continuate a farvi è sempre la stessa: che fine hanno fatto gli attori di Terra Amara? Cosa fanno oggi, davvero, quando non indossano più i panni di Züleyha, di Yılmaz, di Demir? Oggi ve lo racconto uno per uno. E ci tengo a dirvi subito una cosa, perché su questi argomenti in rete gira di tutto: qui non troverete voci di corridoio né cose inventate. Vi racconto solo quello che gli attori hanno detto pubblicamente e quello che si può verificare. ⏸ Perché in una delle tre storie c'è una notizia che ha sorpreso tutti — e non è quella che vi aspettate. Restate fino alla fine — e se volete che vi racconti anche gli altri, ve lo dico tra poco come farmelo sapere.
 
 ### [RESET · 0:50–1:15]
 
@@ -53,9 +53,7 @@ Ma la notizia che in tanti mi avete chiesto riguarda la sua vita privata. E qui 
 
 Fermatevi un attimo su quelle tre parole, perché non sono buttate lì. Non ha detto "l'uomo della mia vita", non ha detto "il grande amore". Ha detto compagno, amico, complice. È la descrizione di una persona con cui si sta bene tutti i giorni, non di un romanzo. E chi ha passato anni a interpretare una donna travolta da passioni distruttive, forse, nella vita vera cerca esattamente il contrario: la calma.
 
-C'è poi un aspetto del suo lavoro di cui si parla poco e che merita un minuto. Züleyha, nelle prime puntate, parla pochissimo. Chi ha rivisto l'inizio della serie se ne accorge subito: le sue scene sono fatte di silenzi, di sguardi bassi, di gesti trattenuti. È una donna che non ha ancora il diritto di parlare. Poi, stagione dopo stagione, la voce arriva. Prima per difendere i figli, poi per difendere sé stessa, alla fine per comandare. Un'attrice che riesce a far sentire questo cambiamento senza che nessuno lo spieghi mai a parole sta facendo qualcosa di molto difficile.
-
-Ed è anche il motivo per cui il pubblico italiano l'ha adottata così in fretta. Perché quella parabola — la ragazza che arriva senza niente e finisce per tenere in piedi tutta la famiglia — è una storia che dalle nostre parti conoscono in tante. Non serviva capire il turco per riconoscerla.
+C'è un aspetto del suo lavoro che merita un minuto: Züleyha, nelle prime puntate, parla pochissimo — silenzi, sguardi bassi, gesti trattenuti. È una donna che non ha ancora il diritto di parlare. Poi, stagione dopo stagione, la voce arriva: prima per difendere i figli, poi sé stessa, alla fine per comandare. Far sentire quel cambiamento senza spiegarlo mai a parole è la cosa più difficile che possa fare un'attrice.
 
 Quello che invece non vi dirò, perché non lo so e nessuno può saperlo con certezza, è quali siano i suoi prossimi progetti definitivi. Di annunci ne circolano tanti, ma finché non c'è la conferma diretta restano voci, e le voci non ve le racconto.
 
@@ -73,9 +71,7 @@ E allora cosa fa oggi Uğur Güneş? Qui la risposta è netta, ed è professiona
 
 Perché questo è il rovescio della medaglia del successo enorme: quando milioni di persone ti identificano con un nome che non è il tuo, la cosa più difficile diventa convincerle che sei anche altro. Alcuni attori accettano di restare quel personaggio per sempre. Altri, come lui, cambiano registro il prima possibile.
 
-E c'è un dettaglio del personaggio che spiega perché quel salto era necessario. Yılmaz è stato scritto come un uomo che non impara mai. Ogni volta che la vita gli offre una via d'uscita, lui sceglie quella sbagliata — per orgoglio, per amore, per rabbia. Interpretare per anni un personaggio così ti costringe a stare dentro un solo registro emotivo: la frustrazione. Un attore, dopo un percorso del genere, ha bisogno di aria diversa. Un comandante delle forze speciali è esattamente il ruolo opposto: uno che decide, agisce, comanda gli altri.
-
-E poi c'è una ragione più pratica, che nel mondo delle serie turche conta moltissimo. Le produzioni là sono enormi e velocissime: un attore che esce da una serie di successo ha una finestra di pochi mesi per farsi vedere in qualcosa di nuovo, prima che il pubblico lo archivi definitivamente con la faccia del personaggio precedente. Uğur Güneş quella finestra l'ha usata.
+E si capisce perché quel salto fosse necessario: Yılmaz è un uomo che non impara mai, che ogni volta sceglie la strada sbagliata per orgoglio o per rabbia. Interpretarlo per anni significa stare dentro un solo registro emotivo, la frustrazione. Un comandante delle forze speciali è il ruolo opposto: uno che decide e comanda.
 
 Sulla sua vita privata, invece, vi dico una cosa che vale come informazione: non si sa quasi niente. E non perché sia un mistero, ma per una scelta precisa. Uğur Güneş è noto per essere molto attento alla propria riservatezza: i suoi profili social sono pieni di lavoro, di set, di progetti — e vuoti di vita privata. È una decisione, non un caso.
 
@@ -93,9 +89,7 @@ Demir era il personaggio più difficile da scrivere di tutti. Perché doveva ess
 
 Dopo l'uscita dalla serie, Murat Ünalmış ha continuato a lavorare senza fermarsi. Nel duemilaventitré è stato impegnato in due produzioni: prima una serie intitolata Göktürkler, poi un'altra intitolata Gülcemal. Due progetti diversi, in due generi diversi, uno dietro l'altro: la carriera di un attore che ha smesso di essere Demir subito, senza aspettare.
 
-C'è anche una cosa che vale la pena spiegare, perché in tanti me lo chiedete: perché un attore lascia una serie che sta andando benissimo? Le ragioni possono essere tante — un contratto in scadenza, un progetto già firmato, una scelta artistica, semplicemente la stanchezza di stare cinque anni dentro lo stesso personaggio. Nella maggior parte dei casi non lo sapremo mai con precisione, perché queste cose restano tra la produzione e l'attore. Quello che si vede da fuori è solo il risultato: da un certo punto in poi, Demir non c'era più.
-
-E la serie l'ha sentito. Chi ha seguito le ultime stagioni sa che la storia ha dovuto reinventarsi, spostare il peso su altri personaggi, trovare nuovi antagonisti. Non è un difetto: è quello che succede a tutte le serie lunghe quando perdono un pilastro. Ma spiega perché tanti spettatori dicono di ricordare soprattutto le prime stagioni.
+Perché un attore lascia una serie che va benissimo? Le ragioni possono essere tante e restano quasi sempre tra la produzione e l'attore: quello che si vede da fuori è solo il risultato. E la serie l'ha sentito — ha dovuto reinventarsi e spostare il peso su altri personaggi. È il motivo per cui tanti spettatori ricordano soprattutto le prime stagioni.
 
 Ma la notizia più bella di tutta questa storia arriva dalla sua vita privata, ed è quella a cui accennavo all'inizio: nell'aprile del duemilaventiquattro Murat Ünalmış e sua moglie, Albena İlieva, sono diventati genitori per la prima volta.
 
@@ -105,19 +99,9 @@ Ed è la ragione per cui vale la pena raccontare queste cose. Perché noi ci aff
 
 E allora resta l'ultima domanda, quella vera.
 
-### [BLOCCO 3-bis · 13:00–15:30 — I volti che continuate a cercare]
+### [CTA · 5:00–5:25]
 
-Prima di chiudere devo parlarvi degli altri, perché nei vostri messaggi non chiedete solo dei tre protagonisti.
-
-Il nome che mi arriva più spesso è quello di Hünkar. La signora di Çukurova. E c'è un motivo se dopo la sua uscita di scena tanti hanno smesso di guardare: Hünkar non era un personaggio, era la legge di quel mondo. Finché c'era lei, ogni cosa che accadeva nella tenuta doveva passare dal suo giudizio. Era severa, spesso ingiusta, capace di crudeltà — eppure il pubblico l'ha amata. Perché sotto quella durezza c'era una donna che aveva sacrificato tutto per tenere in piedi una famiglia, ed è una figura che nelle nostre case molte di voi hanno conosciuto davvero.
-
-Poi c'è Behice. Il personaggio che tutti dicono di aver odiato ⏸ e che tutti, in realtà, aspettavano di vedere in ogni puntata. Perché una storia senza qualcuno che semina il disastro non va avanti, e lei quel lavoro lo faceva benissimo: con il sorriso, con le buone maniere, con la tazza di tè in mano.
-
-E c'è Fikret, arrivato quando la serie sembrava aver già detto tutto, che ha rimesso in moto la vendetta quando ormai la si dava per chiusa.
-
-Su queste attrici e su questi attori vi dico la stessa cosa che vi ho detto sui protagonisti: quando trovo dichiarazioni loro, ve le porto. Quando non le trovo, preferisco tacere invece di riempirvi la testa di cose non verificate. È una promessa che vale per tutti i video di questo canale.
-
-Quello che invece posso dirvi con certezza è che tutti loro, oggi, continuano a lavorare in produzioni turche — perché il successo di Terra Amara ha aperto porte a tutto il cast, non solo ai tre nomi principali.
+E qui vi chiedo una cosa sola: gli attori di Terra Amara sono molti di più di tre, e diversi di loro hanno storie che meritano un video a parte. Se volete che ve le racconti, scrivetemi qui sotto ⏸ **"voglio il seguito"**. Bastano tre parole. Se siete in tanti, la seconda parte la preparo subito.
 
 ### [BLOCCO 4 · 15:30–18:00 — Perché non riusciamo a dimenticarli]
 
@@ -129,9 +113,7 @@ Ecco perché non è mai stata soltanto una soap. Le nostre madri e le nostre non
 
 C'è poi una cosa che riguarda tutti noi che l'abbiamo seguita ogni giorno. Quando una serie entra nella tua routine per anni, non stai guardando solo dei personaggi: stai marcando il tuo tempo. Quel pomeriggio, quella poltrona, quella tazza. La fine di Terra Amara non ha portato via solo Züleyha e Yılmaz ⏸ ha portato via un pezzo delle nostre giornate. Ed è per questo che continuiamo a cercarli: non stiamo cercando notizie sugli attori. Stiamo cercando un pezzo di noi.
 
-E c'è un ultimo motivo, forse il più importante di tutti, per cui questa serie non se ne va. Terra Amara ha raccontato la povertà senza vergognarsene. I protagonisti non erano ricchi annoiati con problemi sentimentali: erano braccianti, servitori, gente che lavorava la terra di qualcun altro. E il pubblico italiano che l'ha amata di più è quello che quella condizione la ricorda, per averla vissuta o per averla sentita raccontare in famiglia. Vedere una storia che parte da lì e non ti tratta dall'alto è una cosa rara in televisione.
-
-Aggiungeteci una cosa tecnica che pochi notano: quella serie era girata bene. La luce di Çukurova, i campi, le case, i silenzi lunghi prima delle scene madri. Non era un prodotto fatto in fretta per riempire un pomeriggio — era cinema portato dentro una soap. E il pubblico, anche quando non lo sa spiegare a parole, la differenza la sente sempre.
+E c'è un ultimo motivo per cui questa serie non se ne va: Terra Amara ha raccontato la povertà senza vergognarsene. I protagonisti erano braccianti e servitori, gente che lavorava la terra di qualcun altro. Il pubblico italiano che l'ha amata di più è quello che quella condizione la ricorda — per averla vissuta o per averla sentita raccontare in famiglia. Una storia che parte da lì e non ti tratta dall'alto, in televisione, è rara.
 
 Quello che possiamo fare è la cosa più bella: seguirli dove sono adesso. Perché sono vivi, lavorano, si innamorano, diventano genitori. La storia non è finita — è solo uscita dallo schermo.
 

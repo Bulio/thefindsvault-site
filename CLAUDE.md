@@ -189,6 +189,40 @@ Primo test formato "speciale voci": video112 (pipeline Mac).
   (oggi il mix è Hercai/Paradiso — serie finite/deboli — e sovrappone STF su
   La Promessa/FF: un canale a 2 iscritti vive solo di ricerca).
 
+## 🏆 LE TRE SCOPERTE CHE GOVERNANO LA PRODUZIONE (20/8/2026, dai dati)
+
+Valgono per **entrambi i canali** e superano le regole precedenti dove in conflitto.
+
+### 1. FORMATO: 8–12 minuti densi (non più 20–25)
+YouTube premia la **percentuale** vista, non i minuti assoluti: 12,5% su un video
+da 20 min contro 29,4% su uno da 8–9. E i video con più viste sono tutti 8–10 min
+(1.700 · 1.600 · 1.400). Stessa densità dello script lungo in metà tempo, zero
+riempitivi. Target 10 min ≈ 10.100 caratteri (ritmo reale 16,9 char/s).
+Dettaglio: `memoria-canale/FORMULA-8-12-MIN-densa.md`.
+
+### 2. ANGOLO: evergreen, non anticipazioni con date
+L'angolo decide le viste. Evergreen su serie **finita ma ancora cercata** = 1.600–2.030
+viste; settimanale con date su serie in onda = 86–380. **Rapporto 20:1.**
+Angoli validati (stesso ordine su STF e SOI): 1) CHI È [personaggio] · 2) CHE FINE
+HA FATTO / cosa fa oggi · 3) scene censurate / quello che non avete visto ·
+4) perché [evento] è successo davvero · 5) i 5 [villain/indizi] più…
+Batch: **2 evergreen + 1 storyline** (storyline solo La Promessa, l'unica serie
+viva che rende). Terra Amara ed Endless Love sono nella rotazione fissa.
+Regola: **la risposta del titolo va data entro il primo minuto**, poi il "come".
+
+### 3. CTA: «scrivete "voglio il seguito"» (non le teorie)
+Letti i commenti reali: sui video con 137–181 commenti, 11 su 20 sono la stessa
+frase — *"voglio il seguito"*. Sono risposte a una richiesta, non opinioni.
+La CTA "scrivete la vostra teoria" ha prodotto **0 commenti su 11 video**.
+Questo pubblico (87% over 55) commenta se il costo è zero e ottiene qualcosa.
+**Obbligo**: commento fissato del canale a ogni uscita + rispondere nelle prime
+24h + **se chiedono il seguito, il seguito va fatto davvero**.
+Dettaglio: `memoria-canale/ANALISI-COMMENTI-perche-alcuni-video-esplodono.md`.
+
+### Stato al 20/8: STF a 244.127 viste nel mese (×11,6 su luglio), 60.300 iscritti.
+Blocchi ancora aperti da 6 check, tutti sul Mac e a costo zero: commenti fissati
+mai pubblicati, diradamento coda non applicato, impression/CTR mai rilevate.
+
 ## Nota su questo repository
 
 thefindsvault-site è un sito statico NON collegato al canale: fa da contenitore della
