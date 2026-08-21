@@ -1,3 +1,69 @@
+# ✅ CHECK A CALDO BATCH NUOVO — VEN 21/8 ~9:35 (sessione cloud)
+
+**Il batch è uscito e la formula è stata applicata sulla durata. E i commenti si
+sono sbloccati.**
+
+## 1. Durata: ✅ CENTRATA AL 100%
+Tutti i 14 video più recenti stanno **tra 8:29 e 10:29** — dentro il range 8–12.
+Il problema segnalato il 20/8 ("nessun video sotto i 15 min dal 15 agosto" e
+prima ancora "durate in deriva") è risolto: la produzione è ora tutta sul
+formato nuovo.
+
+## 2. Angolo: ✅ in gran parte evergreen
+Gli usciti stanotte hanno tutti un angolo da mistero/retroscena, non da
+calendario: "Chi ha ucciso Ozan" · "L'alibi perfetto di Behice e l'unico errore"
+· "Yildiz era pagata per sedurre Halit" · "Il test del DNA era truccato" ·
+"Enora era una spia di Leocadia" · "Chi ha ucciso Jana". Restano 2 settimanali
+con date (FF 24–28, FA 24–28): sono l'eccezione, non più la regola.
+
+## 3. 🎉 COMMENTI: SBLOCCATI (erano 0 su 11 video consecutivi)
+| Video | Viste | Like | **Commenti** |
+|---|---|---|---|
+| LP "Manuel straccia l'ordine" (10:29) | **2.200** | — | **6** |
+| LP "Enora era una spia" (10:00, 12h) | **717** | 27 | **2** |
+
+E c'è la conferma diretta della scoperta sulla CTA — un commento dice
+testualmente: ⭐ *"Io sto dalla parte di Manuel **e voglio il seguito**"*.
+Gli altri sono partecipazione vera: *"Bravissimo Manuel"*, *"ma perché non lo
+mandano via il maggiordomo"*, e una lunga previsione in maiuscolo su Alonso e
+Leocadia. **Il pubblico ha ricominciato a parlare.**
+
+## 4. ⚠️ IL COMMENTO FISSATO NON C'È
+In nessuno dei video controllati compare un commento del canale
+(`authorIsChannelOwner: true`). Quindi questi commenti sono arrivati **da soli**,
+senza l'innesco. È la cosa più importante da correggere oggi: se senza commento
+fissato si arriva a 6, con l'innesco esplicito il risultato sarà molto maggiore.
+I testi pronti sono in `azioni-sbloccanti-15-agosto.md` e in cima a ogni script
+del batch prioritario.
+
+## 5. 🚨 SEGNALE NUOVO: il pubblico dubita delle anticipazioni
+Due commenti sollevano un problema di credibilità:
+> *"Non so se è vera questa informazione, **ne sto sentendo tante che non sono
+> vere**"* · *"È tutto una farsa"*
+
+Va preso sul serio: in una nicchia piena di canali che inventano trame, la
+fiducia è l'unico vantaggio competitivo difendibile. **Raccomandazione**: dire
+nel video da dove arriva l'informazione ("le trame ufficiali dicono…",
+"in Spagna è già andato in onda…") e dichiarare le parti speculative — che è
+già la regola del processo standard, ma nei video prodotti dalla notturna non
+sempre si sente. Sui video evergreen che parlano di attori reali, questo vale
+doppio.
+
+## 6. Canale
+- 19/8: 11.400 viste · 20/8: **9.558** · iscritti **60.400 (+100 ieri)**.
+- Mese in corso: **253.685 viste** (luglio: 21.111 → **×12**).
+- ⚠️ Le viste/giorno sono in calo rispetto ai picchi (29K del 16/8): coerente con
+  meno Shorts o con la fine della spinta del catalogo. Da verificare lunedì —
+  ma ricordare che **il watch time conta più delle viste** (analisi Shorts 20/8).
+
+## 7. Cosa manca (i miei script del batch prioritario NON sono usciti)
+Leocadia, Ender, Sadakat (STF) e i tre SOI non risultano pubblicati: la notturna
+ha prodotto i propri soggetti. Non è un problema — la formula è stata applicata
+lo stesso — ma quei 6 script restano disponibili e coprono angoli non ancora
+usati (profili di personaggio veri e propri, "che fine ha fatto", censura).
+
+---
+
 # ⚖️ VERDETTO A/B — COMPOSIZIONE DEL BATCH (GIO 20/8/2026, sessione cloud)
 
 > Check decisionale promesso il 13/8. Dati: censimento completo dei video usciti
