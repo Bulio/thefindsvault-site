@@ -96,6 +96,98 @@ aggiorna la tabella criteri di questo file.
 
 ## Log dei check
 
+- **CHECK #3 — VEN 21/8 ~10:35 Italia (sessione cloud).**
+
+  ### 🚀 IL CANALE È ESPLOSO
+
+  | Metrica | 11/8 | 14/8 | 18/8 | **21/8** |
+  |---|---|---|---|---|
+  | Iscritti | 2 | 9 | 25 | **44** |
+  | Viste totali | 4.196 | 11.998 | 14.654 | **20.003** |
+  | Video | 38 | 54 | 66 | 70 |
+
+  **+19 iscritti e +5.349 viste in 3 giorni.** Da 2 a 44 iscritti in dieci giorni.
+
+  ### La causa è una sola: il filone Endless Love "dietro le quinte"
+
+  | Video | 18/8 | **21/8** |
+  |---|---|---|
+  | "Le scene censurate tra Kemal e Nihan" | 1.200 | **3.100** |
+  | "Neslihan e Burak — cosa provano davvero gli attori" | 304 | **1.100** |
+  | "5 scene che la censura non voleva farvi vedere" | 313 | **736** |
+  | "Cosa resta oggi di Kemal e Nihan" | 310 | **687** |
+  | "Prima e dopo — come sono cambiati" (nuovo) | — | 495 |
+
+  Nello stesso periodo Hercai e Paradiso: **3–10 viste**. Il filone vale ~6.200
+  viste, tutto il resto quasi zero.
+  ✅ **Raccomandazione #1 del check #2 (raddoppiare sul filone): APPLICATA**, ed
+  è ciò che ha fatto esplodere il canale.
+
+  ### 💬 COMMENTI: 31 su un solo video (su STF erano 0 su 11 video)
+
+  E non sono commenti di cortesia: sono lunghi, appassionati, con risposte tra
+  utenti. *"Kemal e Nihan forever"* · *"Sarebbe stato bello vedere le scene
+  d'amore, ma la violenza quella sì l'abbiamo vista"* · *"più baci e abbracci e
+  meno violenza"* · una spettatrice scrive dieci righe su cosa ha significato
+  quella serie per lei. **Il tema "censura" fa discutere perché tocca un'opinione
+  che tutti hanno già.**
+
+  ### 🚨 ATTENZIONE — il filone sta scivolando sul gossip privato
+
+  Diversi commenti parlano di **sentimenti veri tra i due attori**, di gelosia
+  dei rispettivi coniugi, di Burak Özçivit "condizionato dalla moglie". Il video
+  "cosa provano davvero gli attori" alimenta questa lettura.
+
+  **È un rischio serio e va gestito ora, non dopo:**
+  1. Sono **persone reali e sposate**: insinuare una relazione tra loro è
+     diffamatorio, non verificabile, e può attirare segnalazioni.
+  2. Su un canale che vive di fiducia, farsi la fama di "quelli che inventano"
+     brucia il vantaggio costruito.
+  3. **Regola da applicare subito**: parlare del *lavoro* degli attori, delle
+     regole di censura, delle loro dichiarazioni pubbliche — MAI dei loro
+     sentimenti privati o dei rapporti coniugali. Se il pubblico ci va per conto
+     suo nei commenti va bene: è il canale che non deve alimentarlo.
+
+  ### Stato delle raccomandazioni del check #2
+
+  | Raccomandazione | Stato |
+  |---|---|
+  | Raddoppiare sul filone dietro le quinte | ✅ fatta, ed è il motore |
+  | Allineare gli Shorts ai lunghi | ❔ da verificare (Shorts non aggiornati di recente) |
+  | Commento fissato del canale | ❌ ancora assente (i 31 commenti sono spontanei) |
+  | Durata verso 15–20 min | ➖ superata: la nuova formula è **8–12 min** e i video stanno a 9–10, quindi sono già a norma |
+
+  ### Tabella criteri
+
+  | Criterio | Baseline 11/8 | **21/8** | Target 4 sett. |
+  |---|---|---|---|
+  | Viste 48h/video | 0–14 | fino a 495 il primo giorno | ≥50 ✅ |
+  | Iscritti | 2 | **44** | ≥30 ✅ **superato** |
+  | Commenti/video | 0 | **31** sul migliore | ≥2 ✅ **superato** |
+  | % lunghi sopra 100 viste | ~0% | ~30% | ≥25% ✅ |
+
+  **Tutti e quattro i criteri a quattro settimane sono stati raggiunti in dieci
+  giorni.** Servono criteri nuovi, più alti, dal prossimo check.
+
+  ### Prossimi 3 soggetti consigliati (il filone regge, si continua)
+
+  1. **"TERRA AMARA: le scene che in Italia non avete visto"** — angolo n.1 sulla
+     serie già validata dagli Shorts del canale. Script pronto:
+     `batch-priorita-20-agosto/SOI-2-terra-amara-censura.md`.
+  2. **"ENDLESS LOVE: la scena più discussa e perché ha diviso il pubblico"** —
+     resta sul tema che funziona senza toccare la vita privata.
+  3. **"CHE FINE HANNO FATTO gli attori di Terra Amara"** — script pronto:
+     `soap-opera-italia/script-SOI-1-terra-amara-attori-oggi.md` (11:37).
+
+  ### Blocchi
+  - **NexLev: ancora NON agganciato (5° rilievo)** — con 20.003 viste e 44
+    iscritti ora servirebbe davvero: senza, non vediamo durata media, retention
+    e soprattutto **da dove arriva questo traffico** (ricerca? suggeriti?).
+  - **Memoria SOI dal Mac**: non pervenuta.
+  - **Commento fissato**: mai pubblicato. Con 31 commenti spontanei, l'innesco
+    esplicito moltiplicherebbe il risultato.
+
+
 - **CHECK #2 — MAR 18/8 ~10:35 Italia (sessione cloud).**
 
   ### 🎯 SVOLTA: i video LUNGHI hanno iniziato a funzionare
