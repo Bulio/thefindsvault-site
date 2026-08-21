@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://thefindsvault.com/sitemap.xml
+Sitemap: https://bulio.github.io/thefindsvault-site/sitemap.xml
