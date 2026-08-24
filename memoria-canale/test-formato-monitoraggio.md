@@ -1,3 +1,78 @@
+# 🏆 CONFERMA DEFINITIVA DELLA FORMULA 8–12 MIN — LUN 24/8/2026
+
+**La formula proposta dall'utente il 20/8 ("script formato lungo dentro video da
+8–12 minuti") è confermata dai dati, e con un margine ampio.**
+
+## Il video che chiude la discussione
+
+`0lschUw3FLM` — LA PROMESSA "Manuel strappa l'ordine e caccia Cristóbal" (10:29):
+
+| Metrica | Risultato | Target | Benchmark precedente |
+|---|---|---|---|
+| **% di visione** | **37,3%** (36,9 · 40,2 · 34,9 nei tre giorni) | ≥30% | 12,5% sui 20 min · 29,4% sui vecchi 8-9 min |
+| **Durata media** | **3:54** | ≥3:00 | 2:26 sull'evergreen da 20 min |
+| Viste | **3.273** | ≥800 | — |
+| **Commenti** | **14** | ≥5 | **0 su 11 video** |
+| Like | 120 | — | 8–16 |
+| Iscritti portati | 8 | — | 0–2 |
+| Revenue | 5,69 € | — | 1,26 € |
+
+**Tutti e quattro i criteri superati.** Il 37,3% di visione è **tre volte** il
+formato da 20 minuti e batte anche il vecchio 8–9 min. L'intuizione era giusta:
+la densità dello script lungo dentro un video corto è la combinazione migliore.
+
+## ✅ Formato: applicato al 100%
+Tutti i video usciti 20–24/8 stanno **tra 8:13 e 10:28**. Nessuna eccezione.
+
+## 🔄 CORREZIONE AL VERDETTO DEL 20/8 — i settimanali con date sono tornati
+
+Il 20/8 avevo scritto che i settimanali con date erano finiti (86–380 viste) e
+andavano tolti dagli slot forti. **Quel dato non regge più:**
+
+| Video | Tipo | Viste |
+|---|---|---|
+| LA PROMESSA 22–28 agosto | settimanale **con date** | **1.100** |
+| FORBIDDEN FRUIT 24–28 agosto | settimanale **con date** | **1.100** |
+| FAR AWAY 24–28 agosto | settimanale **con date** | 312 |
+| "Chi è Ángela davvero" | evergreen | **1.400** |
+| "Enora era la spia di Leocadia" | storyline | **1.800** |
+
+FF con le date era a 86 viste il 20/8: oggi ne fa **1.100**, tredici volte tanto.
+**Cosa è cambiato**: non l'angolo, ma il formato (8–12 min densi) e il fatto che
+il feed non è più intasato. → **Il fattore decisivo era la QUALITÀ del video,
+non la presenza delle date nel titolo.**
+
+**Verdetto corretto**: evergreen e settimanali funzionano entrambi, se fatti con
+questa formula. Tenere il mix — evergreen per il traffico di ricerca che non
+scade, settimanali per il pubblico abituale — invece di eliminare una delle due
+linee. La Promessa resta la serie più forte (1.100–1.800 per video).
+
+## 📊 Canale
+- Ultimi giorni: 9.558 · **13.934** · **12.703** · 5.393 (oggi parziale).
+- **Mese in corso: 285.715 viste** contro 21.111 di luglio → **×13,5**.
+- Iscritti 60.400 (+400 nel mese).
+- Il video da 3.273 viste ha generato **5,69 €** da solo: con la % di visione
+  al 37% il watch time monetizza molto meglio.
+
+## 🟡 Le 3 correzioni storiche — stato dopo 7 check
+1. **Commenti fissati**: ancora nessun commento del canale visibile. MA i
+   commenti spontanei sono passati da 0 a 14 su un video. **Il collo di
+   bottiglia si è aperto da solo grazie al formato**: con il commento fissato si
+   moltiplicherebbero ancora.
+2. **Diradamento**: escono 4–5 video/giorno, non 1 vecchio + 3 nuovi. Però ora
+   sono **tutti** nel formato nuovo, quindi il problema originale (coda vecchia
+   che cannibalizza) è di fatto risolto per estinzione.
+3. **Impression/CTR**: mai rilevate. È l'unico dato che manca ancora, e con
+   questi numeri servirebbe per capire quanto margine c'è sulle thumbnail.
+
+## Conclusione operativa
+**La formula 8–12 min è ora lo standard confermato.** Non serve altro test.
+Il prossimo salto non è più sul formato: è sulla **distribuzione** (ricerca
+all'1,6%, impression/CTR mai viste) e sull'**engagement innescato** (commento
+fissato).
+
+---
+
 # ✅ CHECK A CALDO BATCH NUOVO — VEN 21/8 ~9:35 (sessione cloud)
 
 **Il batch è uscito e la formula è stata applicata sulla durata. E i commenti si
