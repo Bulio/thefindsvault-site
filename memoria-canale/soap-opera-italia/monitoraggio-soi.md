@@ -94,6 +94,65 @@ aggiorna la tabella criteri di questo file.
    SOI e senza contesto i check misurano al buio.
 3. Decidere il posizionamento vs STF (punto 2 delle osservazioni) e il mix serie.
 
+## 🚨 CHECK #4 — LUN 24/8/2026: DUE PROBLEMI, UNO NUOVO E GRAVE
+
+**Stato canale**: **58 iscritti** (erano 44 il 21/8) · 31 video nella tab Video.
+
+### 🔴 SCOPERTA NUOVA: i video escono SENZA MINIATURA PERSONALIZZATA
+Verificato dall'utente in Studio il 24/8 sul video `8QPs8UvILjc`: **nessuna
+miniatura caricata**, YouTube mostra un fotogramma automatico. Il file della
+thumbnail **non esiste sul Mac** (cercato con `find`: nessun risultato né per
+nome file né per cartella).
+
+È lo **stesso bug già visto su Serie TV Fans coi video 87-94**: l'upload riesce,
+la chiamata `thumbnails.set` fallisce per quota API esaurita, il video resta
+pubblicato con un frame. Su STF fu risolto con un cron alle **9:02** (subito
+dopo il reset quota delle ~9:00 italiane) che riprova una volta sola e si
+autorimuove — vedi `memoria-mac/checkpoint-master-stf.md`.
+
+⚠️ **Da verificare**: se il problema riguarda TUTTI i video SOI o solo gli
+ultimi. Se è sistemico, non si risolve a mano video per video: va portato su
+SOI lo stesso cron di retry di STF.
+
+**Conseguenza sulla lettura dei dati**: un video senza miniatura personalizzata
+ha CTR depresso per costruzione. Finché il bug è aperto, **le viste dei video
+SOI non misurano l'angolo né il formato** — misurano l'assenza di copertina.
+Non trarre conclusioni sul contenuto da questi numeri.
+
+### 🟠 ANGOLO: i Terra Amara settimanali non funzionano su SOI
+
+| Uscita | Video | Durata | Viste |
+|---|---|---|---|
+| 23/8 | TA "5 indizi tragedia Mujgan" `8QPs8UvILjc` | 9:46 | **22** |
+| 23/8 | TA "Fikret, vendetta abbandonata" `N6Eq8tqlK00` | 9:21 | **17** |
+| 22/8 | TA "Zuleyha lascia Demir" `_GD745xzv-w` | 9:57 | 72 |
+| 21/8 | TA "Dopo la tragedia di Mujgan" `OsF6H6VufLc` | 9:37 | 117 |
+| 20/8 | EL "Prima e dopo Neslihan e Burak" `F-VWLhob_h0` | 9:08 | **1.700** |
+| 16/8 | EL "Scene censurate Kemal e Nihan" `qNYc4F20QB0` | 9:47 | **4.400** |
+| 16/8 | EL "Cosa provano davvero gli attori" `pjPy6kDuDPc` | 10:03 | **1.600** |
+
+Stessa durata, stesso formato, **rapporto 200:1**. Non è il formato 8–12 min:
+è l'angolo. I Terra Amara sono scritti come **settimanali di trama**; su SOI
+funziona solo il **dietro le quinte** (scene censurate · attori oggi · prima e
+dopo · cosa non avete visto).
+
+⚠️ **Differenza da STF, non contraddizione**: su Serie TV Fans i settimanali
+con le date sono tornati a funzionare (regola 3 di CLAUDE.md) perché lì c'è un
+pubblico di 60.400 iscritti che li riceve nel feed. **SOI a 58 iscritti non ha
+feed: vive solo di ricerca**, e la ricerca premia l'evergreen. La regola del mix
+NON si applica a SOI finché il canale non ha un pubblico proprio.
+
+**Decisione**: su SOI, Terra Amara va riscritto sull'angolo dietro-le-quinte
+(attori oggi, scene tagliate, com'era davvero il set), non sulla trama della
+settimana.
+
+### 🔴 NEXLEV — 7° SOLLECITO
+Verificato oggi con `list_my_youtube_channels`: **10 canali collegati, SOI non
+c'è**. Procedura invariata qui sotto (finestra in incognito). Avviato con
+l'utente il 24/8, esito da confermare al prossimo check.
+
+---
+
 ## Log dei check
 
 - **CHECK #3 — VEN 21/8 ~10:35 Italia (sessione cloud).**
