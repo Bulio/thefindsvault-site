@@ -94,7 +94,7 @@ aggiorna la tabella criteri di questo file.
    SOI e senza contesto i check misurano al buio.
 3. Decidere il posizionamento vs STF (punto 2 delle osservazioni) e il mix serie.
 
-## 🚨 CHECK #4 — LUN 24/8/2026: DUE PROBLEMI, UNO NUOVO E GRAVE
+## 🔎 RILIEVO INTERMEDIO — LUN 24/8/2026 (confluito nel CHECK #4)
 
 **Stato canale**: **58 iscritti** (erano 44 il 21/8) · 31 video nella tab Video.
 
@@ -150,6 +150,157 @@ settimana.
 Verificato oggi con `list_my_youtube_channels`: **10 canali collegati, SOI non
 c'è**. Procedura invariata qui sotto (finestra in incognito). Avviato con
 l'utente il 24/8, esito da confermare al prossimo check.
+
+---
+
+## 🚨 CHECK #4 — MAR 25/8/2026 ~10:30 Italia
+
+| Metrica | 11/8 | 18/8 | 21/8 | **25/8** |
+|---|---|---|---|---|
+| Iscritti | 2 | 25 | 44 | **64** |
+| Viste totali | 4.196 | 14.654 | 20.003 | **26.750** |
+| Video totali | 38 | 66 | 70 | **74** (31 lunghi + 21 Shorts in tab) |
+
+Crescita sana e continua: **+20 iscritti e +6.747 viste in 4 giorni**. Ma il
+motore è sempre più concentrato, e sotto la crescita ci sono tre problemi.
+
+---
+
+### 🔴 1. PROBLEMA GRAVE E CONFERMATO: rischio diffamazione sugli attori
+
+Il video **`pjPy6kDuDPc` — "Neslihan e Burak: cosa provano DAVVERO gli attori"**
+(1.600 viste, 16 commenti) sta producendo esattamente ciò che era stato
+segnalato come rischio il 21/8. Commenti reali, letti oggi:
+
+- *"non lo nego che mi sarebbe piaciuto che avessero continuato ad amarsi nella
+  vita reale"*
+- *"se c'è qualcosa… e se c'è, beati loro"*
+- *"dopo 10 anni non si frequentano, non si parlano, evitano le interviste,
+  rifiutano le manifestazioni pubbliche per non incontrarsi"*
+- un commento lungo che specula apertamente su tradimenti coniugali
+
+**Burak Özçivit e Neslihan Atagül sono due persone reali, entrambe sposate con
+altre persone.** Un titolo che promette di rivelare "cosa provano davvero" tra
+loro fa dedurre al pubblico una relazione che non esiste, e il pubblico lo sta
+scrivendo nero su bianco sotto il video. Non è materiale verificabile: è
+speculazione sulla vita privata di persone identificabili. **È il tipo di
+contenuto che fa arrivare una segnalazione e mette a rischio l'intero canale.**
+
+**Regola, già in CLAUDE.md, da applicare adesso**: su persone reali si parla di
+**lavoro, censura, dichiarazioni pubbliche verificabili** — MAI di sentimenti
+privati o rapporti coniugali.
+
+**Azioni concrete:**
+1. **Rititolare `pjPy6kDuDPc`** togliendo l'ambiguità sentimentale. Es.
+   *"Neslihan e Burak: cosa hanno detto davvero su Kemal e Nihan"* — stessa
+   curiosità, zero deduzioni sulla vita privata.
+2. **Moderare i commenti** che affermano relazioni o tradimenti: non sono
+   opinioni sulla serie, sono affermazioni su persone reali pubblicate sul
+   nostro canale.
+3. **Nessun altro video su questa linea.** Il gemello sano esiste già ed è il
+   più forte: *"Prima e dopo — come sono cambiati"* (2.000 viste) parla di
+   aspetto e carriera, cioè fatti pubblici. **Quello si replica, l'altro no.**
+
+---
+
+### 🟠 2. IL VERO PROBLEMA DI PRODUZIONE: l'80% dei video non serve a niente
+
+Non è "Terra Amara vs Endless Love" come sembrava ieri. Classificando i 30
+lunghi più recenti **per modello di titolo**, il taglio è netto:
+
+**Modelli che FUNZIONANO** (6 video su 30 = 20% della produzione):
+| Video | Modello | Viste |
+|---|---|---|
+| `qNYc4F20QB0` | scene censurate — la verità mai raccontata | **4.600** |
+| `F-VWLhob_h0` | prima e dopo: come sono cambiati gli attori | **2.000** |
+| `pjPy6kDuDPc` | cosa provano davvero gli attori ⚠️ da rititolare | 1.600 |
+| `tF5nNxdq4gI` | il fatto frontale (Manuel scopre suo padre) | 1.300 |
+| `KJHzbJtIQ4Y` | 5 scene che la censura non voleva farvi vedere | 983 |
+| `X0UDMCNQYBs` | cosa resta oggi di X | 925 |
+
+**Modelli che NON funzionano** (media viste per modello):
+| Modello di titolo | Esempi | Media |
+|---|---|---|
+| "Prima e dopo — i rapporti nella famiglia" (senza attori) | 22 · 7 | **15** |
+| "[Personaggio] — da X a Y" (ritratto) | 32 · 27 | **30** |
+| "5 indizi che avevano già svelato…" | 33 · 33 · 70 | **45** |
+| "Le teorie dei fan contro la realtà" | 33 · 64 | **49** |
+| "Avevi previsto…? Mettiti alla prova" (quiz) | 12 · 54 · 114 · 27 | **52** |
+| "Dopo X, cosa può succedere adesso" | 130 · 69 | **100** |
+
+**I numeri complessivi**: 6 video fanno **11.400 viste**; gli altri 24 ne fanno
+**2.300 in totale**. Mediana per video: **100 viste**. **Metà dei video sta
+sotto le 100 viste.**
+
+**Conclusione**: si producono 4-5 video attorno allo stesso evento, ma **solo
+quello frontale vive**; i satelliti (quiz, indizi, teorie, "cosa succede
+adesso") sono lavoro buttato — TTS, immagini, montaggio, upload per 30 viste.
+
+**Decisione**: **eliminare i modelli satellite dalla produzione SOI.** Meglio
+1 video forte al giorno che 4 di cui 3 morti. Il tempo liberato va sul filone
+che funziona: **censura · attori (fatti pubblici) · cosa resta oggi · il fatto
+frontale**.
+
+⚠️ La correzione di ieri su Terra Amara resta valida ma va precisata: i Terra
+Amara falliscono **perché sono quasi tutti satelliti** (quiz, 5 indizi,
+ritratto, "cosa succede adesso"). L'unico frontale — "Zuleyha lascia Demir, la
+tragica morte di Mujgan" — è anche il migliore del gruppo (111).
+
+---
+
+### 🟠 3. SHORTS NON ALLINEATI — e i lunghi vincenti non ne hanno nessuno
+
+21 Shorts, **~11.700 viste** (44% del totale canale), da 122 a 1.200 l'uno:
+tengono su i numeri meglio di gran parte dei lunghi. Ma:
+- gli **8 Shorts più recenti sono di Forbidden Fruit** (Ender, Yildiz, Halit,
+  Mert) — serie che sui lunghi non esiste;
+- i Terra Amara ci sono ma più vecchi;
+- **di Endless Love, il filone che fa il 60% delle viste lunghe, non esiste
+  nemmeno uno Short.**
+
+**Azione**: gli Shorts vanno agganciati al lungo del giorno, e la priorità è
+Endless Love / censura. ⚠️ Decisione da coordinare con la **chat SHORT**
+(regola delle due corsie).
+
+---
+
+### 🔴 4. NEXLEV — 8° RILIEVO
+`list_my_youtube_channels` oggi: **10 canali collegati, SOI non c'è.** Il
+tentativo avviato con l'utente il 24/8 non è stato completato.
+**Novità utile**: verificato il 24/8 che da questa sessione le API di Google
+sono raggiungibili (`oauth2.googleapis.com`, `youtube.googleapis.com`
+rispondono). Con le credenziali del canale, **l'aggancio NexLev diventa
+superfluo**: Analytics e persino impression/CTR arriverebbero via API. La via
+scelta con l'utente è però che **le API le usi la sessione Mac**, che le
+credenziali le ha già — vedi
+`ISTRUZIONI-MAC-miniature-e-api-24-agosto.md`.
+
+### 🔴 5. COMMENTO FISSATO — ancora assente
+Nessun commento del canale tra i top di `pjPy6kDuDPc` (16 commenti). Il rituale
+di lancio continua a non essere applicato su SOI.
+
+### 🔴 6. MEMORIA SOI — `memoria-mac-soi/` ancora inesistente
+Ottavo check consecutivo senza contesto sulla pipeline SOI.
+
+---
+
+## 🎯 CRITERI NUOVI — i vecchi sono superati (fissati il 25/8, verifica al 22/9)
+
+I criteri di 4 settimane fa (fissati quando il canale aveva 2 iscritti) sono
+stati raggiunti in dieci giorni. Nuova asticella, tarata sui dati di oggi:
+
+| Criterio | Oggi (25/8) | **Target 22/9** |
+|---|---|---|
+| Iscritti | 64 | **250** |
+| Viste totali | 26.750 | **60.000** |
+| **Mediana viste/video** | **100** | **400** |
+| Video sotto le 100 viste | **50%** | **max 20%** |
+| Commenti per video | ~1 (16 sul migliore) | **8 di media** |
+| Video con commento fissato | 0% | **100%** |
+| Shorts allineati al lungo del giorno | 0% | **100%** |
+
+**La mediana è il criterio che conta.** Le viste totali salgono anche con un
+solo video fortunato; la mediana sale solo se si smette di produrre video morti.
 
 ---
 

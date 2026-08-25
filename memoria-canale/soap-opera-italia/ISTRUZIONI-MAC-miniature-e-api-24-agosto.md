@@ -1,5 +1,21 @@
 # 🔧 ISTRUZIONI SESSIONE MAC — miniature SOI + dati mancanti (24/8/2026)
 
+> 🚨 **AGGIORNATO AL CHECK #4 DEL 25/8 — due voci NUOVE e prioritarie:**
+> **(A) RISCHIO DIFFAMAZIONE, da fare per primo.** Il video `pjPy6kDuDPc`
+> "Neslihan e Burak: cosa provano DAVVERO gli attori" (1.600 viste) sta
+> generando commenti che affermano relazioni e tradimenti fra due persone reali
+> sposate con altri. **Rititolare** (es. "cosa hanno detto davvero su Kemal e
+> Nihan"), **moderare i commenti** che affermano fatti sulla vita privata,
+> **non produrre altri video su questa linea.** Il gemello sano è "Prima e dopo
+> — come sono cambiati" (2.000 viste): aspetto e carriera, fatti pubblici.
+> **(B) TAGLIARE I MODELLI SATELLITE.** 6 video su 30 fanno 11.400 viste, gli
+> altri 24 ne fanno 2.300. Da NON produrre più su SOI: quiz "mettiti alla
+> prova" (media 52), "5 indizi" (45), "teorie dei fan" (49), "cosa può
+> succedere adesso" (100), ritratto di personaggio (30), "prima e dopo i
+> rapporti in famiglia" senza attori (15). Da produrre: censura · attori
+> (fatti pubblici) · "cosa resta oggi" · il fatto frontale.
+> Dettaglio e tabelle in `monitoraggio-soi.md`, CHECK #4.
+
 > Scritte dalla sessione cloud, che NON ha disco, browser né credenziali.
 > Qui il Mac deve solo eseguire: le decisioni sono già prese.
 
