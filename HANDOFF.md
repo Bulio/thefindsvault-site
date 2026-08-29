@@ -3,6 +3,9 @@
 Stato al 2026-08-29, sera. Sostituisce la versione del mattino (commit
 `2f91986`), dove i 9 interventi erano ancora tutti da fare.
 
+✅ **Online dal 29/08 sera** (commit `2ab4a84`): il sito vivo non mostra piu'
+ne' prezzi ne' stelle. Verificato su https://thefindsvault.com/.
+
 ## ⛔ Leggi questo prima di tutto
 
 Il vincolo su cui era costruito il piano precedente **non esiste piu'**.
@@ -42,6 +45,7 @@ li dava per "sopravvissuti", ma non era vero. Ora vivono nel repo privato in
 | 7 | Drip | ✅ costruito e collaudato, **interruttore spento** — vedi sotto |
 | 8 | Slug nel commit | ✅ `deploy_site.sh` li ricava dai prodotti nuovi (`Aggiorna sito: +owala_bottle`) |
 | 9 | `404.html` nel generatore | ✅ generata da `page()`, link root-relative, `noindex` |
+| + | Stelle e n. recensioni | ✅ **via dalla vista** (deciso il 29/08), ma **restano nei dati**: servono a ordinare «Best», a scegliere la foto dei tile e l'ordine dei correlati. Fuori anche da `aggregateRating` |
 
 ### Numeri delle immagini (punto 4)
 
@@ -59,6 +63,15 @@ li dava per "sopravvissuti", ma non era vero. Ora vivono nel repo privato in
 `website/.cache_img/`, validata **sui byte del sorgente, non sulle mtime**
 (la cartella e' dentro iCloud, che le mtime le riscrive). Il build ricopia
 invece di rilavorare. Un deploy ora e' istantaneo.
+
+⛔ **Il clone del deploy stava in `/private/tmp`, e macOS ci fa pulizia.**
+La pulizia periodica cancella i FILE e lascia in piedi le CARTELLE: il `.git`
+restava come guscio vuoto, il vecchio controllo `[ -d "$CLONE/.git" ]` lo dava
+per buono, e il deploy moriva su `fatal: not a git repository` **dopo** aver
+gia' riscritto tutto. Ora il clone sta in `~/.cache/thefindsvault-site` (non
+sincronizzata da iCloud, non ripulita) e la validita' si verifica con
+`git rev-parse --is-inside-work-tree`. ⭐ Un guscio vuoto non e' un repo: si
+controlla il contenuto, non il nome della cartella.
 
 ⛔ **Pillow c'era gia'.** Il vecchio handoff lo dava per assente: era stato
 cercato nell'ambiente sbagliato. `python3` di sistema — quello che lancia
@@ -103,17 +116,10 @@ pubblicati**, la coda e' vuota. Il drip vale dal prossimo lotto in poi.
 
 ## ⏸️ Ancora aperto
 
-- **Niente e' andato online.** Tutto quanto sopra e' nel repo privato e
-  verificato in locale: il sito vivo mostra ancora i prezzi. Serve
-  `cd website && ./deploy_site.sh`, che ora si ferma da solo se
-  `check_site.py` trova errori.
-- **Rating e recensioni sono ancora li'.** Stelle e `(45,289)` sulle card sono
-  dati Amazon congelati esattamente come lo era `$29.99`. ⛔ Toglierli ha un
-  costo preciso, che il vecchio handoff non diceva: **l'ordinamento "Best" e'
-  rating desc + reviews desc**, e senza rating resterebbero solo Newest e
-  Random. Sparirebbero anche il badge "Top Rated", la scelta della foto nei
-  tile in evidenza e l'ordine dei prodotti correlati. Decisione da prendere,
-  non da eseguire di slancio.
+- **Il badge "Top Rated" e' rimasto.** Non e' una cifra Amazon: e' una nostra
+  etichetta editoriale ricavata dal rating che teniamo nei dati. Se un giorno
+  si decide che anche quella e' troppo, si toglie da `card_html()` **e** da
+  `cardHTML()` — sono due, in due linguaggi, e vanno toccate insieme.
 - **Nessuna analytics.** I tracking ID coprono le conversioni Amazon, non il
   traffico.
 - **Liveness degli ASIN**: `check_site.py` non contatta Amazon apposta (dai
