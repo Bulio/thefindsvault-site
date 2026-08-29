@@ -11,14 +11,17 @@
   var all = [];
   var filtered = [];
   var shown = 0;
+  // slug delle card gia' stampate nell'HTML dal generatore: al primo giro non
+  // si svuota la griglia, si continua ad appendere da dove sono arrivate.
+  var gia = {};
+  var quantiGia = 0;
+  Array.prototype.forEach.call(grid.querySelectorAll('.card[data-slug]'), function (el) {
+    gia[el.getAttribute('data-slug')] = 1; quantiGia++;
+  });
+  var primoGiro = true;
   var activeCat = 'All';
   var activeSort = 'best';
   var query = '';
-
-  function stars(rating) {
-    var full = Math.round(rating);
-    return '★'.repeat(full) + '☆'.repeat(5 - full);
-  }
 
   function esc(s) {
     var d = document.createElement('div');
@@ -26,10 +29,19 @@
     return d.innerHTML;
   }
 
-  function cardHTML(c) {
+  // <picture> con WebP + fallback JPG, width/height sempre quando noti.
+  // La primissima card e' l'immagine LCP della home: quella non va in lazy.
+  function media(c, prima) {
+    var dim = c.imageW ? ' width="' + c.imageW + '" height="' + c.imageH + '"' : '';
+    var carica = prima ? ' loading="eager" fetchpriority="high"' : ' loading="lazy"';
+    var img = '<img src="' + c.image + '" alt="' + esc(c.title) + '"' + dim + carica + '>';
+    if (!c.imageWebp) return img;
+    return '<picture><source srcset="' + c.imageWebp + '" type="image/webp">' + img + '</picture>';
+  }
+
+  function cardHTML(c, primaDellaPagina) {
     var badge = c.rating >= 4.7 ? '<span class="badge">Top Rated</span>' : '';
     var newBadge = c.isNew ? '<span class="badge badge-new">New</span>' : '';
-    var reviews = c.reviews ? '(' + c.reviews.toLocaleString() + ')' : '';
     var watchBtn = c.youtube
       ? '<a class="watch-btn" href="' + c.youtube + '" target="_blank" rel="noopener" ' +
         'onclick="event.stopPropagation()">&#9654; YouTube</a>'
@@ -37,20 +49,15 @@
     // niente <a> annidati: il link al prodotto avvolge foto+testo, il
     // bottone YouTube e' un elemento indipendente in fondo alla card.
     return (
-      '<div class="card">' +
+      '<div class="card" data-slug="' + esc(c.slug) + '">' +
         '<a class="card-link" href="products/' + c.slug + '/index.html">' +
-          '<div class="card-media">' + badge + newBadge +
-            '<img src="' + c.image + '" alt="' + esc(c.title) + '" loading="lazy">' +
+          '<div class="card-media">' + badge + newBadge + media(c, primaDellaPagina) +
           '</div>' +
           '<div class="card-body">' +
             '<span class="cat-chip">' + esc(c.category) + '</span>' +
             '<h3>' + esc(c.title) + '</h3>' +
             '<p class="hook">' + esc(c.hook) + '</p>' +
-            '<div class="meta">' +
-              '<span class="stars">' + stars(c.rating) + '</span>' +
-              '<span class="reviews">' + reviews + '</span>' +
-              '<span class="price">' + esc(c.price) + '</span>' +
-            '</div>' +
+            '<div class="meta"><span class="price">See price &rarr;</span></div>' +
           '</div>' +
         '</a>' +
         '<div class="card-actions">' + watchBtn + '</div>' +
@@ -68,10 +75,10 @@
       return;
     }
     var frag = document.createDocumentFragment();
-    next.forEach(function (c) {
+    next.forEach(function (c, i) {
       var div = document.createElement('div');
       div.className = 'card-wrap';
-      div.innerHTML = cardHTML(c);
+      div.innerHTML = cardHTML(c, !quantiGia && shown === 0 && i === 0);
       frag.appendChild(div.firstChild);
     });
     grid.appendChild(frag);
@@ -100,7 +107,11 @@
   }
 
   function recompute() {
-    grid.innerHTML = '';
+    // si tengono le card statiche solo finche' l'utente non tocca niente:
+    // al primo filtro/ordinamento/ricerca la griglia riparte da zero.
+    var tieni = primoGiro && quantiGia &&
+                activeCat === 'All' && activeSort === 'best' && !query;
+    if (!tieni) grid.innerHTML = '';
     shown = 0;
     endMsg.hidden = true;
     sentinel.classList.remove('done');
@@ -116,13 +127,6 @@
 
     if (activeSort === 'newest') {
       filtered.sort(function (a, b) { return (b.order || 0) - (a.order || 0); });
-    } else if (activeSort === 'price-low') {
-      filtered.sort(function (a, b) { return (a.priceNum || 1e9) - (b.priceNum || 1e9); });
-    } else if (activeSort === 'price-high') {
-      filtered.sort(function (a, b) { return (b.priceNum || 0) - (a.priceNum || 0); });
-    } else if (activeSort === 'under20') {
-      filtered = filtered.filter(function (c) { return c.priceNum && c.priceNum < 20; });
-      filtered.sort(function (a, b) { return (b.rating || 0) - (a.rating || 0); });
     } else if (activeSort === 'random') {
       shuffle(filtered);
     } else {
@@ -134,6 +138,11 @@
     if (resultCount) {
       resultCount.textContent = filtered.length + ' finds';
     }
+    if (tieni) {
+      // le card gia' a video non vanno riappese: si tolgono dalla coda
+      filtered = filtered.filter(function (c) { return !gia[c.slug]; });
+    }
+    primoGiro = false;
     renderNext();
   }
 
