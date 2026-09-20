@@ -17,6 +17,52 @@ img{max-width:100%;display:block}
 .site-header nav a{margin-left:20px;color:var(--text-dim);font-size:.95rem}
 .site-header nav a:hover{color:var(--gold)}
 
+/* ---- The Lifetime List: episodi ---------------------------------------
+   Avorio + filetto rosso: sono gli stessi della grafica dei video (regola del
+   restyling 20/09). Sito e video devono sembrare la stessa cosa. */
+:root{--avorio:#f4efe4;--rosso:#b3231f}
+.episodes-band{max-width:1120px;margin:0 auto;padding:8px 20px 56px}
+.band-head{border-top:3px solid var(--rosso);padding-top:18px;margin-bottom:26px}
+.band-kicker{display:block;color:var(--rosso);text-transform:uppercase;letter-spacing:2px;
+  font-size:.72rem;font-weight:700;margin-bottom:6px}
+.band-head h2{margin:0 0 8px;font-size:2rem;font-family:Didot,"Playfair Display",Georgia,serif;
+  font-weight:500;color:var(--text)}
+.band-head p{margin:0;color:var(--text-dim);max-width:62ch;line-height:1.55}
+.band-more{margin:26px 0 0}
+.band-more a{color:var(--gold);font-weight:700;letter-spacing:.5px}
+.ep-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:22px}
+.ep-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:10px;
+  overflow:hidden;transition:transform .15s,border-color .15s}
+.ep-card:hover{transform:translateY(-5px);border-color:var(--gold-dim)}
+.ep-thumb{aspect-ratio:16/9;background:var(--bg-alt)}
+.ep-thumb img{width:100%;height:100%;object-fit:cover}
+.ep-body{padding:16px 18px 20px}
+.ep-label{display:block;color:var(--rosso);text-transform:uppercase;letter-spacing:1.6px;
+  font-size:.68rem;font-weight:700;margin-bottom:8px}
+.ep-body h3{margin:0 0 8px;font-size:1.05rem;line-height:1.35;font-weight:600;color:var(--text)}
+.ep-hook{margin:0 0 12px;color:var(--text-dim);font-size:.9rem;line-height:1.5}
+.ep-date{color:var(--text-dim);font-size:.78rem;letter-spacing:.5px}
+.ep-card-big{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}
+.ep-card-big .ep-body{padding:30px 34px;display:flex;flex-direction:column;justify-content:center}
+.ep-card-big h3{font-size:1.75rem;font-family:Didot,"Playfair Display",Georgia,serif;font-weight:500;line-height:1.25}
+.ep-card-big .ep-hook{font-size:1rem}
+@media(max-width:760px){.ep-card-big{grid-template-columns:1fr}.ep-card-big h3{font-size:1.35rem}
+  .ep-card-big .ep-body{padding:18px 20px 24px}.band-head h2{font-size:1.5rem}}
+
+/* ---- pagina episodio -------------------------------------------------- */
+.player{position:relative;max-width:760px;margin:26px 0;aspect-ratio:16/9;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+h3.gruppo{margin:38px 0 6px;font-family:Didot,"Playfair Display",Georgia,serif;font-weight:500;
+  font-size:1.35rem;color:var(--text);border-top:2px solid var(--rosso);padding-top:16px}
+.gruppo-nota{margin:0 0 14px;color:var(--text-dim);line-height:1.6;max-width:70ch}
+.lifetime-list{line-height:1.7;max-width:74ch}
+.lifetime-list li{margin-bottom:14px}
+.lifetime-list .buy{color:var(--gold);font-weight:700;white-space:nowrap}
+.codes{background:var(--avorio);color:#1a1a1a;border-collapse:collapse;margin:8px 0 26px}
+.codes th,.codes td{border:1px solid #cdc3b0;padding:7px 14px;text-align:left}
+.codes th{border-top:3px solid var(--rosso);font-family:Didot,Georgia,serif;font-weight:600}
+.disclosure{color:var(--text-dim);font-size:.85rem;border-left:3px solid var(--rosso);padding-left:12px}
+
 .hero{text-align:center;padding:56px 20px 32px}
 .hero-logo{width:96px;margin:0 auto 18px;border-radius:50%}
 .hero h1{margin:0;font-size:2.4rem;letter-spacing:3px;color:var(--gold)}
