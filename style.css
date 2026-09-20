@@ -126,6 +126,21 @@ ol.fonti li:target{background:rgba(240,184,78,.13);outline:2px solid var(--gold-
   outline-offset:5px;border-radius:2px}
 ol.fonti a{color:var(--gold-dim)}
 
+/* ---- pagina pilastro e scorrimento infinito ---- */
+.pilastro{padding-top:8px}
+.pilastro-card{display:block;background:var(--bg-alt);border:1px solid var(--border);
+  border-top:3px solid var(--rosso);border-radius:4px;padding:30px 34px;transition:border-color .15s}
+.pilastro-card:hover{border-color:var(--gold-dim)}
+.pilastro-card h2{margin:0 0 12px;font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1.18}
+.pilastro-card p{margin:0 0 18px;color:var(--text-dim);line-height:1.6;max-width:70ch}
+.sede{color:var(--text-dim)}
+.sentinella{display:flex;justify-content:center;padding:34px 0}
+.spinner{width:26px;height:26px;border:2px solid var(--border);border-top-color:var(--gold);
+  border-radius:50%;animation:gira .8s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.spinner{animation:none;border-top-color:var(--border)}}
+@media(max-width:760px){.pilastro-card{padding:20px 22px}.pilastro-card h2{font-size:1.4rem}}
+
 .site-footer{border-top:1px solid var(--border);background:var(--bg-alt);padding:44px 24px 28px}
 .footer-cols{max-width:1120px;margin:0 auto;display:grid;gap:30px;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
