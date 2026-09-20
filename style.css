@@ -49,6 +49,24 @@ img{max-width:100%;display:block}
 @media(max-width:760px){.ep-card-big{grid-template-columns:1fr}.ep-card-big h3{font-size:1.35rem}
   .ep-card-big .ep-body{padding:18px 20px 24px}.band-head h2{font-size:1.5rem}}
 
+/* ---- articolo dell'episodio ------------------------------------------
+   Colonna stretta e corpo grande: e' testo da leggere, non da scorrere. */
+.episodio{max-width:680px;font-size:1.06rem;line-height:1.72;color:#e7e0d4}
+.episodio p{margin:0 0 1.15em}
+.episodio h2{font-family:Didot,"Playfair Display",Georgia,serif;font-weight:500;font-size:1.6rem;
+  line-height:1.25;margin:2em 0 .6em;color:var(--text);border-top:2px solid var(--rosso);padding-top:18px}
+.episodio sup.fonte{font-size:.62em;vertical-align:super;margin-left:2px}
+.episodio sup.fonte a{color:var(--gold-dim);text-decoration:none}
+.episodio sup.fonte a:hover{color:var(--gold)}
+ol.fonti{color:var(--text-dim);font-size:.88rem;line-height:1.6;max-width:74ch}
+ol.fonti li{margin-bottom:8px;scroll-margin-top:90px}
+ol.fonti li:target{background:rgba(240,184,78,.12);outline:2px solid var(--gold-dim);outline-offset:4px;border-radius:3px}
+.breadcrumb{color:var(--text-dim);font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;margin:22px 0 10px}
+.breadcrumb a{color:var(--gold)}
+.container{max-width:860px;margin:0 auto;padding:0 20px 64px}
+.audible{color:var(--text-dim);font-size:.9rem}
+@media(max-width:700px){.episodio{font-size:1.02rem}.episodio h2{font-size:1.3rem}}
+
 /* ---- pagina episodio -------------------------------------------------- */
 .player{position:relative;max-width:760px;margin:26px 0;aspect-ratio:16/9;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
