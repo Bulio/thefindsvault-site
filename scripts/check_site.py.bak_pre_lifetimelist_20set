@@ -113,86 +113,52 @@ def html_files():
                 yield os.path.join(dirpath, f)
 
 
-# ---------------------------------------------------------------- contenuti del sito
-# ⛔ RISCRITTO IL 20/09/2026: il sito non ha piu' i 69 prodotti Amazon del vecchio Finds Vault.
-# Ora ha /blog/<slug>/ (gli articoli degli episodi) e /guides/<tipologia>/ (le guide d'acquisto),
-# piu' i rimandi /list/<categoria>/ che tengono vivi gli indirizzi stampati nelle descrizioni
-# dei video gia' pubblicati. Il controllo vecchio cercava assets/products.json e falliva sempre.
+# ---------------------------------------------------------------- products.json
+products_path = os.path.join(ROOT, "assets", "products.json")
+products = []
+try:
+    with open(products_path, encoding="utf-8") as fh:
+        products = json.load(fh)
+except Exception as exc:
+    err("assets/products.json non si legge: %s" % exc)
 
-def _cartelle(sotto):
-    d = os.path.join(ROOT, sotto)
-    if not os.path.isdir(d):
-        return []
-    return sorted(x for x in os.listdir(d)
-                  if os.path.isdir(os.path.join(d, x))
-                  and os.path.isfile(os.path.join(d, x, "index.html")))
-
-blog_slugs = _cartelle("blog")
-guide_slugs = _cartelle("guides")
-list_slugs = _cartelle("list")
-
-if not blog_slugs:
-    err("nessun articolo in /blog/: il sito non ha contenuto")
-if not guide_slugs:
-    err("nessuna guida in /guides/: sparirebbero tutti i link di affiliazione")
-
-# ⛔ Una pagina ORFANA e' una pagina online che nessuno linka. Il 20/09 sei pagine sono state
-# online per giorni senza un solo link che ci portasse, e rispondevano 200: un 200 non dice
-# che la pagina sia raggiungibile. Si verifica cercando l'indirizzo dentro le ALTRE pagine.
-_tutto_html = ""
-for _p in html_files():
-    with open(_p, encoding="utf-8") as _fh:
-        _tutto_html += _fh.read()
-for slug in blog_slugs:
-    if ("blog/%s/" % slug) not in _tutto_html:
-        err("blog/%s/ e' online ma nessuna pagina la linka (pagina orfana)" % slug)
-for slug in guide_slugs:
-    if ("guides/%s/" % slug) not in _tutto_html:
-        err("guides/%s/ e' online ma nessuna pagina la linka (pagina orfana)" % slug)
-
-# I rimandi /list/ devono essere noindex e NON stare in sitemap: sono duplicati voluti.
-for slug in list_slugs:
-    with open(os.path.join(ROOT, "list", slug, "index.html"), encoding="utf-8") as fh:
-        testo = fh.read()
-    if "noindex" not in testo:
-        err("list/%s/ e' un rimando ma non ha noindex: Google indicizzerebbe un doppione" % slug)
-    if "http-equiv=\"refresh\"" not in testo:
-        err("list/%s/ non rimanda a nulla: chi arriva dal video resta fermo li'" % slug)
-
-# La sitemap deve contenere le pagine vere e NON i rimandi.
-sitemap_path = os.path.join(ROOT, "sitemap.xml")
-sitemap = ""
-if os.path.isfile(sitemap_path):
-    with open(sitemap_path, encoding="utf-8") as fh:
-        sitemap = fh.read()
-    for slug in blog_slugs:
-        if ("/blog/%s/" % slug) not in sitemap:
-            err("blog/%s/ non e' in sitemap.xml" % slug)
-    for slug in guide_slugs:
-        if ("/guides/%s/" % slug) not in sitemap:
-            err("guides/%s/ non e' in sitemap.xml" % slug)
-    for slug in list_slugs:
-        if ("/list/%s/" % slug) in sitemap:
-            err("list/%s/ e' noindex ma sta in sitemap: si chiede a Google di indicizzare "
-                "una pagina che gli dice di non farlo" % slug)
-else:
-    err("sitemap.xml manca")
-
-# ---------------------------------------------------------------- regole Amazon
-# ⛔ Un link di affiliazione senza rel="sponsored" (o nofollow) viola insieme la regola Google
-# e quella Amazon Associates, e una pagina che ne ha senza dichiararlo viola la FTC.
-_amz = re.compile(r'<a[^>]+href="[^"]*(?:amazon\.[a-z.]+|amzn\.to)[^"]*"[^>]*>')
-for _p in html_files():
-    with open(_p, encoding="utf-8") as _fh:
-        _raw = _fh.read()
-    _link = _amz.findall(_raw)
-    if not _link:
+REQUIRED = ("slug", "title", "image", "category")
+seen_slugs = {}
+for i, p in enumerate(products):
+    for field in REQUIRED:
+        if not p.get(field):
+            err("products.json[%d]: campo '%s' mancante o vuoto" % (i, field))
+    slug = p.get("slug")
+    if not slug:
         continue
-    _senza = [a for a in _link if "sponsored" not in a and "nofollow" not in a]
-    if _senza:
-        err("%s: %d link Amazon senza rel sponsored/nofollow" % (rel(_p), len(_senza)))
-    if "Amazon Associate" not in _raw:
-        err("%s: ha %d link di affiliazione ma nessuna disclosure nel testo" % (rel(_p), len(_link)))
+    if slug in seen_slugs:
+        err("products.json: slug duplicato '%s' (indici %d e %d)" % (slug, seen_slugs[slug], i))
+    seen_slugs[slug] = i
+
+    page = os.path.join(ROOT, "products", slug, "index.html")
+    if not os.path.isfile(page):
+        err("products.json: '%s' non ha la pagina products/%s/index.html" % (slug, slug))
+
+    img = p.get("image")
+    if img and not os.path.isfile(os.path.join(ROOT, img)):
+        err("products.json: '%s' punta a un'immagine che non esiste (%s)" % (slug, img))
+
+    if not p.get("youtube"):
+        warn("products.json: '%s' non ha un video YouTube collegato" % slug)
+
+# pagine prodotto orfane (cartella presente, non piu' nel JSON)
+products_dir = os.path.join(ROOT, "products")
+if os.path.isdir(products_dir):
+    for d in sorted(os.listdir(products_dir)):
+        if os.path.isdir(os.path.join(products_dir, d)) and d not in seen_slugs:
+            err("products/%s/ esiste ma non e' in products.json (pagina orfana, indicizzabile)" % d)
+
+# cartelle immagini orfane
+assets_products = os.path.join(ROOT, "assets", "products")
+if os.path.isdir(assets_products):
+    for d in sorted(os.listdir(assets_products)):
+        if os.path.isdir(os.path.join(assets_products, d)) and d not in seen_slugs:
+            warn("assets/products/%s/ e' rimasta dopo la rimozione del prodotto (peso morto nel repo)" % d)
 
 # ---------------------------------------------------------------- pagine HTML
 amazon_re = re.compile(r"amazon\.[a-z.]+|amzn\.to")
@@ -267,13 +233,12 @@ else:
     for loc in locs:
         if not loc.startswith(CANONICAL_HOST):
             err("sitemap.xml: URL su host sbagliato -> %s" % loc)
-    # I confronti su /blog/ e /guides/ li fa gia' il blocco "contenuti del sito" qui sopra.
-    for loc in locs:
-        pezzo = loc.replace(CANONICAL_HOST, "").strip("/")
-        if pezzo.startswith("blog/") and pezzo.split("/")[-1] not in blog_slugs + [""]:
-            err("sitemap.xml: elenca %s che non esiste piu'" % loc)
-        if pezzo.startswith("guides/") and pezzo.split("/")[-1] not in guide_slugs + [""]:
-            err("sitemap.xml: elenca %s che non esiste piu'" % loc)
+    listed = {loc.rstrip("/").rsplit("/", 1)[-1] for loc in locs if "/products/" in loc}
+    for slug in seen_slugs:
+        if slug not in listed:
+            err("sitemap.xml: manca il prodotto '%s'" % slug)
+    for slug in sorted(listed - set(seen_slugs)):
+        err("sitemap.xml: elenca '%s' che non esiste piu'" % slug)
 
 # ---------------------------------------------------------------- peso immagini
 heavy = []
@@ -303,9 +268,8 @@ if "img_alt" in tallies:
     warn("%d immagini senza attributo alt" % tallies["img_alt"]["items"])
 
 # ---------------------------------------------------------------- report
-print("The Lifetime List -- controllo sito")
-print("%d articoli, %d guide, %d rimandi, %d pagine HTML analizzate\n"
-      % (len(blog_slugs), len(guide_slugs), len(list_slugs), len(pages)))
+print("Finds Vault -- controllo sito")
+print("%d prodotti, %d pagine HTML analizzate\n" % (len(products), len(pages)))
 for w in warnings:
     print("  WARN   %s" % w)
 if warnings:
