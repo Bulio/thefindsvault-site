@@ -181,13 +181,22 @@ else:
 # ---------------------------------------------------------------- regole Amazon
 # ⛔ Un link di affiliazione senza rel="sponsored" (o nofollow) viola insieme la regola Google
 # e quella Amazon Associates, e una pagina che ne ha senza dichiararlo viola la FTC.
-_amz = re.compile(r'<a[^>]+href="[^"]*(?:amazon\.[a-z.]+|amzn\.to)[^"]*"[^>]*>')
+_amz = re.compile(r'<a[^>]+href="([^"]*(?:amazon\.[a-z.]+|amzn\.to)[^"]*)"[^>]*>')
+# ⛔ Non tutti i link ad Amazon sono link di affiliazione: la pagina privacy, le condizioni
+# d'uso e le pagine di aiuto sono RIFERIMENTI, e metterci un tag= sarebbe sbagliato (oltre che
+# vietato: non si guadagna su una policy). Si escludono per indirizzo, non per intenzione.
+_amz_non_commerciali = re.compile(
+    r'amazon\.[a-z.]+/(privacy|gp/help|help|conditions|cookies|legal)', re.I)
 for _p in html_files():
     with open(_p, encoding="utf-8") as _fh:
         _raw = _fh.read()
-    _link = _amz.findall(_raw)
-    if not _link:
+    # findall dà l'href; per il rel serve il tag intero, quindi si ricerca a coppie
+    _tag = re.findall(r'<a[^>]+href="[^"]*(?:amazon\.[a-z.]+|amzn\.to)[^"]*"[^>]*>', _raw)
+    _href = _amz.findall(_raw)
+    _coppie = [(h, t) for h, t in zip(_href, _tag) if not _amz_non_commerciali.search(h)]
+    if not _coppie:
         continue
+    _link = [t for _, t in _coppie]
     _senza = [a for a in _link if "sponsored" not in a and "nofollow" not in a]
     if _senza:
         err("%s: %d link Amazon senza rel sponsored/nofollow" % (rel(_p), len(_senza)))
@@ -231,6 +240,11 @@ for path in pages:
         href = a.get("href", "")
         relv = (a.get("rel") or "").lower()
         if amazon_re.search(href):
+            # ⛔ Le pagine di policy di Amazon (privacy, condizioni, aiuto) sono RIFERIMENTI,
+            # non link di affiliazione: metterci un tag= sarebbe sbagliato e non si guadagna
+            # su una policy. Si riconoscono dall'indirizzo.
+            if _amz_non_commerciali.search(href):
+                continue
             if "tag=" not in href:
                 err("%s: link Amazon senza tag affiliate -> %s" % (rel(path), href[:80]))
             missing = [t for t in ("sponsored", "nofollow") if t not in relv]
