@@ -17,7 +17,7 @@ import sys
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CANONICAL_HOST = "https://thefindsvault.com"
+CANONICAL_HOST = "https://thelifetimelistusa.com"
 IMG_WARN_BYTES = 200 * 1024
 
 errors = []
